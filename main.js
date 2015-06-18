@@ -62,7 +62,7 @@ for (var i = 0; i < schemas.length; i++) {
 
 }
 
-
+//List.js funktioner tilføjes
 var options = {
   	valueNames: [ 'name' ]
 };
