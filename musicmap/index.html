@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Musicmap</title>
+	<meta charset=utf-8 />
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		var soundCloudAPI = 'http://api.soundcloud.com/users?client_id=',
+			 clientId = 'd7a717b3d351168e5e31fc80dac22bc2';
+
+		$.getJSON(soundCloudAPI+clientId, function(data) {
+	
+			var location = [];
+			var userID = [];
+
+			$.each( data, function(index, value) {
+			  	if ( value.city !== null && value.country !== null ) {
+			  		location.push(value.city+', '+value.country);
+			  		userID.push(value.id);  
+			  	} else if ( value.city !== null && value.country == null ) {
+			  		location.push(value.city);
+			  		userID.push(value.id);
+			  	} else {
+			  		return;
+			  	}
+			});
+
+			console.log(location);
+			console.log(userID);
+
+		});
+
+	</script>
+</body>
+</html>
