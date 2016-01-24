@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8 />
+	<title>Tourist Map</title>
+	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+	<script src='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.js'></script>
+	<link href='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.css' rel='stylesheet' />
+	<link href='css/style.css' rel='stylesheet' />
+	<script src='js/leaflet-layerjson.min.js'></script>
+</head>
+<body>
+
+	<div id='map'></div>
+	<div id="loader"></div>
+
+	<script>
+		L.mapbox.accessToken = 'pk.eyJ1IjoiYmFmZmlvc28iLCJhIjoiT1JTS1lIMCJ9.f5ubY91Bi42yPnTrgiq-Gw';
+		var map = L.mapbox.map('map', 'mapbox.streets')
+		    	.setView([55.726998, 12.358160], 13),
+		    loader = L.DomUtil.get('loader');
+
+		function osmToMap(key, value, marker) {
+			L.layerJSON({
+			url: 'http://overpass-api.de/api/interpreter?data=[out:json];node({lat1},{lon1},{lat2},{lon2})['+key+'='+value+'];out;',
+			propertyItems: 'elements',
+			propertyTitle: 'tags.name',
+			propertyLoc: ['lat','lon'],
+			buildIcon: function(data, title) {
+					return new L.Icon({
+						iconUrl:'img/'+marker+'.png', //Parameter
+						iconSize: new L.Point(32, 37),
+						iconAnchor: new L.Point(18, 37),
+						popupAnchor: new L.Point(0, -37)
+					});
+				},
+			buildPopup: function(data, marker) {
+					if (data.tags.image != null) {
+						return '<b>'+data.tags.name+'</b></br>'+data.tags.note+'</br><img src='+data.tags.image+' width="270">' || null
+					} else {
+						return data.tags.name || null
+					}
+				}
+			})
+			.on('dataloading',function(e) {
+				loader.style.display = 'block';
+			})
+			.on('dataloaded',function(e) {
+				loader.style.display = 'none';
+			})
+			.addTo(map);
+		}
+
+		osmToMap('amenity','bar','bar');
+		osmToMap('historic','monument','statue');
+
+	</script>
+
+
+</body>
+</html>
