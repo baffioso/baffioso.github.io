@@ -16,25 +16,27 @@
 
 	<script>
 		L.mapbox.accessToken = 'pk.eyJ1IjoiYmFmZmlvc28iLCJhIjoiT1JTS1lIMCJ9.f5ubY91Bi42yPnTrgiq-Gw';
-		var map = L.mapbox.map('map', 'mapbox.streets')
+		var map = L.mapbox.map('map', 'mapbox.streets') //Kortet defineres med centerpunkt og zoomniveu
 		    	.setView([55.726998, 12.358160], 13),
-		    loader = L.DomUtil.get('loader');
+		    loader = L.DomUtil.get('loader'); //Loader variebel som bruges til animationen mens data hentes til kortet
 
+		//Funktion som bruger Leaflet layerJSON plugin til at hente data fra OSM. Key og value er de tags, som bruges i OSM
+		//og marker angiver billedet, som bruges som markør på kortet
 		function osmToMap(key, value, marker) {
 			L.layerJSON({
 			url: 'http://overpass-api.de/api/interpreter?data=[out:json];node({lat1},{lon1},{lat2},{lon2})['+key+'='+value+'];out;',
 			propertyItems: 'elements',
 			propertyTitle: 'tags.name',
-			propertyLoc: ['lat','lon'],
+			propertyLoc: ['lat','lon'], //Koordinater for data angives
 			buildIcon: function(data, title) {
-					return new L.Icon({
-						iconUrl:'img/'+marker, //Parameter
-						iconSize: new L.Point(32, 37),
-						iconAnchor: new L.Point(18, 37),
-						popupAnchor: new L.Point(0, -37)
+					return new L.Icon({ 
+						iconUrl:'img/'+marker, //Stien til markøren angives
+						iconSize: new L.Point(32, 37), //Størrelsen på markøren
+						iconAnchor: new L.Point(18, 37), //Placeringen af markøren
+						popupAnchor: new L.Point(0, -37) //Placeringen af tekstboksen
 					});
 				},
-			buildPopup: function(data, marker) {
+			buildPopup: function(data, marker) { //Der laves en popup med oplysninger fra OSM tags. Her laves if else sætninger for at medtage de oplysninger som er tilgængelige. Som udgangspukt er navn, noter, billered og hjemmesider medtaget, hvis de eksisterer.
 					if (data.tags.image != null) {
 						return '<b>'+data.tags.name+'</b></br>'+data.tags.note+'</br><img src='+data.tags.image+' width="270"></br><a href='+data.tags.url+'  target="_blank">Læs mere her</a>' || null
 					} else {
@@ -42,17 +44,17 @@
 					}
 				}
 			})
-			.on('dataloading',function(e) {
+			.on('dataloading',function(e) { //Animation som kører mens data loades
 				loader.style.display = 'block';
 			})
-			.on('dataloaded',function(e) {
+			.on('dataloaded',function(e) { //Forsvinder igen når data er henetet
 				loader.style.display = 'none';
 			})
 			.addTo(map);
 		}
 
-		osmToMap('amenity','bar','bar.png');
-		osmToMap('tourism','artwork','statue.png');
+		osmToMap('amenity','bar','bar.png'); //Her bruges osmToMap funktionen for bare
+		osmToMap('tourism','artwork','statue.png'); //Her hentes kunst
 
 	</script>
 
