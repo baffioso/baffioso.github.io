@@ -38,7 +38,7 @@
 				},
 			buildPopup: function(data, marker) { //Der laves en popup med oplysninger fra OSM tags. Her laves if else sætninger for at medtage de oplysninger som er tilgængelige. Som udgangspukt er navn, noter, billered og hjemmesider medtaget, hvis de eksisterer.
 					if (data.tags.image != null) {
-						return '<b>'+data.tags.name+'</b></br>'+data.tags.note+'</br><img src='+data.tags.image+' width="270"></br><a href='+data.tags.url+'  target="_blank">Læs mere her</a>' || null
+						return '<b>'+data.tags.name+'</b></br>'+data.tags.note+'</br><img src='+data.tags.image+' width="270"></br><a href='+data.tags.website+' target="_blank">Læs mere her</a>' || null
 					} else {
 						return data.tags.name || null
 					}
@@ -53,7 +53,7 @@
 			.addTo(map);
 		}
 
-		osmToMap('amenity','bar','bar.png'); //Her bruges osmToMap funktionen for bare
+		//osmToMap('amenity','bar','bar.png'); //Her bruges osmToMap funktionen for bare
 		osmToMap('tourism','artwork','statue.png'); //Her hentes kunst
 
 	</script>
