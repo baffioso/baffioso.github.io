@@ -46,7 +46,7 @@
 							var point = geo.adgangsadresse.adgangspunkt.koordinater;
 							var popup = geo.adgangsadresse
 							//Marker føjes til kortet
-							var marker = L.marker([point[1],point[0]]).addTo(mymap).bindPopup(popup.vejstykke.navn + " " + popup.husnr + ", " + popup.postnummer.nr + " " + popup.postnummer.navn);
+							var marker = L.marker([point[1],point[0]]).addTo(mymap).bindPopup(popup.vejstykke.navn + " " + popup.husnr + "\n" + popup.postnummer.nr + " " + popup.postnummer.navn);
 						});
 
 					}
