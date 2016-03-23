@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
 	<title>Adressevask</title>
@@ -23,26 +22,19 @@
 
 
 	<script type="text/javascript">
-
 		$( document ).ready(function() {
-
 			//funktion som kører når der trykkes på søg-knappen
 			$( "#search" ).click(function() {
-
 				//div'en tømmes
 				$( "#result" ).empty();
-
 				//værdien fra søgefeltet hentes
 			  var query = $('#query').val();
-
 				//AJAX kalder DAWA med ordende fra søgefelt
 				$.getJSON( 'http://dawa.aws.dk/datavask/adresser?betegnelse=' + query, function( data ) {
 					var items = [];
-
 					for (var i = 0; i < data.resultater.length; i++) {
 						var adr = data.resultater[i].aktueladresse
-						items.push( "<li  class="list-group-item">" + adr.vejnavn + " " + adr.husnr + ", " + adr.postnrnavn + "</li>" );
-
+						items.push( "<li class=\"list-group-item\">" + adr.vejnavn + " " + adr.husnr + ", " + adr.postnrnavn + "</li>" );
 						//Koordinater hentes fra href propertiet under aktueladresse
 						$.getJSON(adr.href, function( geo ) {
 							var point = geo.adgangsadresse.adgangspunkt.koordinater;
@@ -50,31 +42,21 @@
 							//Marker føjes til kortet
 							var marker = L.marker([point[1],point[0]]).addTo(mymap).bindPopup(popup.vejstykke.navn + " " + popup.husnr + "</br>" + popup.postnummer.nr + " " + popup.postnummer.navn);
 						});
-
 					}
-
 					$( "<ul/>", {
 						"class": "list-group",
 						html: items.join( "" )
 					}).appendTo( "#result" );
-
-
-
-
 				});
-
 			});
-
 			//Leaflet kort tilføjes
 			var mymap = L.map('mapid').setView([56, 12], 7);
-
 			L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
 			    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
 			    maxZoom: 18,
 			    id: 'baffioso.ie1ok8lg',
 			    accessToken: 'pk.eyJ1IjoiYmFmZmlvc28iLCJhIjoiT1JTS1lIMCJ9.f5ubY91Bi42yPnTrgiq-Gw'
 			}).addTo(mymap);
-
 		});
 	</script>
 </body>
