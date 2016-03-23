@@ -41,7 +41,7 @@
 
 					for (var i = 0; i < data.resultater.length; i++) {
 						var adr = data.resultater[i].aktueladresse
-						items.push( "<li class="list-group-item">" + adr.vejnavn + " " + adr.husnr + ", " + adr.postnrnavn + "</li>" );
+						items.push( "<li>" + adr.vejnavn + " " + adr.husnr + ", " + adr.postnrnavn + "</li>" );
 
 						//Koordinater hentes fra href propertiet under aktueladresse
 						$.getJSON(adr.href, function( geo ) {
