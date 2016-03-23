@@ -8,27 +8,66 @@
 	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<style>
-		#mapid { height: 600px; width: 50%; }
-		#result { height: 600px; width: 50%; }
-		#query { width: 40%; }
-		#search {
-			position: absolute;
-    	right: 0px; 
-		}
+		#mapid { height: 50%; width: 100%; border-radius: 20px; box-shadow: 3px 100px 200px 10px #333;}
+		#result { max-height: 300px; overflow:scroll;  }
+		
 	</style>
 </head>
 <body>
-	<div>
-		<div>
-			<input id='query' type="text" class="form-control" placeholder="Skriv en adresse" ></input>
-			<button type="button" class="btn btn-success" id='search'>Søg</button>
-		</div>
-		<div>
-			<div id="mapid"></div>
-			<div id='result'></div>
+
+	<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    
+  </div><!-- /.container-fluid -->
+</nav>
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-xs-12 col-sm-8">
+				<div class="row">
+
+					<div id="mapid"></div>
+
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-4">
+
+				<div class="row">
+					<div class="col-xs-9">
+						<input id='query' type="text" class="form-control" placeholder="Skriv en adresse" ></input>
+					
+					</div>
+					<div class="col-xs-3">
+						<button type="button" class="btn btn-primary" style="background-color:#33aaff" id='search' data-toggle="modal" data-target="#myModal">Søg nu</button>
+					</div>
+				</div>
+
+				<!-- Modal -->
+				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h4 class="modal-title" id="myModalLabel">Søgeresultat</h4>
+				      </div>
+				      <div class="modal-body">
+				        <div id='result'></div>      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Luk</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+
+			</div>
+	
+				
+			
 		</div>
 	</div>
-
 
 	<script type="text/javascript">
 		$( document ).ready(function() {
@@ -59,7 +98,7 @@
 				});
 			});
 			//Leaflet kort tilføjes
-			var mymap = L.map('mapid').setView([56, 12], 7);
+			var mymap = L.map('mapid').setView([56, 12], 6);
 			L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
 			    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
 			    maxZoom: 18,
