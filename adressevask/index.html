@@ -8,17 +8,21 @@
 	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<style>
-		#mapid { height: 600px; }
+		#mapid { height: 600px; width: 50%; right: 0px; }
+		#result { height: 600px; width: 50%; left: 0px; }
 	</style>
 </head>
 <body>
 	<div>
-		<input id='query' type="text" class="form-control" placeholder="Skriv en adresse"></input>
-		<button type="button" class="form-control input-sm" id='search'>Søg</button>
+		<div>
+			<input id='query' type="text" class="form-control" placeholder="Skriv en adresse"></input>
+			<button type="button" class="btn btn-success" id='search'>Søg</button>
+		</div>
+		<div>
+			<div id="mapid"></div>
+			<div id='result'></div>
+		</div>
 	</div>
-	<div id="mapid"></div>
-	<div id='result'></div>
-
 
 
 	<script type="text/javascript">
