@@ -1,0 +1,96 @@
+<html>
+<head>
+	<title>Adressevask</title>
+	<meta charset=utf-8 />
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.1.2/papaparse.min.js"></script>
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js'></script>
+  <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.css' rel='stylesheet' />
+  <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.Default.css' rel='stylesheet' />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Adressevasker</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 col-md-offset-5">
+        <span class="btn btn-success btn-file">
+          BROWSE CSV <input type="file" id="csv-file" name="files">
+        </span>
+      </div>
+    </div>
+    <div class="row">
+      <div id="mapid"></div>
+    </div>
+  </div>
+
+	<script type="text/javascript">
+		$( document ).ready(function() {
+
+      function geocoder(query) {
+        //eksisterende lag fjernes
+        map.removeLayer(markers);
+        //Der laves to kald:
+        // - det første returnere datavask resultater
+        $.getJSON( 'http://dawa.aws.dk/datavask/adresser?betegnelse=' + query, function( data ) {
+          // - href fra første objekt kaldes så koordinater kan angives
+          $.getJSON(data.resultater[0].aktueladresse.href, function( data ) {
+            var xy = data.adgangsadresse.adgangspunkt.koordinater;
+            var marker = L.marker([xy[1],xy[0]]).bindPopup(data.adressebetegnelse);
+            markers.addLayer(marker);
+            map.addLayer(markers);
+          });
+        });
+      }
+
+      //CSV
+      function csvFile(evt) {
+        var file = evt.target.files[0];
+
+        Papa.parse(file, {
+          header: true,
+          dynamicTyping: true,
+          complete: function(results) {
+            //der loopes gennem adresser i csv
+            for (var i = 0; i < results.data.length; i++) {
+              //geocoder køres for at finde koordinater, tilføje markør/popup til kort
+              //OBS kolonne i CSV skal hedde "adresse"
+              geocoder(results.data[i].adresse);
+            }
+          }
+        });
+      }
+
+      //ved skift af imput i Browse CSV køres csvFile funktionen
+      $("#csv-file").change(csvFile);
+
+      //Cluster marker
+      var markers = new L.MarkerClusterGroup();
+
+      //Leaflet baggrundskort tilføjes
+      var map = L.map('mapid').setView([56, 12], 6);
+      L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+          attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+          maxZoom: 18,
+          id: 'baffioso.ie1ok8lg',
+          accessToken: 'pk.eyJ1IjoiYmFmZmlvc28iLCJhIjoiT1JTS1lIMCJ9.f5ubY91Bi42yPnTrgiq-Gw'
+      }).addTo(map);
+
+		});
+	</script>
+</body>
+</html>
