@@ -45,28 +45,33 @@
 	<script type="text/javascript">
 		$( document ).ready(function() {
 
-      function geocoder(query) {
+			var koordinater;
+
+      function geocoder(adresse) {
         //Der laves to kald:
         // - det første returnere datavask resultater
-        $.getJSON( 'http://dawa.aws.dk/datavask/adresser?betegnelse=' + query, function( data ) {
+        $.getJSON( 'http://dawa.aws.dk/datavask/adresser?betegnelse=' + adresse, function( data ) {
           //kategori gemmes i variabel, så det kan bruges inde i næste ajax kald
           var kategori = data.kategori
           // - href fra første objekt kaldes så koordinater kan angives
           $.getJSON(data.resultater[0].aktueladresse.href, function( data ) {
-            var xy = data.adgangsadresse.adgangspunkt.koordinater;
-            var marker = L.marker([xy[1],xy[0]]);
+            koordinater = data.adgangsadresse.adgangspunkt.koordinater;
+            var marker = L.marker([koordinater[1],koordinater[0]]);
             //Markører farves, så de angiver kvaliteten af match
             if (kategori === 'A') {
               marker.setIcon(L.mapbox.marker.icon({
-                'marker-color': '#04B404'
+                'marker-color': '#04B404',
+								'marker-symbol': '1'
               }));
             } else if (kategori === 'B') {
               marker.setIcon(L.mapbox.marker.icon({
-                'marker-color': '#FFBF00'
+                'marker-color': '#FFBF00',
+								'marker-symbol': '2'
               }));
             } else if (kategori === 'C') {
               marker.setIcon(L.mapbox.marker.icon({
-                'marker-color': '#DF0101'
+                'marker-color': '#DF0101',
+								'marker-symbol': '3'
               }));
             } else {
               marker.setIcon(L.mapbox.marker.icon({}));
@@ -88,10 +93,12 @@
           dynamicTyping: true,
           complete: function(results) {
             //der loopes gennem adresser i csv
+						console.log(results.data);
             for (var i = 0; i < results.data.length; i++) {
               //geocoder køres for at finde koordinater, tilføje markør/popup til kort
               //OBS kolonne i CSV skal hedde "adresse"
-              geocoder(results.data[i].adresse);
+              $.when(geocoder(results.data[i].adresse)) //when done forsøges at bruges
+								.done(results.data[i].koordinater = koordinater);
             }
           }
         });
