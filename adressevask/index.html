@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.1.2/papaparse.min.js"></script>
+	<script type="text/javascript" src="js/geojson.min.js"></script>
 
   <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js'></script>
   <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.css' rel='stylesheet' />
@@ -30,11 +31,12 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-md-2 col-md-offset-5">
-        <span class="btn btn-success btn-file">
+
+        <button class="btn btn-success btn-file">
           BROWSE CSV <input type="file" id="csv-file" name="files">
-        </span>
-      </div>
+        </button>
+
+			<button id="hentdata" class="btn btn-success">HENT GEOJSON</button>
     </div>
     <div class="row">
       <div id="mapid"></div>
@@ -46,46 +48,21 @@
 	<script type="text/javascript">
 		$( document ).ready(function() {
 
-			var koordinater;
+			//ved skift af input i Browse CSV køres csvFile funktionen
+			$("#csv-file").change(csvFile);
 
-      function geocoder(adresse) {
-        //Der laves to kald:
-        // - det første returnere datavask resultater
-        $.getJSON( 'http://dawa.aws.dk/datavask/adresser?betegnelse=' + adresse, function( data ) {
-          //kategori gemmes i variabel, så det kan bruges inde i næste ajax kald
-          var kategori = data.kategori
-          // - href fra første objekt kaldes så koordinater kan angives
-          $.getJSON(data.resultater[0].aktueladresse.href, function( data ) {
-            koordinater = data.adgangsadresse.adgangspunkt.koordinater;
-            var marker = L.marker([koordinater[1],koordinater[0]]);
-            //Markører farves, så de angiver kvaliteten af match
-            if (kategori === 'A') {
-              marker.setIcon(L.mapbox.marker.icon({
-                'marker-color': '#04B404',
-								'marker-symbol': '1'
-              }));
-            } else if (kategori === 'B') {
-              marker.setIcon(L.mapbox.marker.icon({
-                'marker-color': '#FFBF00',
-								'marker-symbol': '2'
-              }));
-            } else if (kategori === 'C') {
-              marker.setIcon(L.mapbox.marker.icon({
-                'marker-color': '#DF0101',
-								'marker-symbol': '3'
-              }));
-            } else {
-              marker.setIcon(L.mapbox.marker.icon({}));
-            }
-            //Der lave popup
-            marker.bindPopup(data.adressebetegnelse);
-            markers.addLayer(marker);
-            map.addLayer(markers);
-          });
-        });
-      }
+			//hent data knappen gemmes og vises efter ajax er afsluttet
+			$("#hentdata").hide();
 
-      //CSV
+			//Når der tykkes på hent data knappen køres funktionen outputData
+			$('#hentdata').click(function() {
+				outputData()
+			});
+
+			//array som fyldes op med csv-data og kooridinater m.m. fra DAWA
+			var output = [];
+
+			//CSV
       function csvFile(evt) {
         var file = evt.target.files[0];
         //PapaParse bruges til at parse lokal CSV-fil
@@ -93,20 +70,83 @@
           header: true,
           dynamicTyping: true,
           complete: function(results) {
-            //der loopes gennem adresser i csv
-						console.log(results.data);
-            for (var i = 0; i < results.data.length; i++) {
-              //geocoder køres for at finde koordinater, tilføje markør/popup til kort
-              //OBS kolonne i CSV skal hedde "adresse"
-              $.when(geocoder(results.data[i].adresse)) //when done forsøges at bruges
-								.done(results.data[i].koordinater = koordinater);
-            }
+						//loopes gennem adresser i csv
+						$.each(results, function(index, value) {
+							//geocoder køres for at finde koordinater, tilføje markør/popup til kort
+							//OBS kolonne i CSV skal hedde "adresse"
+							geocoder(results.data);
+							//der returneres så objectet kommer 3 gange for data, error og ??
+							return results.length < 1;
+						});
           }
         });
       }
 
-      //ved skift af imput i Browse CSV køres csvFile funktionen
-      $("#csv-file").change(csvFile);
+      function geocoder(csvAdresse) {
+				//Loop over csv adresserne fra csvFile funktionen
+				$.each(csvAdresse, function(index, value) {
+					//Der laves to kald:
+					// - det første returnere datavask resultater
+	        $.getJSON( 'http://dawa.aws.dk/datavask/adresser?betegnelse=' + csvAdresse[index].adresse, function( data ) {
+	          //kategori gemmes i variabel, så det kan bruges inde i næste ajax kald
+						var kategori = data.kategori
+	          // - href fra første objekt kaldes så koordinater kan angives
+	          $.getJSON(data.resultater[0].aktueladresse.href, function( data ) {
+	            koordinater = data.adgangsadresse.adgangspunkt.koordinater;
+							//Der laves markører med koordinaterne
+							var marker = L.marker([koordinater[1],koordinater[0]]);
+	            //Markører farves, så de angiver kvaliteten af match
+	            if (kategori === 'A') {
+	              marker.setIcon(L.mapbox.marker.icon({
+	                'marker-color': '#04B404',
+									'marker-symbol': '1'
+	              }));
+	            } else if (kategori === 'B') {
+	              marker.setIcon(L.mapbox.marker.icon({
+	                'marker-color': '#FFBF00',
+									'marker-symbol': '2'
+	              }));
+	            } else if (kategori === 'C') {
+	              marker.setIcon(L.mapbox.marker.icon({
+	                'marker-color': '#DF0101',
+									'marker-symbol': '3'
+	              }));
+	            } else {
+	              marker.setIcon(L.mapbox.marker.icon({}));
+	            }
+	            //Der laves popup
+	            marker.bindPopup(data.adressebetegnelse);
+							//marker tilføjes laget markers
+	            markers.addLayer(marker);
+							//Markers laget føjes til kortet
+	            map.addLayer(markers);
+
+							//Koordinater og matchkategori tilføjes csv-data
+							csvAdresse[index].lat = koordinater[1];
+							csvAdresse[index].lon = koordinater[0];
+							csvAdresse[index].matchkategori = kategori;
+							//det opdaterede objekt skubbes ind i den globale output array
+							output.push(csvAdresse[index]);
+	          });
+	        });
+				});
+      }
+
+			function outputData() {
+				//csv adresse laves om til geojson
+				var obj = GeoJSON.parse(output, {Point: ['lat', 'lon']});
+
+				//gem fil lokalt
+				var data = "text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(obj));
+
+				var a = document.createElement('a');
+				a.href = 'data:' + data;
+				a.download = 'data.geojson';
+				a.innerHTML = ' TRYK HER';
+
+				var container = document.getElementById('hentdata');
+				container.appendChild(a);
+			}
 
       //Cluster marker
       var markers = new L.MarkerClusterGroup();
@@ -121,12 +161,16 @@
           accessToken: L.mapbox.accessToken
       }).addTo(map);
 
-			//Loader animatio mens ajax kører (http://stackoverflow.com/questions/1964839/how-can-i-create-a-please-wait-loading-animation-using-jquery)
+			//Loader animation mens ajax kører (http://stackoverflow.com/questions/1964839/how-can-i-create-a-please-wait-loading-animation-using-jquery)
 			$body = $("body");
 
+
 			$(document).on({
-			    ajaxStart: function() { $body.addClass("loading");    },
-			     ajaxStop: function() { $body.removeClass("loading"); }
+				ajaxStart: function() { $body.addClass("loading"); },
+				ajaxStop: function() {
+					$body.removeClass("loading");
+					$("#hentdata").show();
+				}
 			});
 
 		});
