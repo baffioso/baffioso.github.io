@@ -56,3 +56,12 @@ body.loading {
 body.loading .modal {
     display: block;
 }
+
+.navbar-brand {
+    float: left;
+    height: 57px;
+    padding: 22px 15px;
+    font-size: 16px;
+    font-family: monospace;
+    line-height: 20px;
+}
