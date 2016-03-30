@@ -32,36 +32,39 @@
    for themselves. Background we set to 80% white with
    our animation centered, and no-repeating */
 .modal {
-    display:    none;
-    position:   fixed;
-    z-index:    1000;
-    top:        0;
-    left:       0;
-    height:     100%;
-    width:      100%;
-    background: rgba( 255, 255, 255, .4 )
-                url('http://i.stack.imgur.com/FhHRx.gif')
-                50% 50%
-                no-repeat;
+  display:    none;
+  position:   fixed;
+  z-index:    1000;
+  top:        0;
+  left:       0;
+  height:     100%;
+  width:      100%;
+  background: rgba( 255, 255, 255, .4 )
+              url('http://i.stack.imgur.com/FhHRx.gif')
+              50% 50%
+              no-repeat;
 }
 
 /* When the body has the loading class, we turn
    the scrollbar off with overflow:hidden */
 body.loading {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 /* Anytime the body has the loading class, our
    modal element will be visible */
 body.loading .modal {
-    display: block;
+  display: block;
 }
 
 .navbar-brand {
-    float: left;
-    height: 57px;
-    padding: 22px 15px;
-    font-size: 16px;
-    font-family: monospace;
-    line-height: 20px;
+  float: left;
+  height: 57px;
+  padding: 22px 15px;
+  font-size: 16px;
+  font-family: monospace;
+  line-height: 20px;
+}
+a:link, a:visited, a:hover {
+  color:white;
 }

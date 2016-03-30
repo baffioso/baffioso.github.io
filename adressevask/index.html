@@ -30,27 +30,23 @@
   </nav>
 
   <div class="container">
-    <div class="row">
-	
-	<div class="col-sm-9">
-      <button class="btn btn-success btn-file">
-        BROWSE CSV <input type="file" id="csv-file" name="files">
-      </button> 
-      <button id="hentdata" class="btn btn-primary" style="display: inline-block;">HENT GEOJSON</button>
-  	</div>
-  
-  
-	<div class="col-sm-3 text-right">
-			
-			<button id="rydkort" class="btn btn-default" style="display: inline-block;">RYD KORTET</button>
-    </div>
-    </div>
-    <div class="row">
-      <div id="mapid"></div>
-    </div>
-  </div>
-
-	<div class="modal"><!-- Place at bottom of page --></div>
+		<div class="row">
+			<div class="col-sm-9">
+			  <button class="btn btn-success btn-file">
+			    BROWSE CSV <input type="file" id="csv-file" name="files">
+			  </button>
+			  <a href="#" id="hentdata" class="btn btn-primary" style="display: inline-block;" role="button"></a>
+			</div>
+			<div class="col-sm-3 text-right">
+				<button id="rydkort" class="btn btn-default" style="display: inline-block;">RYD KORTET</button>
+			</div>
+		</div>
+		<div class="row">
+		  <div id="mapid"></div>
+		</div>
+	</div>
+	<!-- Bruges til ajax loading spinner -->
+	<div class="modal"></div>
 
 	<script type="text/javascript">
 		$( document ).ready(function() {
@@ -63,10 +59,11 @@
 			$("#rydkort").hide();
 
 			//Når der tykkes på hent data knappen køres funktionen outputData
-			$('#hentdata').click(function() {
+			/*$
+			('#hentdata').click(function() {
 				outputData()
 			});
-
+			*/
 			$('#rydkort').click(function() {
 				clearMarkers();
 			});
@@ -122,7 +119,13 @@
 	              marker.setIcon(L.mapbox.marker.icon({}));
 	            }
 	            //Der laves popup
-	            marker.bindPopup(data.adressebetegnelse);
+	            marker.bindPopup('<b>CSV-adresse:</b></br>'+ csvAdresse[index].adresse + '</br><b>Vaske-adresse:</b></br>' + data.adressebetegnelse);
+							marker.on('mouseover', function (e) {
+		            this.openPopup();
+			        });
+			        marker.on('mouseout', function (e) {
+		            this.closePopup();
+			        });
 							//marker tilføjes laget markers
 	            markers.addLayer(marker);
 							//Markers-laget føjes til kortet
@@ -148,12 +151,11 @@
 
 				var a = document.createElement('a');
 				a.href = 'data:' + data;
-				a.download = 'data.geojson';
-				//a.innerHTML = ' TRYK HER';
+				a.download = 'adressevask.geojson';
+				a.innerHTML = 'HENT GEOJSON';
 
-				//var container = document.getElementById('hentdata');
-				//container.appendChild(a);
-				window.open(a.href);
+				var container = document.getElementById('hentdata');
+				container.appendChild(a);
 			}
 
 			function clearMarkers() {
@@ -162,8 +164,9 @@
 				//output array tømmes
 				output = []
 				//knapper fjernes
-				$("#hentdata").hide();
+				$("#hentdata").html('').hide();
 				$("#rydkort").hide();
+				$("#csv-file").val('');
 			}
 
       //Cluster marker
@@ -190,8 +193,9 @@
 					//Knapperne hentdata/rydkort vises efter endt ajax
 					$("#hentdata").show();
 					$("#rydkort").show();
+					outputData();
 				}
-			});  	
+			});
 
 		});
 	</script>
