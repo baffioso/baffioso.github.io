@@ -32,11 +32,12 @@
   <div class="container">
     <div class="row">
 
-        <button class="btn btn-success btn-file">
-          BROWSE CSV <input type="file" id="csv-file" name="files">
-        </button>
+      <button class="btn btn-success btn-file">
+        BROWSE CSV <input type="file" id="csv-file" name="files">
+      </button>
 
 			<button id="hentdata" class="btn btn-success">HENT GEOJSON</button>
+			<!--<a id="rydkort" class="btn btn-default">RYD KORTET</a> -->
     </div>
     <div class="row">
       <div id="mapid"></div>
@@ -51,8 +52,9 @@
 			//ved skift af input i Browse CSV køres csvFile funktionen
 			$("#csv-file").change(csvFile);
 
-			//hent data knappen gemmes og vises efter ajax er afsluttet
+			//hent data/rydkort knappen gemmes og vises efter ajax er afsluttet
 			$("#hentdata").hide();
+			$("#rydkort").hide();
 
 			//Når der tykkes på hent data knappen køres funktionen outputData
 			$('#hentdata').click(function() {
@@ -70,14 +72,9 @@
           header: true,
           dynamicTyping: true,
           complete: function(results) {
-						//loopes gennem adresser i csv
-						$.each(results, function(index, value) {
 							//geocoder køres for at finde koordinater, tilføje markør/popup til kort
 							//OBS kolonne i CSV skal hedde "adresse"
 							geocoder(results.data);
-							//der returneres så objectet kommer 3 gange for data, error og ??
-							return results.length < 1;
-						});
           }
         });
       }
@@ -118,7 +115,7 @@
 	            marker.bindPopup(data.adressebetegnelse);
 							//marker tilføjes laget markers
 	            markers.addLayer(marker);
-							//Markers laget føjes til kortet
+							//Markers-laget føjes til kortet
 	            map.addLayer(markers);
 
 							//Koordinater og matchkategori tilføjes csv-data
@@ -142,10 +139,11 @@
 				var a = document.createElement('a');
 				a.href = 'data:' + data;
 				a.download = 'data.geojson';
-				a.innerHTML = ' TRYK HER';
+				//a.innerHTML = ' TRYK HER';
 
-				var container = document.getElementById('hentdata');
-				container.appendChild(a);
+				//var container = document.getElementById('hentdata');
+				//container.appendChild(a);
+				window.open(a.href);
 			}
 
       //Cluster marker
@@ -169,7 +167,9 @@
 				ajaxStart: function() { $body.addClass("loading"); },
 				ajaxStop: function() {
 					$body.removeClass("loading");
+					//Knapperne hentdata/rydkort vises efter endt ajax
 					$("#hentdata").show();
+					$("#rydkort").show();
 				}
 			});
 
