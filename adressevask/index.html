@@ -58,12 +58,7 @@
 			$("#hentdata").hide();
 			$("#rydkort").hide();
 
-			//Når der tykkes på hent data knappen køres funktionen outputData
-			/*$
-			('#hentdata').click(function() {
-				outputData()
-			});
-			*/
+			//Når der tykkes på ryd kort knappen køres funktionen
 			$('#rydkort').click(function() {
 				clearMarkers();
 			});
@@ -120,6 +115,7 @@
 	            }
 	            //Der laves popup
 	            marker.bindPopup('<b>CSV-adresse:</b></br>'+ csvAdresse[index].adresse + '</br><b>Vaske-adresse:</b></br>' + data.adressebetegnelse);
+							//mouseover popup
 							marker.on('mouseover', function (e) {
 		            this.openPopup();
 			        });
@@ -166,6 +162,7 @@
 				//knapper fjernes
 				$("#hentdata").html('').hide();
 				$("#rydkort").hide();
+				//input filen fjernes
 				$("#csv-file").val('');
 			}
 
@@ -185,7 +182,7 @@
 			//Loader animation mens ajax kører (http://stackoverflow.com/questions/1964839/how-can-i-create-a-please-wait-loading-animation-using-jquery)
 			$body = $("body");
 
-
+			//ved ajax start vises spinner og ved stop fjernes spinner og knapper tilføjes
 			$(document).on({
 				ajaxStart: function() { $body.addClass("loading"); },
 				ajaxStop: function() {
@@ -193,6 +190,7 @@
 					//Knapperne hentdata/rydkort vises efter endt ajax
 					$("#hentdata").show();
 					$("#rydkort").show();
+					//output data tilføjes til hent knappen som href med funktionen
 					outputData();
 				}
 			});
