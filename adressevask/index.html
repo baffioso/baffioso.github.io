@@ -37,7 +37,7 @@
       </button>
 
 			<button id="hentdata" class="btn btn-success">HENT GEOJSON</button>
-			<!--<a id="rydkort" class="btn btn-default">RYD KORTET</a> -->
+			<a id="rydkort" class="btn btn-default">RYD KORTET</a>
     </div>
     <div class="row">
       <div id="mapid"></div>
@@ -59,6 +59,10 @@
 			//Når der tykkes på hent data knappen køres funktionen outputData
 			$('#hentdata').click(function() {
 				outputData()
+			});
+
+			$('#rydkort').click(function() {
+				clearMarkers();
 			});
 
 			//array som fyldes op med csv-data og kooridinater m.m. fra DAWA
@@ -144,6 +148,16 @@
 				//var container = document.getElementById('hentdata');
 				//container.appendChild(a);
 				window.open(a.href);
+			}
+
+			function clearMarkers() {
+				//Markører fjernes fra kortet
+				markers.clearLayers();
+				//output array tømmes
+				output = []
+				//knapper fjernes
+				$("#hentdata").hide();
+				$("#rydkort").hide();
 			}
 
       //Cluster marker
