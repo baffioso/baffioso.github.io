@@ -31,13 +31,19 @@
 
   <div class="container">
     <div class="row">
-
+	
+	<div class="col-sm-9">
       <button class="btn btn-success btn-file">
         BROWSE CSV <input type="file" id="csv-file" name="files">
-      </button>
-
-			<button id="hentdata" class="btn btn-success">HENT GEOJSON</button>
-			<button id="rydkort" class="btn btn-default">RYD KORTET</button>
+      </button> 
+      <button id="hentdata" class="btn btn-primary" style="display: inline-block;">HENT GEOJSON</button>
+  	</div>
+  
+  
+	<div class="col-sm-3 text-right">
+			
+			<button id="rydkort" class="btn btn-default" style="display: inline-block;">RYD KORTET</button>
+    </div>
     </div>
     <div class="row">
       <div id="mapid"></div>
