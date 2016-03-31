@@ -36,6 +36,8 @@
 			    BROWSE CSV <input type="file" id="csv-file" name="files">
 			  </span>
 			  <a href="#" id="hentdata" class="btn btn-primary" style="display: inline-block;" role="button"></a>
+				<!-- vis statistik -->
+				<button id="statistik" type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">VIS MATCH</button>
 			</div>
 			<div class="col-sm-3 text-right">
 				<button id="rydkort" class="btn btn-default" style="display: inline-block;">RYD KORTET</button>
@@ -45,8 +47,52 @@
 		  <div id="mapid"></div>
 		</div>
 	</div>
+
+	<!-- Modal -->
+	<div id="myModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">MATCHSTATISTIK</h4>
+	      </div>
+	      <div class="modal-body">
+					<div id='count'>
+						<table class="table table-striped">
+					    <thead>
+					      <tr>
+					        <th>Præcist match</th>
+					        <th>Sikkert match</th>
+					        <th>Usikkert match</th>
+					      </tr>
+					    </thead>
+					    <tbody>
+					      <tr>
+					        <td id='katA'></td>
+					        <td id='katB'></td>
+					        <td id='katC'></td>
+					      </tr>
+								<tr>
+									<td><img src="http://a.tiles.mapbox.com/v4/marker/pin-m-1+04B404.png?access_token=pk.eyJ1IjoiYmFmZmlvc28iLCJhIjoiT1JTS1lIMCJ9.f5ubY91Bi42yPnTrgiq-Gw" alt="Kategori A" /></td>
+									<td><img src="http://a.tiles.mapbox.com/v4/marker/pin-m-2+FFBF00.png?access_token=pk.eyJ1IjoiYmFmZmlvc28iLCJhIjoiT1JTS1lIMCJ9.f5ubY91Bi42yPnTrgiq-Gw" alt="Kategori B" /></td>
+									<td><img src="http://a.tiles.mapbox.com/v4/marker/pin-m-3+DF0101.png?access_token=pk.eyJ1IjoiYmFmZmlvc28iLCJhIjoiT1JTS1lIMCJ9.f5ubY91Bi42yPnTrgiq-Gw" alt="Kategori C" /></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">LUK</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
 	<!-- Bruges til ajax loading spinner -->
-	<div class="modal"></div>
+	<div class="spinner"></div>
 
 	<script type="text/javascript">
 		$( document ).ready(function() {
@@ -57,6 +103,7 @@
 			//hent data/rydkort knappen gemmes og vises efter ajax er afsluttet
 			$("#hentdata").hide();
 			$("#rydkort").hide();
+			$("#statistik").hide();
 
 			//Når der tykkes på ryd kort knappen køres funktionen
 			$('#rydkort').click(function() {
@@ -114,7 +161,7 @@
 	              marker.setIcon(L.mapbox.marker.icon({}));
 	            }
 	            //Der laves popup
-	            marker.bindPopup('<b>CSV-adresse:</b></br>'+ csvAdresse[index].adresse + '</br><b>Vaske-adresse:</b></br>' + data.adressebetegnelse);
+	            marker.bindPopup('<b>CSV-adresse:</b></br>'+ csvAdresse[index].adresse + '</br><b>Officiel adresse:</b></br>' + data.adressebetegnelse);
 							//mouseover popup
 							marker.on('mouseover', function (e) {
 		            this.openPopup();
@@ -139,7 +186,7 @@
       }
 
 			function outputData() {
-				//csv adresse laves om til geojson
+				//output array laves om til geojson
 				var obj = GeoJSON.parse(output, {Point: ['lat', 'lon']});
 
 				//gem fil lokalt
@@ -157,13 +204,40 @@
 			function clearMarkers() {
 				//Markører fjernes fra kortet
 				markers.clearLayers();
-				//output array tømmes
+				//array tømmes
 				output = []
 				//knapper fjernes
 				$("#hentdata").html('').hide();
 				$("#rydkort").hide();
+				$("#statistik").hide();
 				//input filen fjernes
 				$("#csv-file").val('');
+			}
+
+
+			function countKategori() {
+				//arrays til at matchkategori
+				var a = []
+				var b = []
+				var c = []
+				//for hver kategori fyldes array om med værdier
+				$.each(output, function(index, value) {
+					switch (output[index].matchkategori) {
+						case 'A':
+							a.push('A');
+							break;
+						case 'B':
+							b.push('B');
+							break;
+						case 'C':
+							c.push('C');
+							break;
+					}
+				});
+				//værdierne i array tælles og føjes til modal
+				$("#katA").html(a.length)
+				$("#katB").html(b.length)
+				$("#katC").html(c.length)
 			}
 
       //Cluster marker
@@ -190,8 +264,11 @@
 					//Knapperne hentdata/rydkort vises efter endt ajax
 					$("#hentdata").show();
 					$("#rydkort").show();
+					$("#statistik").show();
 					//output data tilføjes til hent knappen som href med funktionen
 					outputData();
+					//statistik for match beregnes og tilføjes modal
+					countKategori();
 				}
 			});
 
