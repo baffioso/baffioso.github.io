@@ -1,41 +1,42 @@
 <html>
+
 <head>
 	<title>Adressevask</title>
 	<meta charset=utf-8 />
 	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 
-  <script src='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.js'></script>
-  <link href='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.css' rel='stylesheet' />
+	<script src='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.js'></script>
+	<link href='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.css' rel='stylesheet' />
 
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.1.2/papaparse.min.js"></script>
 	<script type="text/javascript" src="js/geojson.min.js"></script>
 
-  <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js'></script>
-  <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.css' rel='stylesheet' />
-  <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.Default.css' rel='stylesheet' />
+	<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js'></script>
+	<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.css' rel='stylesheet' />
+	<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.Default.css' rel='stylesheet' />
 
-  <link rel="stylesheet" href="css/style.css" />
-
+	<link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">Adressevasker</a>
-      </div>
-    </div>
-  </nav>
 
-  <div class="container">
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Adressevasker</a>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
 		<div class="row">
 			<div class="col-sm-9">
-			  <span class="btn btn-success btn-file" data-toggle="tooltip" title="Kolonnentitlen for adresser skal hedde &quot;adresse&quot;">
+				<span class="btn btn-success btn-file" data-toggle="tooltip" title="Kolonnentitlen for adresser i CSV-filen skal hedde &quot;adresse&quot;">
 			    BROWSE CSV <input type="file" id="csv-file" name="files">
 			  </span>
-			  <a href="#" id="hentdata" class="btn btn-primary" style="display: inline-block;" role="button"></a>
+				<a href="#" id="hentdata" class="btn btn-primary" style="display: inline-block;" role="button"></a>
 				<!-- vis statistik -->
 				<button id="statistik" type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">VIS MATCH</button>
 			</div>
@@ -44,36 +45,36 @@
 			</div>
 		</div>
 		<div class="row">
-		  <div id="mapid"></div>
+			<div id="mapid"></div>
 		</div>
 	</div>
 
-	<!-- Modal -->
+	<!-- Modal med matchstatistik -->
 	<div id="myModal" class="modal fade" role="dialog">
-	  <div class="modal-dialog">
+		<div class="modal-dialog">
 
-	    <!-- Modal content-->
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal">&times;</button>
-	        <h4 class="modal-title">MATCHSTATISTIK</h4>
-	      </div>
-	      <div class="modal-body">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">MATCHSTATISTIK</h4>
+				</div>
+				<div class="modal-body">
 					<div id='count'>
 						<table class="table table-striped">
-					    <thead>
-					      <tr>
-					        <th>Præcist match</th>
-					        <th>Sikkert match</th>
-					        <th>Usikkert match</th>
-					      </tr>
-					    </thead>
-					    <tbody>
-					      <tr>
-					        <td id='katA'></td>
-					        <td id='katB'></td>
-					        <td id='katC'></td>
-					      </tr>
+							<thead>
+								<tr>
+									<th>Præcist match</th>
+									<th>Sikkert match</th>
+									<th>Usikkert match</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td id='katA'></td>
+									<td id='katB'></td>
+									<td id='katC'></td>
+								</tr>
 								<tr>
 									<td><img src="http://a.tiles.mapbox.com/v4/marker/pin-m-1+04B404.png?access_token=pk.eyJ1IjoiYmFmZmlvc28iLCJhIjoiT1JTS1lIMCJ9.f5ubY91Bi42yPnTrgiq-Gw" alt="Kategori A" /></td>
 									<td><img src="http://a.tiles.mapbox.com/v4/marker/pin-m-2+FFBF00.png?access_token=pk.eyJ1IjoiYmFmZmlvc28iLCJhIjoiT1JTS1lIMCJ9.f5ubY91Bi42yPnTrgiq-Gw" alt="Kategori B" /></td>
@@ -83,19 +84,18 @@
 						</table>
 					</div>
 				</div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">LUK</button>
-	      </div>
-	    </div>
-
-	  </div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">LUK</button>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<!-- Bruges til ajax loading spinner -->
 	<div class="spinner"></div>
 
 	<script type="text/javascript">
-		$( document ).ready(function() {
+		$(document).ready(function() {
 
 			//ved skift af input i Browse CSV køres csvFile funktionen
 			$("#csv-file").change(csvFile);
@@ -110,69 +110,74 @@
 				clearMarkers();
 			});
 
+			//Tooltip aktiveres
+			$('[data-toggle="tooltip"]').tooltip({
+				trigger: 'hover'
+			})
+
 			//array som fyldes op med csv-data og kooridinater m.m. fra DAWA
 			var output = [];
 
 			//CSV
-      function csvFile(evt) {
-        var file = evt.target.files[0];
-        //PapaParse bruges til at parse lokal CSV-fil
-        Papa.parse(file, {
-          header: true,
-          dynamicTyping: true,
-          complete: function(results) {
-							//geocoder køres for at finde koordinater, tilføje markør/popup til kort
-							//OBS kolonne i CSV skal hedde "adresse"
-							geocoder(results.data);
-          }
-        });
-      }
+			function csvFile(evt) {
+				var file = evt.target.files[0];
+				//PapaParse bruges til at parse lokal CSV-fil
+				Papa.parse(file, {
+					header: true,
+					dynamicTyping: true,
+					complete: function(results) {
+						//geocoder køres for at finde koordinater, tilføje markør/popup til kort
+						//OBS kolonne i CSV skal hedde "adresse"
+						geocoder(results.data);
+					}
+				});
+			}
 
-      function geocoder(csvAdresse) {
+			function geocoder(csvAdresse) {
 				//Loop over csv adresserne fra csvFile funktionen
 				$.each(csvAdresse, function(index, value) {
 					//Der laves to kald:
-					// - det første returnere datavask resultater
-	        $.getJSON( 'http://dawa.aws.dk/datavask/adresser?betegnelse=' + csvAdresse[index].adresse, function( data ) {
-	          //kategori gemmes i variabel, så det kan bruges inde i næste ajax kald
+					// - det første returnere DAWA datavask resultater
+					$.getJSON('http://dawa.aws.dk/datavask/adresser?betegnelse=' + csvAdresse[index].adresse, function(data) {
+						//kategori gemmes i variabel, så det kan bruges inde i næste ajax kald
 						var kategori = data.kategori
-	          // - href fra første objekt kaldes så koordinater kan angives
-	          $.getJSON(data.resultater[0].aktueladresse.href, function( data ) {
-	            koordinater = data.adgangsadresse.adgangspunkt.koordinater;
+							//Med href fra første datavask kaldes DAWA adgangsadresse så koordinater kan angives
+						$.getJSON(data.resultater[0].aktueladresse.href, function(data) {
+							koordinater = data.adgangsadresse.adgangspunkt.koordinater;
 							//Der laves markører med koordinaterne
-							var marker = L.marker([koordinater[1],koordinater[0]]);
-	            //Markører farves, så de angiver kvaliteten af match
-	            if (kategori === 'A') {
-	              marker.setIcon(L.mapbox.marker.icon({
-	                'marker-color': '#04B404',
+							var marker = L.marker([koordinater[1], koordinater[0]]);
+							//Markører farves, så de angiver kvaliteten af match
+							if (kategori === 'A') {
+								marker.setIcon(L.mapbox.marker.icon({
+									'marker-color': '#04B404',
 									'marker-symbol': '1'
-	              }));
-	            } else if (kategori === 'B') {
-	              marker.setIcon(L.mapbox.marker.icon({
-	                'marker-color': '#FFBF00',
+								}));
+							} else if (kategori === 'B') {
+								marker.setIcon(L.mapbox.marker.icon({
+									'marker-color': '#FFBF00',
 									'marker-symbol': '2'
-	              }));
-	            } else if (kategori === 'C') {
-	              marker.setIcon(L.mapbox.marker.icon({
-	                'marker-color': '#DF0101',
+								}));
+							} else if (kategori === 'C') {
+								marker.setIcon(L.mapbox.marker.icon({
+									'marker-color': '#DF0101',
 									'marker-symbol': '3'
-	              }));
-	            } else {
-	              marker.setIcon(L.mapbox.marker.icon({}));
-	            }
-	            //Der laves popup
-	            marker.bindPopup('<b>CSV-adresse:</b></br>'+ csvAdresse[index].adresse + '</br><b>Officiel adresse:</b></br>' + data.adressebetegnelse);
+								}));
+							} else {
+								marker.setIcon(L.mapbox.marker.icon({}));
+							}
+							//Der laves popup
+							marker.bindPopup('<b>CSV-adresse:</b></br>' + csvAdresse[index].adresse + '</br><b>Officiel adresse:</b></br>' + data.adressebetegnelse);
 							//mouseover popup
-							marker.on('mouseover', function (e) {
-		            this.openPopup();
-			        });
-			        marker.on('mouseout', function (e) {
-		            this.closePopup();
-			        });
+							marker.on('mouseover', function(e) {
+								this.openPopup();
+							});
+							marker.on('mouseout', function(e) {
+								this.closePopup();
+							});
 							//marker tilføjes laget markers
-	            markers.addLayer(marker);
+							markers.addLayer(marker);
 							//Markers-laget føjes til kortet
-	            map.addLayer(markers);
+							map.addLayer(markers);
 
 							//Koordinater og matchkategori tilføjes csv-data
 							csvAdresse[index].lat = koordinater[1];
@@ -180,14 +185,16 @@
 							csvAdresse[index].matchkategori = kategori;
 							//det opdaterede objekt skubbes ind i den globale output array
 							output.push(csvAdresse[index]);
-	          });
-	        });
+						});
+					});
 				});
-      }
+			}
 
 			function outputData() {
 				//output array laves om til geojson
-				var obj = GeoJSON.parse(output, {Point: ['lat', 'lon']});
+				var obj = GeoJSON.parse(output, {
+					Point: ['lat', 'lon']
+				});
 
 				//gem fil lokalt
 				var data = "text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(obj));
@@ -206,7 +213,7 @@
 				markers.clearLayers();
 				//array tømmes
 				output = []
-				//knapper fjernes
+					//knapper fjernes
 				$("#hentdata").html('').hide();
 				$("#rydkort").hide();
 				$("#statistik").hide();
@@ -220,7 +227,7 @@
 				var a = []
 				var b = []
 				var c = []
-				//for hver kategori fyldes array om med værdier
+					//for hver kategori fyldes array om med værdier
 				$.each(output, function(index, value) {
 					switch (output[index].matchkategori) {
 						case 'A':
@@ -240,25 +247,27 @@
 				$("#katC").html(c.length)
 			}
 
-      //Cluster marker
-      var markers = new L.MarkerClusterGroup();
+			//Cluster marker
+			var markers = new L.MarkerClusterGroup();
 
-      //Leaflet baggrundskort tilføjes
-      L.mapbox.accessToken = 'pk.eyJ1IjoiYmFmZmlvc28iLCJhIjoiT1JTS1lIMCJ9.f5ubY91Bi42yPnTrgiq-Gw';
-      var map = L.map('mapid').setView([56, 12], 6);
-      L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-          attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-          maxZoom: 18,
-          id: 'baffioso.ie1ok8lg',
-          accessToken: L.mapbox.accessToken
-      }).addTo(map);
+			//Leaflet baggrundskort tilføjes
+			L.mapbox.accessToken = 'pk.eyJ1IjoiYmFmZmlvc28iLCJhIjoiT1JTS1lIMCJ9.f5ubY91Bi42yPnTrgiq-Gw';
+			var map = L.map('mapid').setView([56, 12], 6);
+			L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+				attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+				maxZoom: 18,
+				id: 'baffioso.ie1ok8lg',
+				accessToken: L.mapbox.accessToken
+			}).addTo(map);
 
 			//Loader animation mens ajax kører (http://stackoverflow.com/questions/1964839/how-can-i-create-a-please-wait-loading-animation-using-jquery)
 			$body = $("body");
 
 			//ved ajax start vises spinner og ved stop fjernes spinner og knapper tilføjes
 			$(document).on({
-				ajaxStart: function() { $body.addClass("loading"); },
+				ajaxStart: function() {
+					$body.addClass("loading");
+				},
 				ajaxStop: function() {
 					$body.removeClass("loading");
 					//Knapperne hentdata/rydkort vises efter endt ajax
@@ -271,8 +280,8 @@
 					countKategori();
 				}
 			});
-
 		});
 	</script>
 </body>
+
 </html>
