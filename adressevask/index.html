@@ -38,7 +38,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-9">
-				<span class="btn btn-success btn-file" data-toggle="tooltip" title="Kolonnentitlen for adresser i CSV-filen skal hedde &quot;adresse&quot;">
+				<span class="btn btn-success btn-file" data-toggle="tooltip" title="Kolonnentitlen for adresser i CSV-filen skal hedde &quot;adresse&quot;. Tegnsætning: UTF-8">
 					BROWSE CSV <input type="file" id="csv-file" name="files">
 			  	</span>
 				<!-- vis statistik -->
@@ -109,7 +109,7 @@
 				</div>
 				<div class="modal-body">
 					<p>Adressevasekeren bruger <a href="http://dawa.aws.dk/adressedok#datavask" target="_blank" style="color:black; text-decoration: underline;">DAWA's datavask</a> til at geokode adresser fra CSV-fil, som vises på kort og med muligheden for at gemme data
-						lokalt som GeoJSON. CSV-filen kan både være semikolon- eller kommasepareret men skal indeholde en kolonne med adresser som hedder "adresse". GeoJSON-filen vil indeholde de oprindelige data fra CSV'en, men også kooridinater samt matchkategori, som
+						lokalt som GeoJSON. CSV-filen skal have tegnsætning UTF-8 og kan både være semikolon- eller kommasepareret men skal indeholde en kolonne med adresser som hedder "adresse". GeoJSON-filen vil indeholde de oprindelige data fra CSV'en, men også kooridinater samt matchkategori, som
 						angiver hvor godt adressevasken er gået.
 						<li>A = Præcist match</li>
 						<li>B = Sikkert match</li>
