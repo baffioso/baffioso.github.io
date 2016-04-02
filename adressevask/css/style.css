@@ -2,6 +2,7 @@
   height: 80%;
   width: 100%;
   border-radius: 5px;
+  z-index: 0;
   box-shadow: 3px 100px 200px 10px #333;
 }
 .btn-file {
