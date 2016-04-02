@@ -1,12 +1,12 @@
 $(document).ready(function() {
 
-  //ved skift af input i Browse CSV køres csvFile funktionen
-  $("#csv-file").change(csvFile);
-
   //hent data/rydkort knappen gemmes og vises efter ajax er afsluttet
   $("#hentdata").hide();
   $("#rydkort").hide();
   $("#statistik").hide();
+
+  //ved skift af input i Browse CSV køres csvFile funktionen
+  $("#csv-file").change(csvFile);
 
   //Når der tykkes på ryd kort knappen køres funktionen
   $('#rydkort').click(function() {
@@ -18,7 +18,7 @@ $(document).ready(function() {
     trigger: 'hover'
   })
 
-  //array som fyldes op med csv-data og kooridinater m.m. fra DAWA
+  //Global array som fyldes op med csv-data og kooridinater m.m. fra DAWA
   var output = [];
 
   //CSV
@@ -44,7 +44,7 @@ $(document).ready(function() {
       $.getJSON('http://dawa.aws.dk/datavask/adresser?betegnelse=' + csvAdresse[index].adresse, function(data) {
         //kategori gemmes i variabel, så det kan bruges inde i næste ajax kald
         var kategori = data.kategori
-          //Med href fra første datavask kaldes DAWA adgangsadresse så koordinater kan angives
+        //Med href fra første datavask kaldes DAWA adgangsadresse så koordinater kan angives
         $.getJSON(data.resultater[0].aktueladresse.href, function(data) {
           koordinater = data.adgangsadresse.adgangspunkt.koordinater;
           //Der laves markører med koordinaterne
@@ -130,7 +130,7 @@ $(document).ready(function() {
     var a = []
     var b = []
     var c = []
-      //for hver kategori fyldes array om med værdier
+    //for hver kategori fyldes array om med værdier
     $.each(output, function(index, value) {
       switch (output[index].matchkategori) {
         case 'A':
