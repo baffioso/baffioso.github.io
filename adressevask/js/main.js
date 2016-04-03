@@ -8,6 +8,23 @@ $(document).ready(function() {
   //ved skift af input i Browse CSV køres csvFile funktionen
   $("#csv-file").change(csvFile);
 
+  //Søgning
+  $( "#search" ).click(function() {
+    //værdien fra søgefeltet hentes og føjes til propertiet adresse i objektet query
+    var query = {
+      adresse: $('#query').val()
+    };
+    //geokoder funktionen køres
+    geocoder([query]);
+  });
+
+  //Søg når der trykkes enter
+  $("#query").keyup(function(event){
+      if(event.keyCode == 13){
+          $("#search").click();
+      }
+  });
+
   //Når der tykkes på ryd kort knappen køres funktionen
   $('#rydkort').click(function() {
     clearMarkers();
@@ -17,6 +34,7 @@ $(document).ready(function() {
   $('[data-toggle="tooltip"]').tooltip({
     trigger: 'hover'
   })
+
 
   //Global array som fyldes op med csv-data og kooridinater m.m. fra DAWA
   var output = [];
@@ -35,6 +53,7 @@ $(document).ready(function() {
       }
     });
   }
+
 
   function geocoder(csvAdresse) {
     //Loop over csv adresserne fra csvFile funktionen
@@ -174,7 +193,7 @@ $(document).ready(function() {
     ajaxStop: function() {
       $body.removeClass("loading");
       //Knapperne hentdata/rydkort vises efter endt ajax
-      $("#hentdata").show();
+      $("#hentdata").empty().show(); //hent data knappen tømmes så ikke link dubleres
       $("#rydkort").show();
       $("#statistik").show();
       //output data tilføjes til hent knappen som href med funktionen
