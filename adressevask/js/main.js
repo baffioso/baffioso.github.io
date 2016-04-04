@@ -104,6 +104,11 @@ $(document).ready(function() {
           csvAdresse[index].lon = koordinater[0];
           csvAdresse[index].matchkategori = kategori;
           csvAdresse[index].officieladresse = data.adressebetegnelse;
+          csvAdresse[index].kommunenr = data.adgangsadresse.kommune.kode;
+          csvAdresse[index].vejkode = data.adgangsadresse.vejstykke.kode;
+          csvAdresse[index].husnr = data.adgangsadresse.husnr;
+          csvAdresse[index].etage = data.etage;
+          csvAdresse[index].doer = data['dør'];
           csvAdresse[index].adresseurl = data.href;
           //det opdaterede objekt skubbes ind i den globale output array
           output.push(csvAdresse[index]);
