@@ -103,6 +103,8 @@ $(document).ready(function() {
           csvAdresse[index].lat = koordinater[1];
           csvAdresse[index].lon = koordinater[0];
           csvAdresse[index].matchkategori = kategori;
+          csvAdresse[index].officieladresse = data.adressebetegnelse;
+          csvAdresse[index].adresseurl = data.href;
           //det opdaterede objekt skubbes ind i den globale output array
           output.push(csvAdresse[index]);
         });
