@@ -75,8 +75,13 @@ a:link, a:visited, a:hover {
   margin-top: 15px;
 }
 #search {
-  margin-left: -25px;
+  margin-left: -25px; /*Ikke god løsning*/
+  color: gray;
 }
 .searching{
   text-align: center;
+}
+/*Tekst i statisitk tabellen centreres*/
+th, td {
+    text-align: center;
 }

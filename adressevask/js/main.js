@@ -35,7 +35,6 @@ $(document).ready(function() {
     trigger: 'hover'
   })
 
-
   //Global array som fyldes op med csv-data og kooridinater m.m. fra DAWA
   var output = [];
 
@@ -88,7 +87,7 @@ $(document).ready(function() {
             marker.setIcon(L.mapbox.marker.icon({}));
           }
           //Der laves popup
-          marker.bindPopup('<b>CSV-adresse:</b></br>' + csvAdresse[index].adresse + '</br><b>Officiel adresse:</b></br>' + data.adressebetegnelse);
+          marker.bindPopup('<b>Søgeadresse:</b></br>' + csvAdresse[index].adresse + '</br><b>Officiel adresse:</b></br>' + data.adressebetegnelse);
           //mouseover popup
           marker.on('mouseover', function(e) {
             this.openPopup();
@@ -100,8 +99,7 @@ $(document).ready(function() {
           markers.addLayer(marker);
           //Markers-laget føjes til kortet
           map.addLayer(markers);
-
-          //Koordinater og matchkategori tilføjes csv-data
+          //Koordinater og matchkategori tilføjes csv-data objekt
           csvAdresse[index].lat = koordinater[1];
           csvAdresse[index].lon = koordinater[0];
           csvAdresse[index].matchkategori = kategori;
