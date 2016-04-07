@@ -25,24 +25,18 @@
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="#">Adressevasker</a>
+				<a class="navbar-brand" href="#" data-toggle="modal" data-target="#om">Adressevasker</a>
 			</div>
-
-				<div class="col-xs-4 col-md-offset-2">
-					<div class="form-group">
-						<input id='query' type="text" class="form-control" placeholder="Stav adressen forkert!"></input>
-					</div>
+			<div class="col-lg-4 pull-right">
+				<div class="input-group">
+					<input id="query" type="text" class="form-control" placeholder="Stav adressen forkert!">
+					<span class="input-group-btn">
+		        <button id="search" class="btn btn-default" type="button">Søg</button>
+		      </span>
 				</div>
-				<div class="col-xs-2">
-					<button id='search' type="submit" class="btn btn-default">Søg</button>
-				</div>
-
-
-			<ul class="nav navbar-nav">
-				<li>
-					<a href="#" data-toggle="modal" data-target="#om">Om</a>
-				</li>
-			</ul>
+				<!-- /input-group -->
+			</div>
+			<!-- /.col-lg-4 -->
 		</div>
 	</nav>
 
@@ -51,11 +45,10 @@
 			<div class="col-sm-9">
 				<span class="btn btn-success btn-file" data-toggle="tooltip" title="Kolonnentitlen for adresser i CSV-filen skal hedde &quot;adresse&quot;. Tegnsætning: UTF-8">
 					BROWSE CSV <input type="file" id="csv-file" name="files">
-			  	</span>
+			  </span>
 				<!-- vis statistik -->
 				<button id="statistik" type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">VIS MATCH</button>
-
-				<a href="#" id="hentdata" class="btn btn-primary" style="display: inline-block;" role="button"></a>
+				<a href="#" id="hentdata" class="btn btn-primary" role="button"></a>
 			</div>
 			<div class="col-sm-3 text-right">
 				<button id="rydkort" class="btn btn-default" style="display: inline-block;">RYD KORTET</button>
@@ -120,14 +113,14 @@
 				</div>
 				<div class="modal-body">
 					<p>Adressevasekeren bruger <a href="http://dawa.aws.dk/adressedok#datavask" target="_blank" style="color:black; text-decoration: underline;">DAWA's datavask</a> til at geokode adresser fra CSV-fil, som vises på kort og med muligheden for at gemme data
-						lokalt som GeoJSON. CSV-filen skal have tegnsætning UTF-8 og kan både være semikolon- eller kommasepareret men skal indeholde en kolonne med adresser som hedder "adresse". GeoJSON-filen vil indeholde de oprindelige data fra CSV'en, men også kooridinater samt matchkategori, som
-						angiver hvor godt adressevasken er gået.</p>
-						<li>A = Præcist match</li>
-						<li>B = Sikkert match</li>
-						<li>C = Usikkert match</li>
+						lokalt som GeoJSON. CSV-filen skal have tegnsætning UTF-8 og kan både være semikolon- eller kommasepareret men skal indeholde en kolonne med adresser som hedder "adresse". GeoJSON-filen vil indeholde de oprindelige data fra CSV'en, men også kooridinater
+						samt matchkategori, som angiver hvor godt adressevasken er gået.</p>
+					<li>A = Præcist match</li>
+					<li>B = Sikkert match</li>
+					<li>C = Usikkert match</li>
 					</br>
 					<p>
-						Laves der adressesøgning i søgefeltet efter en CSV-fil er vasket, vil disse også blive tilføjet GeoJSON-filen.
+						Laves der adressesøgning i søgefeltet før eller efter en CSV-fil er vasket uden kortet rydes, vil disse også blive tilføjet GeoJSON-filen.
 					</p>
 				</div>
 				<div class="modal-footer">

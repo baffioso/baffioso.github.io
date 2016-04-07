@@ -1,31 +1,31 @@
 #mapid {
-  height: 80%;
-  width: 100%;
-  border-radius: 5px;
-  z-index: 0;
-  box-shadow: 3px 100px 200px 10px #333;
+    height: 80%;
+    width: 100%;
+    border-radius: 5px;
+    z-index: 0;
+    box-shadow: 3px 100px 200px 10px #333;
 }
 .btn-file {
-  position: relative;
-  overflow: hidden;
+    position: relative;
+    overflow: hidden;
 }
 .btn-file input[type=file] {
-  position: absolute;
-  top: 0;
-  right: 0;
-  min-width: 100%;
-  min-height: 100%;
-  font-size: 100px;
-  text-align: right;
-  filter: alpha(opacity=0);
-  opacity: 0;
-  outline: none;
-  background: white;
-  cursor: inherit;
-  display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
 }
 .row {
-  margin-bottom: 15px
+    margin-bottom: 15px
 }
 
 /* Start by setting display:none to make this hidden.
@@ -35,53 +35,40 @@
    our animation centered, and no-repeating */
 
 .spinner {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba( 255, 255, 255, .4) url('http://i.stack.imgur.com/FhHRx.gif') 50% 50% no-repeat;
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba( 255, 255, 255, .4) url('http://i.stack.imgur.com/FhHRx.gif') 50% 50% no-repeat;
 }
+
 /* Anytime the body has the loading class, our
    modal element will be visible */
+
 body.loading .spinner {
-  display: block;
+    display: block;
 }
 .navbar-brand {
-  float: left;
-  height: 57px;
-  padding: 22px 15px;
-  font-size: 16px;
-  font-family: monospace;
-  line-height: 20px;
-}
-.navbar-nav>li>a {
-  padding-top: 22px;
-  padding-bottom: 15px;
-  font-size: 16px;
-  font-family: monospace;
-}
-.navbar-nav {
-  float: right;
+    float: left;
+    height: 57px;
+    padding: 22px 40px;
+    font-size: 16px;
+    font-family: monospace;
 }
 a:link, a:visited, a:hover {
-  color: white;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 #search, #query {
-  font-family: monospace;
-  margin-top: 15px;
+    font-family: monospace;
+    margin-top: 15px;
 }
-#search {
-  margin-left: -25px; /*Ikke god løsning*/
-  color: gray;
-}
-.searching{
-  text-align: center;
-}
+
 /*Tekst i statisitk tabellen centreres*/
+
 th, td {
     text-align: center;
 }
