@@ -54,9 +54,15 @@ body.loading .spinner {
 .navbar-brand {
     float: left;
     height: 57px;
-    padding: 22px 40px;
+    padding: 22px 30px;
     font-size: 16px;
     font-family: monospace;
+}
+.navbar-nav>li>a {
+    padding-top: 22px;
+    padding-bottom: 15px;
+    font-family: monospace;
+    font-size: 16;
 }
 a:link, a:visited, a:hover {
     color: white;
