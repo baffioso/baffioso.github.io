@@ -63,59 +63,67 @@ $(document).ready(function() {
                 //kategori gemmes i variabel, så det kan bruges inde i næste ajax kald
                 var kategori = data.kategori
                     //Med href fra første datavask kaldes DAWA adgangsadresse så koordinater kan angives
-                $.getJSON(data.resultater[0].aktueladresse.href, function(data) {
-                    koordinater = data.adgangsadresse.adgangspunkt.koordinater;
-                    //Der laves markører med koordinaterne
-                    var marker = L.marker([koordinater[1], koordinater[0]]);
-                    //Markører farves, så de angiver kvaliteten af match
-                    switch (kategori) {
-                        case 'A':
-                            marker.setIcon(L.mapbox.marker.icon({
-                                'marker-color': '#04B404',
-                                'marker-symbol': '1'
-                            }));
-                            break;
-                        case 'B':
-                            marker.setIcon(L.mapbox.marker.icon({
-                                'marker-color': '#FFBF00',
-                                'marker-symbol': '2'
-                            }));
-                            break;
-                        case 'C':
-                            marker.setIcon(L.mapbox.marker.icon({
-                                'marker-color': '#DF0101',
-                                'marker-symbol': '3'
-                            }));
-                            break;
-                        default:
-                            marker.setIcon(L.mapbox.marker.icon({}));
+
+                var fundnevejnavne = {};
+                $.each(data.resultater, function(_, resultat) {
+                    if (resultat.adresse.vejnavn in fundnevejnavne) {
+                        return;
                     }
-                    //Der laves popup
-                    marker.bindPopup('<b>Søgeadresse:</b></br>' + csvAdresse[index].adresse + '</br><b>Officiel adresse:</b></br>' + data.adressebetegnelse);
-                    //mouseover popup
-                    marker.on('mouseover', function(e) {
-                        this.openPopup();
+                    fundnevejnavne[resultat.adresse.vejnavn] = true;
+                    $.getJSON(resultat.aktueladresse.href, function(data) {
+                        koordinater = data.adgangsadresse.adgangspunkt.koordinater;
+                        //Der laves markører med koordinaterne
+                        var marker = L.marker([koordinater[1], koordinater[0]]);
+                        //Markører farves, så de angiver kvaliteten af match
+                        switch (kategori) {
+                            case 'A':
+                                marker.setIcon(L.mapbox.marker.icon({
+                                    'marker-color': '#04B404',
+                                    'marker-symbol': '1'
+                                }));
+                                break;
+                            case 'B':
+                                marker.setIcon(L.mapbox.marker.icon({
+                                    'marker-color': '#FFBF00',
+                                    'marker-symbol': '2'
+                                }));
+                                break;
+                            case 'C':
+                                marker.setIcon(L.mapbox.marker.icon({
+                                    'marker-color': '#DF0101',
+                                    'marker-symbol': '3'
+                                }));
+                                break;
+                            default:
+                                marker.setIcon(L.mapbox.marker.icon({}));
+                        }
+                        //Der laves popup
+                        marker.bindPopup('<b>Søgeadresse:</b></br>' + csvAdresse[index].adresse + '</br><b>Officiel adresse:</b></br>' + data.adressebetegnelse);
+                        //mouseover popup
+                        marker.on('mouseover', function(e) {
+                            this.openPopup();
+                        });
+                        marker.on('mouseout', function(e) {
+                            this.closePopup();
+                        });
+                        //marker tilføjes laget markers
+                        markers.addLayer(marker);
+                        //Markers-laget føjes til kortet
+                        map.addLayer(markers);
+                        //Koordinater og en række andre attributter fra DAWA's datavask tilføjes csv-data
+                        csvAdresse[index].lat = koordinater[1];
+                        csvAdresse[index].lon = koordinater[0];
+                        csvAdresse[index].matchkategori = kategori;
+                        csvAdresse[index].officieladresse = data.adressebetegnelse;
+                        csvAdresse[index].kommunenr = data.adgangsadresse.kommune.kode;
+                        csvAdresse[index].vejkode = data.adgangsadresse.vejstykke.kode;
+                        csvAdresse[index].husnr = data.adgangsadresse.husnr;
+                        csvAdresse[index].etage = data.etage;
+                        csvAdresse[index].doer = data['dør'];
+                        csvAdresse[index].adresseurl = data.href;
+                        //det opdaterede objekt skubbes ind i den globale output array
+                        output.push(csvAdresse[index]);
                     });
-                    marker.on('mouseout', function(e) {
-                        this.closePopup();
-                    });
-                    //marker tilføjes laget markers
-                    markers.addLayer(marker);
-                    //Markers-laget føjes til kortet
-                    map.addLayer(markers);
-                    //Koordinater og en række andre attributter fra DAWA's datavask tilføjes csv-data
-                    csvAdresse[index].lat = koordinater[1];
-                    csvAdresse[index].lon = koordinater[0];
-                    csvAdresse[index].matchkategori = kategori;
-                    csvAdresse[index].officieladresse = data.adressebetegnelse;
-                    csvAdresse[index].kommunenr = data.adgangsadresse.kommune.kode;
-                    csvAdresse[index].vejkode = data.adgangsadresse.vejstykke.kode;
-                    csvAdresse[index].husnr = data.adgangsadresse.husnr;
-                    csvAdresse[index].etage = data.etage;
-                    csvAdresse[index].doer = data['dør'];
-                    csvAdresse[index].adresseurl = data.href;
-                    //det opdaterede objekt skubbes ind i den globale output array
-                    output.push(csvAdresse[index]);
                 });
             });
         });
