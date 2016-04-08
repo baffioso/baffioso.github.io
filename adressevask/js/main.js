@@ -62,14 +62,14 @@ $(document).ready(function() {
             $.getJSON('http://dawa.aws.dk/datavask/adresser?betegnelse=' + csvAdresse[index].adresse, function(data) {
                 //kategori gemmes i variabel, så det kan bruges inde i næste ajax kald
                 var kategori = data.kategori
-                    //Med href fra første datavask kaldes DAWA adgangsadresse så koordinater kan angives
-
+                //Fuzzy match ifht variationer i vejnavne
                 var fundnevejnavne = {};
                 $.each(data.resultater, function(_, resultat) {
                     if (resultat.adresse.vejnavn in fundnevejnavne) {
                         return;
                     }
                     fundnevejnavne[resultat.adresse.vejnavn] = true;
+                    //Med href fra første datavask kaldes DAWA adgangsadresse så koordinater kan angives
                     $.getJSON(resultat.aktueladresse.href, function(data) {
                         koordinater = data.adgangsadresse.adgangspunkt.koordinater;
                         //Der laves markører med koordinaterne
@@ -77,21 +77,30 @@ $(document).ready(function() {
                         //Markører farves, så de angiver kvaliteten af match
                         switch (kategori) {
                             case 'A':
-                                marker.setIcon(L.mapbox.marker.icon({
-                                    'marker-color': '#04B404',
-                                    'marker-symbol': '1'
+                                marker.setIcon(L.icon({
+                                    iconUrl: "img/a.png",
+                                    shadowUrl: "img/shadow.png",
+                                    iconAnchor: [16, 37],
+                                    shadowAnchor: [20, 35],
+                                    popupAnchor: [0, -30]
                                 }));
                                 break;
                             case 'B':
-                                marker.setIcon(L.mapbox.marker.icon({
-                                    'marker-color': '#FFBF00',
-                                    'marker-symbol': '2'
+                                marker.setIcon(L.icon({
+                                    iconUrl: "img/b.png",
+                                    shadowUrl: "img/shadow.png",
+                                    iconAnchor: [16, 37],
+                                    shadowAnchor: [20, 35],
+                                    popupAnchor: [0, -30]
                                 }));
                                 break;
                             case 'C':
-                                marker.setIcon(L.mapbox.marker.icon({
-                                    'marker-color': '#DF0101',
-                                    'marker-symbol': '3'
+                                marker.setIcon(L.icon({
+                                    iconUrl: "img/c.png",
+                                    shadowUrl: "img/shadow.png",
+                                    iconAnchor: [16, 37],
+                                    shadowAnchor: [20, 35],
+                                    popupAnchor: [0, -30]
                                 }));
                                 break;
                             default:
