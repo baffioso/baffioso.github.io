@@ -54,22 +54,30 @@ $(document).ready(function() {
     }
 
 
-    function geocoder(csvAdresse) {
+    function geocoder(adresse) {
         //Loop over csv adresserne fra csvFile funktionen
-        $.each(csvAdresse, function(index, value) {
+        $.each(adresse, function(index, value) {
             //Der laves to kald:
             // - det første returnere DAWA datavask resultater
-            $.getJSON('http://dawa.aws.dk/datavask/adresser?betegnelse=' + csvAdresse[index].adresse, function(data) {
+            $.getJSON('http://dawa.aws.dk/datavask/adresser?betegnelse=' + adresse[index].adresse, function(data) {
                 //kategori gemmes i variabel, så det kan bruges inde i næste ajax kald
                 var kategori = data.kategori
-                //Fuzzy match ifht variationer i vejnavne
+                //Oprettes object til variationer i vejnavne (fuzzy match)
                 var fundnevejnavne = {};
+                //Loopes over DAWA's returnerede resultater, som ved upræcist
+                //match (kategori C), kan være flere forskellige adresser
                 $.each(data.resultater, function(_, resultat) {
+                    //Der undersøges om vejnavn eksisterer i objektet
+                    // fundnevejnavne, da der kun ønskes unikke vejnavne
                     if (resultat.adresse.vejnavn in fundnevejnavne) {
+                        //eksisterer vejnanvnet hoppes til næste iteration
                         return;
                     }
+                    //DAWA-resultatets vejnavn tilføjes objektet så der i næste
+                    //iteration kan tjekkes om det allerede er geokodet
                     fundnevejnavne[resultat.adresse.vejnavn] = true;
-                    //Med href fra første datavask kaldes DAWA adgangsadresse så koordinater kan angives
+                    //Med href fra datavask kaldes DAWA adgangsadresse, så
+                    //koordinater (m.m.) kan bruges til geokodningen
                     $.getJSON(resultat.aktueladresse.href, function(data) {
                         koordinater = data.adgangsadresse.adgangspunkt.koordinater;
                         //Der laves markører med koordinaterne
@@ -107,7 +115,7 @@ $(document).ready(function() {
                                 marker.setIcon(L.mapbox.marker.icon({}));
                         }
                         //Der laves popup
-                        marker.bindPopup('<b>Søgeadresse:</b></br>' + csvAdresse[index].adresse + '</br><b>Officiel adresse:</b></br>' + data.adressebetegnelse);
+                        marker.bindPopup('<b>Søgeadresse:</b></br>' + adresse[index].adresse + '</br><b>Officiel adresse:</b></br>' + data.adressebetegnelse);
                         //mouseover popup
                         marker.on('mouseover', function(e) {
                             this.openPopup();
@@ -120,18 +128,18 @@ $(document).ready(function() {
                         //Markers-laget føjes til kortet
                         map.addLayer(markers);
                         //Koordinater og en række andre attributter fra DAWA's datavask tilføjes csv-data
-                        csvAdresse[index].lat = koordinater[1];
-                        csvAdresse[index].lon = koordinater[0];
-                        csvAdresse[index].matchkategori = kategori;
-                        csvAdresse[index].officieladresse = data.adressebetegnelse;
-                        csvAdresse[index].kommunenr = data.adgangsadresse.kommune.kode;
-                        csvAdresse[index].vejkode = data.adgangsadresse.vejstykke.kode;
-                        csvAdresse[index].husnr = data.adgangsadresse.husnr;
-                        csvAdresse[index].etage = data.etage;
-                        csvAdresse[index].doer = data['dør'];
-                        csvAdresse[index].adresseurl = data.href;
+                        adresse[index].lat = koordinater[1];
+                        adresse[index].lon = koordinater[0];
+                        adresse[index].matchkategori = kategori;
+                        adresse[index].officieladresse = data.adressebetegnelse;
+                        adresse[index].kommunenr = data.adgangsadresse.kommune.kode;
+                        adresse[index].vejkode = data.adgangsadresse.vejstykke.kode;
+                        adresse[index].husnr = data.adgangsadresse.husnr;
+                        adresse[index].etage = data.etage;
+                        adresse[index].doer = data['dør'];
+                        adresse[index].adresseurl = data.href;
                         //det opdaterede objekt skubbes ind i den globale output array
-                        output.push(csvAdresse[index]);
+                        output.push(adresse[index]);
                     });
                 });
             });
