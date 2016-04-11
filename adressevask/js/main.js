@@ -140,10 +140,12 @@ $(document).ready(function() {
                         adresse[index].adresseurl = data.href;
                         //det opdaterede objekt skubbes ind i den globale output array
                         output.push(adresse[index]);
-                    });
-                });
-            });
-        });
+                        console.log(data.adressebetegnelse);
+                        console.log(output);
+                    }); //getJSON adgangsadresse
+                }); //each datavask
+            }); //getJSON datavadk
+        }); //each CSV
     }
 
     function outputData() {
@@ -160,7 +162,7 @@ $(document).ready(function() {
         a.download = 'adressevask.geojson';
         a.innerHTML = 'HENT GEOJSON';
 
-        var container = document.getElementById('hentdata');
+        var container = document.getElementById('geojson');
         container.appendChild(a);
     }
 
@@ -227,9 +229,10 @@ $(document).ready(function() {
         ajaxStop: function() {
             $body.removeClass("loading");
             //Knapperne hentdata/rydkort vises efter endt ajax
-            $("#hentdata").empty().show(); //hent data knappen tømmes så ikke link dubleres
+            $("#hentdata").show(); //hent data knappen tømmes så ikke link dubleres
             $("#rydkort").show();
             $("#statistik").show();
+            $("#geojson").empty();
             //output data tilføjes til hent knappen som href med funktionen
             outputData();
             //statistik for match beregnes og tilføjes modal
