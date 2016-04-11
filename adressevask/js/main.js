@@ -62,20 +62,20 @@ $(document).ready(function() {
             $.getJSON('http://dawa.aws.dk/datavask/adresser?betegnelse=' + adresse[index].adresse, function(data) {
                 //kategori gemmes i variabel, så det kan bruges inde i næste ajax kald
                 var kategori = data.kategori
-                //Oprettes object til variationer i vejnavne (fuzzy match)
+                    //Oprettes object til variationer i vejnavne (fuzzy match)
                 var fundnevejnavne = {};
                 //Loopes over DAWA's returnerede resultater, som ved upræcist
                 //match (kategori C), kan være flere forskellige adresser
                 $.each(data.resultater, function(_, resultat) {
-                    //Der undersøges om vejnavn eksisterer i objektet
-                    // fundnevejnavne, da der kun ønskes unikke vejnavne
-                    if (resultat.adresse.vejnavn in fundnevejnavne) {
+                    //Der undersøges om vejnavn/postnr eksisterer i objektet,
+                    //da der kun ønskes ét vejnavne for hvert postnr
+                    if (resultat.adresse.vejnavn + ', ' + resultat.adresse.postnr in fundnevejnavne) {
                         //eksisterer vejnanvnet hoppes til næste iteration
                         return;
                     }
-                    //DAWA-resultatets vejnavn tilføjes objektet så der i næste
+                    //DAWA-resultatets vejnavn/postnr tilføjes objektet så der i næste
                     //iteration kan tjekkes om det allerede er geokodet
-                    fundnevejnavne[resultat.adresse.vejnavn] = true;
+                    fundnevejnavne[resultat.adresse.vejnavn + ', ' + resultat.adresse.postnr] = true;
                     //Med href fra datavask kaldes DAWA adgangsadresse, så
                     //koordinater (m.m.) kan bruges til geokodningen
                     $.getJSON(resultat.aktueladresse.href, function(data) {
@@ -183,7 +183,7 @@ $(document).ready(function() {
         var a = []
         var b = []
         var c = []
-            //for hver kategori fyldes array om med værdier
+        //for hver kategori fyldes array om med værdier
         $.each(output, function(index, value) {
             switch (output[index].matchkategori) {
                 case 'A':
