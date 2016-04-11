@@ -149,6 +149,9 @@ $(document).ready(function() {
     }
 
     function outputData() {
+        //Her kommer if/switch som fjerner attributter, hvis der ikke er checked i modal
+
+
         //output array laves om til geojson med GeoJSON JS-bibliotek.
         var obj = GeoJSON.parse(output, {
             Point: ['lat', 'lon']
