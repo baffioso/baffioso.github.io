@@ -35,6 +35,10 @@ $(document).ready(function() {
         trigger: 'hover'
     })
 
+    $('#geojson').click(function() {
+        outputData();
+    });
+
     //Global array som fyldes op med csv-data og kooridinater m.m. fra DAWA
     var output = [];
 
@@ -140,8 +144,8 @@ $(document).ready(function() {
                         adresse[index].adresseurl = data.href;
                         //det opdaterede objekt skubbes ind i den globale output array
                         output.push(adresse[index]);
-                        console.log(data.adressebetegnelse);
-                        console.log(output);
+                        //console.log(data.adressebetegnelse);
+                        //console.log(output);
                     }); //getJSON adgangsadresse
                 }); //each datavask
             }); //getJSON datavadk
@@ -149,24 +153,30 @@ $(document).ready(function() {
     }
 
     function outputData() {
-        //Her kommer if/switch som fjerner attributter, hvis der ikke er checked i modal
 
+        //Laver kopi af output for at bevare original data
+        var outputCopy = output.slice();
+        //if som fjerner attributter, hvis der ikke er checked i modal
+        if ($('#adrurl').prop('checked') === false) {
+            for (var i = 0; i < outputCopy.length; i++) {
+              delete outputCopy[i].adresseurl;
+            }
+        }
 
         //output array laves om til geojson med GeoJSON JS-bibliotek.
-        var obj = GeoJSON.parse(output, {
+        var obj = GeoJSON.parse(outputCopy, {
             Point: ['lat', 'lon']
         });
 
-        //gem fil lokalt
+        //data som skal gemmes lokalt laves til en geojson tekst
         var data = "text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(obj));
 
-        var a = document.createElement('a');
-        a.href = 'data:' + data;
-        a.download = 'adressevask.geojson';
-        a.innerHTML = 'HENT GEOJSON';
-
-        var container = document.getElementById('geojson');
-        container.appendChild(a);
+        //der laves link som indeholder geojson til download
+        var a = $("<a>")
+            .attr("href", 'data:' + data)
+            .attr("download", 'adressevask.geojson')
+            .appendTo("body")
+            [0].click(); //linket åbnes/download dialog
     }
 
     function clearMarkers() {
@@ -235,9 +245,6 @@ $(document).ready(function() {
             $("#hentdata").show(); //hent data knappen tømmes så ikke link dubleres
             $("#rydkort").show();
             $("#statistik").show();
-            $("#geojson").empty();
-            //output data tilføjes til hent knappen som href med funktionen
-            outputData();
             //statistik for match beregnes og tilføjes modal
             countKategori();
         }

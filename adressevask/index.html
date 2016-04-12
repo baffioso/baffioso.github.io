@@ -102,7 +102,7 @@
 		</div>
 	</div>
 
-	<!-- Modal med matchstatistik -->
+	<!-- Modal med output -->
 	<div id="hentgeojson" class="modal fade" role="dialog">
 		<div class="modal-dialog">
 
@@ -118,27 +118,27 @@
 					</p>
 					<div id='count'>
 						<div class="checkbox">
-						  <label><input type="checkbox" value="">Kommunekode</label>
+						  <label><input type="checkbox" value="" id="komkode">Kommunekode</label>
 						</div>
 						<div class="checkbox">
-						  <label><input type="checkbox" value="">Vejkode</label>
+						  <label><input type="checkbox" value="" id="vejkode">Vejkode</label>
 						</div>
 						<div class="checkbox">
-						  <label><input type="checkbox" value="">Husnummer</label>
+						  <label><input type="checkbox" value="" id="husnr">Husnummer</label>
 						</div>
 						<div class="checkbox">
-							<label><input type="checkbox" value="">Etage</label>
+							<label><input type="checkbox" value="" id="etage">Etage</label>
 						</div>
 						<div class="checkbox">
-							<label><input type="checkbox" value="">Dør/Side</label>
+							<label><input type="checkbox" value="" id="doer">Dør/Side</label>
 						</div>
 						<div class="checkbox">
-							<label><input type="checkbox" value="">Adresse URL</label>
+							<label><input type="checkbox" value="" id="adrurl">Adresse URL</label>
 						</div>
 					</div>
 				</div>
 				<div class="modal-footer">
-					<a href="#" id="geojson" class="btn btn-primary" role="button"></a>
+					<button type="button" class="btn btn-primary" id="geojson" data-dismiss="modal">DOWNLOAD</button>
 				</div>
 			</div>
 		</div>
