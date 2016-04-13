@@ -136,6 +136,7 @@ $(document).ready(function() {
                         adresse[index].lon = koordinater[0];
                         adresse[index].matchkategori = kategori;
                         adresse[index].officieladresse = data.adressebetegnelse;
+                        //Disse attributter kan tilvælges i modal
                         adresse[index].kommunenr = data.adgangsadresse.kommune.kode;
                         adresse[index].vejkode = data.adgangsadresse.vejstykke.kode;
                         adresse[index].husnr = data.adgangsadresse.husnr;
@@ -154,12 +155,38 @@ $(document).ready(function() {
 
     function outputData() {
 
-        //Laver kopi af output for at bevare original data
-        var outputCopy = output.slice();
+        //Cloner output for at bevare original data, så bruger kan
+        //ombestemme sig når attributter vælges i download dialog
+        var outputCopy = $.extend(true, [], output);
         //if som fjerner attributter, hvis der ikke er checked i modal
-        if ($('#adrurl').prop('checked') === false) {
+        if ($('#komkode').prop('checked') == false) {
             for (var i = 0; i < outputCopy.length; i++) {
-              delete outputCopy[i].adresseurl;
+                delete outputCopy[i].kommunenr;
+            }
+        }
+        if ($('#vejkode').prop('checked') == false) {
+            for (var i = 0; i < outputCopy.length; i++) {
+                delete outputCopy[i].vejkode;
+            }
+        }
+        if ($('#husnr').prop('checked') == false) {
+            for (var i = 0; i < outputCopy.length; i++) {
+                delete outputCopy[i].husnr;
+            }
+        }
+        if ($('#etage').prop('checked') == false) {
+            for (var i = 0; i < outputCopy.length; i++) {
+                delete outputCopy[i].etage;
+            }
+        }
+        if ($('#doer').prop('checked') == false) {
+            for (var i = 0; i < outputCopy.length; i++) {
+                delete outputCopy[i].doer;
+            }
+        }
+        if ($('#adrurl').prop('checked') == false) {
+            for (var i = 0; i < outputCopy.length; i++) {
+                delete outputCopy[i].adresseurl;
             }
         }
 
@@ -171,12 +198,11 @@ $(document).ready(function() {
         //data som skal gemmes lokalt laves til en geojson tekst
         var data = "text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(obj));
 
-        //der laves link som indeholder geojson til download
+        //der laves link som indeholder parset geojson til download
         var a = $("<a>")
             .attr("href", 'data:' + data)
             .attr("download", 'adressevask.geojson')
-            .appendTo("body")
-            [0].click(); //linket åbnes/download dialog
+            .appendTo("body")[0].click(); //linket åbnes/download dialog
     }
 
     function clearMarkers() {
@@ -198,7 +224,7 @@ $(document).ready(function() {
         var a = []
         var b = []
         var c = []
-        //for hver kategori fyldes array om med værdier
+            //for hver kategori fyldes array om med værdier
         $.each(output, function(index, value) {
             switch (output[index].matchkategori) {
                 case 'A':
