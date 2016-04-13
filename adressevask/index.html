@@ -49,7 +49,7 @@
 			  </span>
 				<!-- vis statistik -->
 				<button id="statistik" type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">VIS MATCH</button>
-				<a href="#" id="hentdata" class="btn btn-primary" role="button"></a>
+				<button id="hentdata" type="button" class="btn btn-primary" data-toggle="modal" data-target="#hentgeojson">HENT GEOJSON</button>
 			</div>
 			<div class="col-sm-3 text-right">
 				<button id="rydkort" class="btn btn-default" style="display: inline-block;">RYD KORTET</button>
@@ -82,14 +82,14 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td id='katA'></td>
-									<td id='katB'></td>
-									<td id='katC'></td>
-								</tr>
-								<tr>
 									<td><img src="img/a.png" alt="Kategori A" /></td>
 									<td><img src="img/b.png" alt="Kategori B" /></td>
 									<td><img src="img/c.png" alt="Kategori C" /></td>
+								</tr>
+								<tr>
+									<td id='katA'></td>
+									<td id='katB'></td>
+									<td id='katC'></td>
 								</tr>
 							</tbody>
 						</table>
@@ -97,6 +97,48 @@
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">LUK</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal med output -->
+	<div id="hentgeojson" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">GeoJSON Output</h4>
+				</div>
+				<div class="modal-body">
+					<p>
+						Vælg ekstra oplysninger fra Danmarks Adresser, som skal tilføjes dine data når de laves om til GeoJSON
+					</p>
+					<div id='count'>
+						<div class="checkbox">
+						  <label><input type="checkbox" value="" id="komkode" checked="checked">Kommunekode</label>
+						</div>
+						<div class="checkbox">
+						  <label><input type="checkbox" value="" id="vejkode" checked="checked">Vejkode</label>
+						</div>
+						<div class="checkbox">
+						  <label><input type="checkbox" value="" id="husnr" checked="checked">Husnummer</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" value="" id="etage" checked="checked">Etage</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" value="" id="doer" checked="checked">Dør/Side</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" value="" id="adrurl" checked="checked">Adresse URL</label>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" id="geojson" data-dismiss="modal">DOWNLOAD</button>
 				</div>
 			</div>
 		</div>
@@ -114,13 +156,14 @@
 				</div>
 				<div class="modal-body">
 					<p>Adressevasekeren bruger <a href="http://dawa.aws.dk/adressedok#datavask" target="_blank" style="color:black; text-decoration: underline;">DAWA's datavask</a> til at geokode adresser fra CSV-fil, som vises på kort og med muligheden for at gemme data
-						lokalt som GeoJSON. CSV-filen skal have tegnsætning UTF-8 og kan både være semikolon- eller kommasepareret men skal indeholde en kolonne med adresser som hedder "adresse". GeoJSON-filen vil indeholde de oprindelige data fra CSV'en, men også kooridinater
+						lokalt som GeoJSON. CSV-filen skal have tegnsætning UTF-8 og kan både være semikolon- eller kommasepareret men skal indeholde en kolonne med adresser som hedder "adresse". GeoJSON-filen vil indeholde de oprindelige data fra CSV'en, men også en officiel vaskeadresse
 						samt matchkategori, som angiver hvor godt adressevasken er gået.</p>
 					<li>A = Præcist match</li>
 					<li>B = Sikkert match</li>
 					<li>C = Usikkert match</li>
 					</br>
 					<p>
+						Det er muligt at tilføje data yderligere oplysniger fra Danmarks Adresser i dialogen der kommer frem når GeoJSON skal hentes.
 						Laves der adressesøgning i søgefeltet før eller efter en CSV-fil er vasket uden kortet rydes, vil disse også blive tilføjet GeoJSON-filen.
 					</p>
 				</div>

@@ -35,6 +35,10 @@ $(document).ready(function() {
         trigger: 'hover'
     })
 
+    $('#geojson').click(function() {
+        outputData();
+    });
+
     //Global array som fyldes op med csv-data og kooridinater m.m. fra DAWA
     var output = [];
 
@@ -132,6 +136,7 @@ $(document).ready(function() {
                         adresse[index].lon = koordinater[0];
                         adresse[index].matchkategori = kategori;
                         adresse[index].officieladresse = data.adressebetegnelse;
+                        //Disse attributter kan tilvælges i modal
                         adresse[index].kommunenr = data.adgangsadresse.kommune.kode;
                         adresse[index].vejkode = data.adgangsadresse.vejstykke.kode;
                         adresse[index].husnr = data.adgangsadresse.husnr;
@@ -140,28 +145,64 @@ $(document).ready(function() {
                         adresse[index].adresseurl = data.href;
                         //det opdaterede objekt skubbes ind i den globale output array
                         output.push(adresse[index]);
-                    });
-                });
-            });
-        });
+                        //console.log(data.adressebetegnelse);
+                        //console.log(output);
+                    }); //getJSON adgangsadresse
+                }); //each datavask
+            }); //getJSON datavadk
+        }); //each CSV
     }
 
     function outputData() {
+
+        //Cloner output for at bevare original data, så bruger kan
+        //ombestemme sig når attributter vælges i download dialog
+        var outputCopy = $.extend(true, [], output);
+        //if som fjerner attributter, hvis der ikke er checked i modal
+        if ($('#komkode').prop('checked') == false) {
+            for (var i = 0; i < outputCopy.length; i++) {
+                delete outputCopy[i].kommunenr;
+            }
+        }
+        if ($('#vejkode').prop('checked') == false) {
+            for (var i = 0; i < outputCopy.length; i++) {
+                delete outputCopy[i].vejkode;
+            }
+        }
+        if ($('#husnr').prop('checked') == false) {
+            for (var i = 0; i < outputCopy.length; i++) {
+                delete outputCopy[i].husnr;
+            }
+        }
+        if ($('#etage').prop('checked') == false) {
+            for (var i = 0; i < outputCopy.length; i++) {
+                delete outputCopy[i].etage;
+            }
+        }
+        if ($('#doer').prop('checked') == false) {
+            for (var i = 0; i < outputCopy.length; i++) {
+                delete outputCopy[i].doer;
+            }
+        }
+        if ($('#adrurl').prop('checked') == false) {
+            for (var i = 0; i < outputCopy.length; i++) {
+                delete outputCopy[i].adresseurl;
+            }
+        }
+
         //output array laves om til geojson med GeoJSON JS-bibliotek.
-        var obj = GeoJSON.parse(output, {
+        var obj = GeoJSON.parse(outputCopy, {
             Point: ['lat', 'lon']
         });
 
-        //gem fil lokalt
+        //data som skal gemmes lokalt laves til en geojson tekst
         var data = "text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(obj));
 
-        var a = document.createElement('a');
-        a.href = 'data:' + data;
-        a.download = 'adressevask.geojson';
-        a.innerHTML = 'HENT GEOJSON';
-
-        var container = document.getElementById('hentdata');
-        container.appendChild(a);
+        //der laves link som indeholder parset geojson til download
+        var a = $("<a>")
+            .attr("href", 'data:' + data)
+            .attr("download", 'adressevask.geojson')
+            .appendTo("body")[0].click(); //linket åbnes/download dialog
     }
 
     function clearMarkers() {
@@ -183,7 +224,7 @@ $(document).ready(function() {
         var a = []
         var b = []
         var c = []
-        //for hver kategori fyldes array om med værdier
+            //for hver kategori fyldes array om med værdier
         $.each(output, function(index, value) {
             switch (output[index].matchkategori) {
                 case 'A':
@@ -227,11 +268,9 @@ $(document).ready(function() {
         ajaxStop: function() {
             $body.removeClass("loading");
             //Knapperne hentdata/rydkort vises efter endt ajax
-            $("#hentdata").empty().show(); //hent data knappen tømmes så ikke link dubleres
+            $("#hentdata").show(); //hent data knappen tømmes så ikke link dubleres
             $("#rydkort").show();
             $("#statistik").show();
-            //output data tilføjes til hent knappen som href med funktionen
-            outputData();
             //statistik for match beregnes og tilføjes modal
             countKategori();
         }
