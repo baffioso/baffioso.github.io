@@ -35,6 +35,7 @@ $(document).ready(function() {
         trigger: 'hover'
     })
 
+    //HENT GeoJSON knap kører outputfunktion
     $('#geojson').click(function() {
         outputData();
     });
@@ -143,10 +144,17 @@ $(document).ready(function() {
                         adresse[index].etage = data.etage;
                         adresse[index].doer = data['dør'];
                         adresse[index].adresseurl = data.href;
+                        adresse[index].ejerlav = data.adgangsadresse.ejerlav.navn;
+                        adresse[index].matrikelnr = data.adgangsadresse.matrikelnr;
+                        adresse[index].ejendomsnr = data.adgangsadresse.esrejendomsnr;
+                        adresse[index].sogn = data.adgangsadresse.sogn.navn;
+                        adresse[index].region = data.adgangsadresse.region.navn;
+                        adresse[index].retskreds = data.adgangsadresse.retskreds.navn;
+                        adresse[index].politikreds = data.adgangsadresse.politikreds.navn;
+                        adresse[index].opstillingskreds = data.adgangsadresse.opstillingskreds.navn;
+
                         //det opdaterede objekt skubbes ind i den globale output array
                         output.push(adresse[index]);
-                        //console.log(data.adressebetegnelse);
-                        //console.log(output);
                     }); //getJSON adgangsadresse
                 }); //each datavask
             }); //getJSON datavadk
@@ -158,8 +166,20 @@ $(document).ready(function() {
         //Cloner output for at bevare original data, så bruger kan
         //ombestemme sig når attributter vælges i download dialog
         var outputCopy = $.extend(true, [], output);
+        /*
+                //Tester forkortet udgave
+                var attri = ['kommunenr', 'vejkode', 'husnr', 'etage', 'doer', 'adresseurl'];
+
+                $.each(attri, function(_, val1) {
+                    if ($('#' + val1).prop('checked') == false) {
+                        $.each(outputCopy, function(i, obj) {
+                            delete outputCopy[i].val1;
+                        });
+                    }
+                });
+        */
         //if som fjerner attributter, hvis der ikke er checked i modal
-        if ($('#komkode').prop('checked') == false) {
+        if ($('#kommunenr').prop('checked') == false) {
             for (var i = 0; i < outputCopy.length; i++) {
                 delete outputCopy[i].kommunenr;
             }
@@ -184,11 +204,52 @@ $(document).ready(function() {
                 delete outputCopy[i].doer;
             }
         }
-        if ($('#adrurl').prop('checked') == false) {
+        if ($('#adresseurl').prop('checked') == false) {
             for (var i = 0; i < outputCopy.length; i++) {
                 delete outputCopy[i].adresseurl;
             }
         }
+        if ($('#region').prop('checked') == false) {
+            for (var i = 0; i < outputCopy.length; i++) {
+                delete outputCopy[i].region;
+            }
+        }
+        if ($('#ejerlav').prop('checked') == false) {
+            for (var i = 0; i < outputCopy.length; i++) {
+                delete outputCopy[i].ejerlav;
+            }
+        }
+        if ($('#matrikelnr').prop('checked') == false) {
+            for (var i = 0; i < outputCopy.length; i++) {
+                delete outputCopy[i].matrikelnr;
+            }
+        }
+        if ($('#ejendomsnr').prop('checked') == false) {
+            for (var i = 0; i < outputCopy.length; i++) {
+                delete outputCopy[i].ejendomsnr;
+            }
+        }
+        if ($('#sogn').prop('checked') == false) {
+            for (var i = 0; i < outputCopy.length; i++) {
+                delete outputCopy[i].sogn;
+            }
+        }
+        if ($('#opstillingskreds').prop('checked') == false) {
+            for (var i = 0; i < outputCopy.length; i++) {
+                delete outputCopy[i].opstillingskreds;
+            }
+        }
+        if ($('#retskreds').prop('checked') == false) {
+            for (var i = 0; i < outputCopy.length; i++) {
+                delete outputCopy[i].retskreds;
+            }
+        }
+        if ($('#politikreds').prop('checked') == false) {
+            for (var i = 0; i < outputCopy.length; i++) {
+                delete outputCopy[i].politikreds;
+            }
+        }
+        console.log(outputCopy[0]);
 
         //output array laves om til geojson med GeoJSON JS-bibliotek.
         var obj = GeoJSON.parse(outputCopy, {
