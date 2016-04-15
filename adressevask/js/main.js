@@ -1,9 +1,7 @@
 $(document).ready(function() {
 
-    //hent data/rydkort/statistik knappen gemmes og vises efter ajax er afsluttet
-    $("#hentdata").hide();
-    $("#rydkort").hide();
-    $("#statistik").hide();
+    //diverse knapper gemmes og vises efter ajax er afsluttet
+    $("#hentdata, #rydkort, #statistik, .left, .right").hide();
 
     //ved skift af input i Browse CSV køres csvFile funktionen
     $("#csv-file").change(csvFile);
@@ -39,6 +37,17 @@ $(document).ready(function() {
     $('#geojson').click(function() {
         outputData();
     });
+
+    //Carousel knapper
+    $(".right").click(function(){
+        $(this).hide();
+        $(".left").show();
+    });
+    $(".left").click(function(){
+        $(this).hide();
+        $(".right").show();
+    });
+
 
     //Global array som fyldes op med csv-data og kooridinater m.m. fra DAWA
     var output = [];
@@ -271,12 +280,12 @@ $(document).ready(function() {
         markers.clearLayers();
         //array tømmes
         output = []
-            //knapper fjernes
-        $("#hentdata").fadeOut();
-        $("#rydkort").fadeOut();
-        $("#statistik").fadeOut();
+        //knapper og tabel fjernes
+        $("#hentdata, #rydkort, #statistik, .left, .right, #jsGrid").fadeOut();
         //input filen fjernes
         $("#csv-file").val('');
+        //Hop til kort
+        $("#myCarousel").carousel(0);
     }
 
 
@@ -305,6 +314,29 @@ $(document).ready(function() {
         $("#katC").html(c.length)
     }
 
+    function createTable() {
+        $("#jsGrid").jsGrid({
+            width: "100%",
+            height: "80%",
+
+            selecting: true,
+            sorting: true,
+            paging: true,
+
+            data: output,
+
+            fields: [{
+                    name: "adresse",
+                    type: "text"
+                }, {
+                    name: "officieladresse",
+                    type: "text"
+                }
+
+            ]
+        });
+    }
+
     //Cluster marker
     var markers = new L.MarkerClusterGroup();
 
@@ -328,12 +360,14 @@ $(document).ready(function() {
         },
         ajaxStop: function() {
             $body.removeClass("loading");
+            //Tilføjer tabellen
+            createTable();
             //Knapperne hentdata/rydkort vises efter endt ajax
-            $("#hentdata").show(); //hent data knappen tømmes så ikke link dubleres
-            $("#rydkort").show();
-            $("#statistik").show();
+            $("#hentdata, #rydkort, #statistik, .right").show();
             //statistik for match beregnes og tilføjes modal
             countKategori();
+
         }
     });
+
 });

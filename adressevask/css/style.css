@@ -1,9 +1,12 @@
+body {
+  font-family: monospace;
+}
 #mapid {
     height: 80%;
     width: 100%;
     border-radius: 5px;
     z-index: 0;
-    box-shadow: 3px 100px 200px 10px #333;
+    /*box-shadow: 3px 100px 200px 10px #333;*/
 }
 .btn-file {
     position: relative;
@@ -56,12 +59,10 @@ body.loading .spinner {
     height: 57px;
     padding: 22px 30px;
     font-size: 16px;
-    font-family: monospace;
 }
 .navbar-nav>li>a {
     padding-top: 22px;
     padding-bottom: 15px;
-    font-family: monospace;
     font-size: 16;
 }
 a:link, a:visited, a:hover {
@@ -69,7 +70,6 @@ a:link, a:visited, a:hover {
     text-decoration: none;
 }
 #search, #query {
-    font-family: monospace;
     margin-top: 15px;
 }
 
@@ -77,4 +77,23 @@ a:link, a:visited, a:hover {
 
 th, td {
     text-align: center;
+}
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+    color: black;
+}
+.carousel-control.right {
+    right: -114px;
+}
+.carousel-control.left {
+    left: -114px;
+}
+.carousel-control {
+    position: absolute;
+    top: 50%;    /* pushes the icon in the middle of the height */
+    z-index: 5;
+    display: inline-block;
+}
+.glyphicon {
+    font-size: 1.7em;
 }
