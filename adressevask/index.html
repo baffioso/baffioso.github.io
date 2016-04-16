@@ -18,11 +18,16 @@
 	<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.css' rel='stylesheet' />
 	<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.Default.css' rel='stylesheet' />
 
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.4.1/jsgrid.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.4.1/jsgrid.min.css" />
+	<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.4.1/jsgrid-theme.min.css" />
+
 	<link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-	<nav class="navbar navbar-default">
+
+	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<a class="navbar-brand">Adressevasker</a>
@@ -33,11 +38,15 @@
 					<span class="input-group-btn">
 		        <button id="search" class="btn btn-default" type="button">Søg</button>
 		      </span>
-				</div><!-- /input-group -->
-			</div><!-- /.col-lg-4 -->
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<li id="showMap" class="active glyphicon glyphicon-map-marker"></li>
+				<li id="showTable" class="glyphicon glyphicon-th-list"></li>
+			</div>
 			<ul class="nav navbar-nav pull-right">
 				<li><a href="#" data-toggle="modal" data-target="#om">Om</a></li>
-			<ul>
+				<ul>
 		</div>
 	</nav>
 
@@ -58,7 +67,12 @@
 		<div class="row">
 			<div id="mapid"></div>
 		</div>
+		<div class="row">
+			<div id="jsGrid"></div>
+		</div>
 	</div>
+
+
 
 	<!-- Modal med matchstatistik -->
 	<div id="myModal" class="modal fade" role="dialog">
@@ -116,7 +130,7 @@
 					<div class="row">
 						<div class="col-xs-12">
 							<p>
-								Vælg ekstra oplysninger fra Danmarks Adresser, som skal tilføjes dine data når de laves om til GeoJSON
+								Vælg ekstra oplysninger fra Danmarks Adresser, som skal tilføjes data når de laves om til GeoJSON
 							</p>
 						</div>
 					</div>
@@ -186,7 +200,7 @@
 					</div>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-primary" id="geojson" data-dismiss="modal">DOWNLOAD</button>
+					<button type="button" class="btn btn-primary" id="geojson" data-dismiss="modal">HENT</button>
 				</div>
 			</div>
 		</div>
@@ -204,15 +218,14 @@
 				</div>
 				<div class="modal-body">
 					<p>Adressevasekeren bruger <a href="http://dawa.aws.dk/adressedok#datavask" target="_blank" style="color:black; text-decoration: underline;">DAWA's datavask</a> til at geokode adresser fra CSV-fil, som vises på kort og med muligheden for at gemme data
-						lokalt som GeoJSON. CSV-filen skal have tegnsætning UTF-8 og kan både være semikolon- eller kommasepareret men skal indeholde en kolonne med adresser som hedder "adresse". GeoJSON-filen vil indeholde de oprindelige data fra CSV'en, men også en officiel vaskeadresse
-						samt matchkategori, som angiver hvor godt adressevasken er gået.</p>
+						lokalt som GeoJSON. CSV-filen skal have tegnsætning UTF-8 og kan både være semikolon- eller kommasepareret men skal indeholde en kolonne med adresser som hedder "adresse". GeoJSON-filen vil indeholde de oprindelige data fra CSV'en, men også en officiel
+						vaskeadresse samt matchkategori, som angiver hvor godt adressevasken er gået.</p>
 					<li>A = Præcist match</li>
 					<li>B = Sikkert match</li>
 					<li>C = Usikkert match</li>
 					</br>
 					<p>
-						Det er muligt at tilføje data yderligere oplysniger fra Danmarks Adresser i dialogen der kommer frem når GeoJSON skal hentes.
-						Laves der adressesøgning i søgefeltet før eller efter en CSV-fil er vasket uden kortet rydes, vil disse også blive tilføjet GeoJSON-filen.
+						Det er muligt at tilføje data yderligere oplysniger fra Danmarks Adresser i dialogen der kommer frem når GeoJSON skal hentes. Laves der adressesøgning i søgefeltet før eller efter en CSV-fil er vasket uden kortet rydes, vil disse også blive tilføjet GeoJSON-filen.
 					</p>
 				</div>
 				<div class="modal-footer">

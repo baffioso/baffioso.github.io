@@ -1,9 +1,7 @@
 $(document).ready(function() {
 
-    //hent data/rydkort/statistik knappen gemmes og vises efter ajax er afsluttet
-    $("#hentdata").hide();
-    $("#rydkort").hide();
-    $("#statistik").hide();
+    //diverse knapper gemmes og vises efter ajax er afsluttet
+    $("#hentdata, #rydkort, #statistik").hide();
 
     //ved skift af input i Browse CSV køres csvFile funktionen
     $("#csv-file").change(csvFile);
@@ -38,6 +36,18 @@ $(document).ready(function() {
     //HENT GeoJSON knap kører outputfunktion
     $('#geojson').click(function() {
         outputData();
+    });
+
+    //Scroll til tabel/kort
+    $("#showTable").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#jsGrid").offset().top
+        }, 500);
+    });
+    $("#showMap").click(function() {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 500);
     });
 
     //Global array som fyldes op med csv-data og kooridinater m.m. fra DAWA
@@ -120,7 +130,7 @@ $(document).ready(function() {
                                 marker.setIcon(L.mapbox.marker.icon({}));
                         }
                         //Der laves popup
-                        marker.bindPopup('<b>Søgeadresse:</b></br>' + adresse[index].adresse + '</br><b>Officiel adresse:</b></br>' + data.adressebetegnelse);
+                        marker.bindPopup('<b>Søgeadresse:</b></br>' + adresse[index].adresse + '</br><b>Vaskeadresse:</b></br>' + data.adressebetegnelse);
                         //mouseover popup
                         marker.on('mouseover', function(e) {
                             this.openPopup();
@@ -152,7 +162,7 @@ $(document).ready(function() {
                         adresse[index].retskreds = data.adgangsadresse.retskreds.navn;
                         adresse[index].politikreds = data.adgangsadresse.politikreds.navn;
                         adresse[index].opstillingskreds = data.adgangsadresse.opstillingskreds.navn;
-
+                        adresse[index].leaflet_marker_id = marker._leaflet_id;
                         //det opdaterede objekt skubbes ind i den globale output array
                         output.push(adresse[index]);
                     }); //getJSON adgangsadresse
@@ -178,6 +188,12 @@ $(document).ready(function() {
                     }
                 });
         */
+
+        //fjerner leaflet marker is
+        for (var i = 0; i < outputCopy.length; i++) {
+            delete outputCopy[i].leaflet_marker_id;
+        }
+
         //if som fjerner attributter, hvis der ikke er checked i modal
         if ($('#kommunenr').prop('checked') == false) {
             for (var i = 0; i < outputCopy.length; i++) {
@@ -271,12 +287,12 @@ $(document).ready(function() {
         markers.clearLayers();
         //array tømmes
         output = []
-            //knapper fjernes
-        $("#hentdata").fadeOut();
-        $("#rydkort").fadeOut();
-        $("#statistik").fadeOut();
+        //knapper og tabel fjernes
+        $("#hentdata, #rydkort, #statistik").fadeOut();
         //input filen fjernes
         $("#csv-file").val('');
+
+        $("#jsGrid").hide();
     }
 
 
@@ -305,6 +321,45 @@ $(document).ready(function() {
         $("#katC").html(c.length)
     }
 
+    function createTable() {
+        $("#jsGrid").show();
+        $("#jsGrid").jsGrid({
+            width: "100%",
+            height: "100%",
+
+            selecting: true,
+            sorting: true,
+            paging: false,
+
+            data: output,
+            //Når der trykkes på en række zoomes til adressen
+            rowClick: function(item) {
+              //der scrolles til kortet div
+              $('html, body').animate({
+                  scrollTop: 0
+              }, 100);
+              //pan til adresse og zoom ind
+              map.setView({lat: item.item.lat, lng: item.item.lon}, 17)
+            },
+
+            fields: [{
+                    title: "Søgeadresse",
+                    name: "adresse",
+                    type: "text"
+                }, {
+                    title: "Vaskeadresse",
+                    name: "officieladresse",
+                    type: "text"
+                },{
+                    title: "Matchkategori",
+                    name: "matchkategori",
+                    type: "text",
+                    width: 30
+                }
+            ]
+        });
+    }
+
     //Cluster marker
     var markers = new L.MarkerClusterGroup();
 
@@ -328,12 +383,14 @@ $(document).ready(function() {
         },
         ajaxStop: function() {
             $body.removeClass("loading");
+            //Tilføjer tabellen
+            createTable();
             //Knapperne hentdata/rydkort vises efter endt ajax
-            $("#hentdata").show(); //hent data knappen tømmes så ikke link dubleres
-            $("#rydkort").show();
-            $("#statistik").show();
+            $("#hentdata, #rydkort, #statistik").show();
             //statistik for match beregnes og tilføjes modal
             countKategori();
+
         }
     });
+
 });
