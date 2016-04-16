@@ -27,7 +27,7 @@
 
 <body>
 
-	<nav class="navbar navbar-default">
+	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<a class="navbar-brand">Adressevasker</a>
@@ -39,6 +39,10 @@
 		        <button id="search" class="btn btn-default" type="button">Søg</button>
 		      </span>
 				</div>
+			</div>
+			<div class="col-sm-3">
+				<li id="showMap" class="active glyphicon glyphicon-map-marker"></li>
+				<li id="showTable" class="glyphicon glyphicon-th-list"></li>
 			</div>
 			<ul class="nav navbar-nav pull-right">
 				<li><a href="#" data-toggle="modal" data-target="#om">Om</a></li>
@@ -61,19 +65,10 @@
 			</div>
 		</div>
 		<div class="row">
-			<div id="myCarousel" class="carousel slide" data-interval="false">
-				<div class="carousel-inner" role="listbox">
-					<div class="item active">
-						<div id="mapid"></div>
-					</div>
-					<div class="item">
-						<div id="jsGrid"></div>
-					</div>
-				</div>
-				<!-- Left and right controls -->
-				<a class="left carousel-control glyphicon glyphicon-map-marker" href="#myCarousel" role="button" data-slide="prev"></a>
-				<a class="right carousel-control glyphicon glyphicon-th-list" href="#myCarousel" role="button" data-slide="next"></a>
-			</div>
+			<div id="mapid"></div>
+		</div>
+		<div class="row">
+			<div id="jsGrid"></div>
 		</div>
 	</div>
 
