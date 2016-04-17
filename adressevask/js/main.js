@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     //diverse knapper gemmes og vises efter ajax er afsluttet
-    $("#hentdata, #rydkort, #statistik").hide();
+    $("#hentdata, #rydkort, #statistik, #scroller").hide();
 
     //ved skift af input i Browse CSV køres csvFile funktionen
     $("#csv-file").change(csvFile);
@@ -288,7 +288,7 @@ $(document).ready(function() {
         //array tømmes
         output = []
         //knapper og tabel fjernes
-        $("#hentdata, #rydkort, #statistik").fadeOut();
+        $("#hentdata, #rydkort, #statistik, #scroller").fadeOut();
         //input filen fjernes
         $("#csv-file").val('');
 
@@ -386,7 +386,7 @@ $(document).ready(function() {
             //Tilføjer tabellen
             createTable();
             //Knapperne hentdata/rydkort vises efter endt ajax
-            $("#hentdata, #rydkort, #statistik").show();
+            $("#hentdata, #rydkort, #statistik, #scroller").show();
             //statistik for match beregnes og tilføjes modal
             countKategori();
 

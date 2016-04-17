@@ -76,10 +76,10 @@ a:link, a:visited, a:hover {
     text-decoration: none;
 }
 #search, #query {
-    margin-top: 15px;
+    margin-top: 14px;
 }
-#showMap, #showTable {
-    margin-top: 17px;
+#scroller {
+    margin-top: 14px;
     cursor: pointer;
 }
 
@@ -89,6 +89,6 @@ th, td {
     text-align: center;
 }
 .glyphicon {
-    font-size: 1.7em;
+    font-size: 1.5em;
     color: gray;
 }
