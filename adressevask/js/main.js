@@ -68,6 +68,10 @@ $(document).ready(function() {
         });
     }
 
+/*    //Bug-fixing
+    geocoder([{
+        adresse: "islands brygge 33, 4. tv, 2300"
+    }]);*/
 
     function geocoder(adresse) {
         //Loop over csv adresserne fra csvFile funktionen
@@ -84,7 +88,8 @@ $(document).ready(function() {
                 $.each(data.resultater, function(_, resultat) {
                     //Der undersøges om vejnavn/postnr eksisterer i objektet,
                     //da der kun ønskes ét vejnavne for hvert postnr
-                    if (resultat.adresse.vejnavn + ', ' + resultat.adresse.postnr in fundnevejnavne) {
+                    //Derudover om aktueladresse.status er !=  1 (endelig adresse og ikke log)
+                    if (resultat.adresse.vejnavn + ', ' + resultat.adresse.postnr in fundnevejnavne || resultat.aktueladresse.status !== 1) {
                         //eksisterer vejnanvnet hoppes til næste iteration
                         return;
                     }
@@ -97,34 +102,25 @@ $(document).ready(function() {
                         koordinater = data.adgangsadresse.adgangspunkt.koordinater;
                         //Der laves markører med koordinaterne
                         var marker = L.marker([koordinater[1], koordinater[0]]);
-                        //Markører farves, så de angiver kvaliteten af match
+                        //Markører farves, så de angiver kvaliteten af match (kategori)
+                        function markerStyle(img) {
+                            marker.setIcon(L.icon({
+                                iconUrl: img,
+                                shadowUrl: "img/shadow.png",
+                                iconAnchor: [16, 37],
+                                shadowAnchor: [20, 35],
+                                popupAnchor: [0, -30]
+                            }));
+                        }
                         switch (kategori) {
                             case 'A':
-                                marker.setIcon(L.icon({
-                                    iconUrl: "img/a.png",
-                                    shadowUrl: "img/shadow.png",
-                                    iconAnchor: [16, 37],
-                                    shadowAnchor: [20, 35],
-                                    popupAnchor: [0, -30]
-                                }));
+                                markerStyle("img/a.png");
                                 break;
                             case 'B':
-                                marker.setIcon(L.icon({
-                                    iconUrl: "img/b.png",
-                                    shadowUrl: "img/shadow.png",
-                                    iconAnchor: [16, 37],
-                                    shadowAnchor: [20, 35],
-                                    popupAnchor: [0, -30]
-                                }));
+                                markerStyle("img/b.png");
                                 break;
                             case 'C':
-                                marker.setIcon(L.icon({
-                                    iconUrl: "img/c.png",
-                                    shadowUrl: "img/shadow.png",
-                                    iconAnchor: [16, 37],
-                                    shadowAnchor: [20, 35],
-                                    popupAnchor: [0, -30]
-                                }));
+                                markerStyle("img/c.png");
                                 break;
                             default:
                                 marker.setIcon(L.mapbox.marker.icon({}));
@@ -162,9 +158,11 @@ $(document).ready(function() {
                         adresse[index].retskreds = data.adgangsadresse.retskreds.navn;
                         adresse[index].politikreds = data.adgangsadresse.politikreds.navn;
                         adresse[index].opstillingskreds = data.adgangsadresse.opstillingskreds.navn;
-                        adresse[index].leaflet_marker_id = marker._leaflet_id;
+                        //adresse[index].leaflet_marker_id = marker._leaflet_id; //SKal måske bruges til at aktivere popup
                         //det opdaterede objekt skubbes ind i den globale output array
                         output.push(adresse[index]);
+                        //console.log("_: " + _ + ", index:" + index);
+                        //console.log(adresse[index].officieladresse);
                     }); //getJSON adgangsadresse
                 }); //each datavask
             }); //getJSON datavadk
@@ -175,97 +173,36 @@ $(document).ready(function() {
 
         //Cloner output for at bevare original data, så bruger kan
         //ombestemme sig når attributter vælges i download dialog
+        //Kan måske også laves med array.filter eller $.grep
         var outputCopy = $.extend(true, [], output);
-        /*
-                //Tester forkortet udgave
-                var attri = ['kommunenr', 'vejkode', 'husnr', 'etage', 'doer', 'adresseurl'];
 
-                $.each(attri, function(_, val1) {
-                    if ($('#' + val1).prop('checked') == false) {
-                        $.each(outputCopy, function(i, obj) {
-                            delete outputCopy[i].val1;
-                        });
-                    }
+        //Tester forkortet udgave
+        var attri = [
+            'kommunenr',
+            'vejkode',
+            'husnr',
+            'etage',
+            'doer',
+            'adresseurl',
+            'region',
+            'ejerlav',
+            'matrikelnr',
+            'ejendomsnr',
+            'sogn',
+            'opstillingskreds',
+            'retskreds',
+            'politikreds'
+        ];
+
+        //Hvis attribut/poperty fra ovenstående array ikke er checked i modal,
+        //slettes den fra outputCopy
+        $.each(attri, function(_, val) {
+            if ($('#' + val).prop('checked') == false) {
+                $.each(outputCopy, function(i) {
+                    delete outputCopy[i][val];
                 });
-        */
-
-        //fjerner leaflet marker is
-        for (var i = 0; i < outputCopy.length; i++) {
-            delete outputCopy[i].leaflet_marker_id;
-        }
-
-        //if som fjerner attributter, hvis der ikke er checked i modal
-        if ($('#kommunenr').prop('checked') == false) {
-            for (var i = 0; i < outputCopy.length; i++) {
-                delete outputCopy[i].kommunenr;
             }
-        }
-        if ($('#vejkode').prop('checked') == false) {
-            for (var i = 0; i < outputCopy.length; i++) {
-                delete outputCopy[i].vejkode;
-            }
-        }
-        if ($('#husnr').prop('checked') == false) {
-            for (var i = 0; i < outputCopy.length; i++) {
-                delete outputCopy[i].husnr;
-            }
-        }
-        if ($('#etage').prop('checked') == false) {
-            for (var i = 0; i < outputCopy.length; i++) {
-                delete outputCopy[i].etage;
-            }
-        }
-        if ($('#doer').prop('checked') == false) {
-            for (var i = 0; i < outputCopy.length; i++) {
-                delete outputCopy[i].doer;
-            }
-        }
-        if ($('#adresseurl').prop('checked') == false) {
-            for (var i = 0; i < outputCopy.length; i++) {
-                delete outputCopy[i].adresseurl;
-            }
-        }
-        if ($('#region').prop('checked') == false) {
-            for (var i = 0; i < outputCopy.length; i++) {
-                delete outputCopy[i].region;
-            }
-        }
-        if ($('#ejerlav').prop('checked') == false) {
-            for (var i = 0; i < outputCopy.length; i++) {
-                delete outputCopy[i].ejerlav;
-            }
-        }
-        if ($('#matrikelnr').prop('checked') == false) {
-            for (var i = 0; i < outputCopy.length; i++) {
-                delete outputCopy[i].matrikelnr;
-            }
-        }
-        if ($('#ejendomsnr').prop('checked') == false) {
-            for (var i = 0; i < outputCopy.length; i++) {
-                delete outputCopy[i].ejendomsnr;
-            }
-        }
-        if ($('#sogn').prop('checked') == false) {
-            for (var i = 0; i < outputCopy.length; i++) {
-                delete outputCopy[i].sogn;
-            }
-        }
-        if ($('#opstillingskreds').prop('checked') == false) {
-            for (var i = 0; i < outputCopy.length; i++) {
-                delete outputCopy[i].opstillingskreds;
-            }
-        }
-        if ($('#retskreds').prop('checked') == false) {
-            for (var i = 0; i < outputCopy.length; i++) {
-                delete outputCopy[i].retskreds;
-            }
-        }
-        if ($('#politikreds').prop('checked') == false) {
-            for (var i = 0; i < outputCopy.length; i++) {
-                delete outputCopy[i].politikreds;
-            }
-        }
-        console.log(outputCopy[0]);
+        });
 
         //output array laves om til geojson med GeoJSON JS-bibliotek.
         var obj = GeoJSON.parse(outputCopy, {
@@ -287,7 +224,7 @@ $(document).ready(function() {
         markers.clearLayers();
         //array tømmes
         output = []
-        //knapper og tabel fjernes
+            //knapper og tabel fjernes
         $("#hentdata, #rydkort, #statistik, #scroller").fadeOut();
         //input filen fjernes
         $("#csv-file").val('');
@@ -334,29 +271,31 @@ $(document).ready(function() {
             data: output,
             //Når der trykkes på en række zoomes til adressen
             rowClick: function(item) {
-              //der scrolles til kortet div
-              $('html, body').animate({
-                  scrollTop: 0
-              }, 100);
-              //pan til adresse og zoom ind
-              map.setView({lat: item.item.lat, lng: item.item.lon}, 17)
+                //der scrolles til kortet div
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 100);
+                //pan til adresse og zoom ind
+                map.setView({
+                    lat: item.item.lat,
+                    lng: item.item.lon
+                }, 17)
             },
 
             fields: [{
-                    title: "Søgeadresse",
-                    name: "adresse",
-                    type: "text"
-                }, {
-                    title: "Vaskeadresse",
-                    name: "officieladresse",
-                    type: "text"
-                },{
-                    title: "Matchkategori",
-                    name: "matchkategori",
-                    type: "text",
-                    width: 30
-                }
-            ]
+                title: "Søgeadresse",
+                name: "adresse",
+                type: "text"
+            }, {
+                title: "Vaskeadresse",
+                name: "officieladresse",
+                type: "text"
+            }, {
+                title: "Matchkategori",
+                name: "matchkategori",
+                type: "text",
+                width: 30
+            }]
         });
     }
 
@@ -389,7 +328,6 @@ $(document).ready(function() {
             $("#hentdata, #rydkort, #statistik, #scroller").show();
             //statistik for match beregnes og tilføjes modal
             countKategori();
-
         }
     });
 
