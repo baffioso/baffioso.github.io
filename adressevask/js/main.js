@@ -33,6 +33,11 @@ $(document).ready(function() {
         trigger: 'hover'
     })
 
+    //Vælg alle checkboxe i GeoJSON-output Modal
+    $("#checkAll").change(function() {
+        $("input:checkbox").prop('checked', $(this).prop("checked"));
+    });
+
     //HENT GeoJSON knap kører outputfunktion
     $('#geojson').click(function() {
         outputData();
@@ -76,7 +81,7 @@ $(document).ready(function() {
             $.getJSON('http://dawa.aws.dk/datavask/adresser?betegnelse=' + adresse[index].adresse, function(data) {
                 //kategori gemmes i variabel, så det kan bruges inde i næste ajax kald
                 var kategori = data.kategori
-                    //Oprettes object til variationer i vejnavne (fuzzy match)
+                //Oprettes object til variationer i vejnavne (fuzzy match)
                 var fundnevejnavne = {};
                 //Loopes over DAWA's returnerede resultater, som ved upræcist
                 //match (kategori C), kan være flere forskellige adresser

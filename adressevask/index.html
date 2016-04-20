@@ -43,10 +43,10 @@
 			<div class="col-sm-3">
 				<div id="scroller">
 					<div class="btn-group">
-					  <button id="showMap" type="button" class="btn btn-default">
+						<button id="showMap" type="button" class="btn btn-default">
 							<span class="glyphicon glyphicon-map-marker"></span>
 						</button>
-					  <button id="showTable" type="button" class="btn btn-default">
+						<button id="showTable" type="button" class="btn btn-default">
 							<span class="glyphicon glyphicon-th-list"></span>
 						</button>
 					</div>
@@ -208,7 +208,15 @@
 					</div>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-primary" id="geojson" data-dismiss="modal">HENT</button>
+					<div class="col-xs-6">
+						<div class="checkbox pull-left">
+							<label>
+								<input type="checkbox" value="" id="checkAll">Vælg alle</label>
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<button type="button" class="btn btn-primary" id="geojson" data-dismiss="modal">HENT</button>
+					</div>
 				</div>
 			</div>
 		</div>
