@@ -68,11 +68,6 @@ $(document).ready(function() {
         });
     }
 
-/*    //Bug-fixing
-    geocoder([{
-        adresse: "islands brygge 33, 4. tv, 2300"
-    }]);*/
-
     function geocoder(adresse) {
         //Loop over csv adresserne fra csvFile funktionen
         $.each(adresse, function(index, value) {
@@ -161,8 +156,6 @@ $(document).ready(function() {
                         //adresse[index].leaflet_marker_id = marker._leaflet_id; //SKal måske bruges til at aktivere popup
                         //det opdaterede objekt skubbes ind i den globale output array
                         output.push(adresse[index]);
-                        //console.log("_: " + _ + ", index:" + index);
-                        //console.log(adresse[index].officieladresse);
                     }); //getJSON adgangsadresse
                 }); //each datavask
             }); //getJSON datavadk
