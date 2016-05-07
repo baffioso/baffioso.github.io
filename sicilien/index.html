@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sicilien 2016</title>
+	<meta charset=utf-8 />
+	<script src="js/sources/jquery.js"></script>
+	<script src="js/sources/bootstrap.min.js"></script>
+	<script src="js/sources/leaflet.js"></script>
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+	<link type="text/css" rel="stylesheet" href="css/leaflet.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<!-- Cluster marker -->
+	<script src='js/sources/leaflet.markercluster.js'></script>
+	<link href='css/MarkerCluster.css' rel='stylesheet' />
+	<link href='css/MarkerCluster.Default.css' rel='stylesheet' />
+	<!-- Mapbox 
+	<script src='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.js'></script>
+	<link href='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.css' rel='stylesheet' />
+-->
+	<!-- MVC -->
+	<script src="js/model.js"></script>
+	<script src="js/controller.js"></script>
+	<script src="js/view.js"></script>
+
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand"><h3>Sicilien 2016</h3></a>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<!-- Filter Dropdown -->
+		<div class="dropdown pull-right">
+			<button class="btn btn-default dropdown-toggle" type="button" id="area" data-toggle="dropdown" aria-expanded="true">
+				Vælg område
+				<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu" role="menu" aria-labelledby="area">
+				<li role="presentation" id="areaDropdown"></li>
+			</ul>
+		</div>
+		<div role="tabpanel">
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active"><a href="#imageGrid" aria-controls="imageGrid" role="tab" data-toggle="tab">Billeder</a></li>
+				<li role="presentation"><a href="#imageCarousel" aria-controls="imageCarousel" role="tab" data-toggle="tab">Slideshow</a></li>
+<!-- 				<li role="presentation"><a href="#video" aria-controls="video" role="tab" data-toggle="tab">Video</a></li> -->
+				<li role="presentation"><a href="#mapTab" aria-controls="mapTab" role="tab" data-toggle="tab" id="showMap">Kort</a></li>
+			</ul>
+			<div class="tab-content">
+				<!-- IMAGE GRID -->
+				<div role="tabpanel" class="tab-pane fade in active" id="imageGrid"></div>
+				<!-- IMAGE CAROUSEL -->
+				<div role="tabpanel" class="tab-pane fade" id="imageCarousel">
+					<div id="carousel" class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner" role="listbox"></div>
+						<a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>	
+					</div>
+				</div>
+				<!-- VIDEO  -->
+<!-- 				<div role="tabpanel" class="tab-pane" id="video">
+					<div id="video">Vi tester</div>
+				</div> -->
+				<!-- MAP -->
+				<div role="tabpanel" class="tab-pane fade" id="mapTab">
+					<div id="map"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function() {			
+			controller.init();
+		});
+	</script>
+</body>
+</html>
+

@@ -1,0 +1,55 @@
+body {
+    font-family: courier;
+}
+.navbar {
+    background: url("../img/navimg.jpg") no-repeat 10% 50%;
+    background-size: cover;
+    height: 150px;
+}
+.container-fluid>.navbar-header {
+    margin-left: 80px;
+}
+.navbar-default .navbar-brand {
+    color: #5e5e5e;
+}
+.btn-default {
+    opacity: 0.8;
+} 
+.dropdown-menu {
+    opacity: 0.95;
+}
+.nav>li>a {
+    background-color: whitesmoke;
+    opacity: 0.8;
+    color: gray;
+}
+.nav-tabs>li.active>a {
+    background-color: white;
+    opacity: 1;
+}
+.row {
+    margin-bottom: 30px;
+}
+#imageGrid, #imageCarousel, #video {
+    margin-top: 30px;
+}
+.carousel-img {
+    width: 100%;
+}
+#map {
+    margin-top: 30px;
+    height: 600px;
+    width: 100%;
+    border-radius: 5px;
+    z-index: 0;
+}
+.leaflet-popup-content-wrapper .leaflet-popup-content {
+    width: 500px;
+}
+.map-img {
+    width: 100%;
+    border-radius: 5px;
+}
+.container {
+    margin-top: -62px;
+}
