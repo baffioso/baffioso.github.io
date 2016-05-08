@@ -155,6 +155,47 @@ var mapView = {
 };
 
 
+/* ===================== */
+/* ======= VIDEO ======= */
+/* ===================== */
+
+var videoView = {
+
+	init: function() {
+		this.render();
+	},
+
+	render: function() {
+		var play = undefined;
+		var stop = undefined;
+
+		var mlyRoute = new Mapillary.Viewer('mly-route', 'cjJ1SUtVOEMtdy11b21JM0tyYTZIQTo2ZmVjNTQ3YWQ0OWI2Yjgx', 'rAMb8yclimLOLpxn2oB5AA',
+		                                        {cover: true, cache: false, direction: false});
+	    var route = mlyRoute.getComponent("route");
+
+	    route.configure({paths: [
+	        {sequenceKey: "YQP_HHogDwkDljUz77nDfA", startKey: "rAMb8yclimLOLpxn2oB5AA", stopKey: "XM6zbzpP8nADQtRpgVSfIg",
+	         infoKeys: [
+	             {key: "rAMb8yclimLOLpxn2oB5AA", description: "På tur rundt om Monte Cofane"}
+	         ]
+	        }
+	    ], playing: true});
+	    mlyRoute.activateComponent("route");
+
+	    this.play = function play() {
+	        mlyRoute.deactivateCover();
+	        route.play();
+	    }
+
+	    this.stop = function stop() {
+	        route.stop()
+	    }
+
+	}
+
+};
+
+
 /* ======================== */
 /* ======= DROPDOWN ======= */
 /* ======================== */
@@ -232,4 +273,4 @@ var dropdownView = {
 			$("#area").html("Vis alle <span class='caret'></span>")
 		});
 	}
-}
+};

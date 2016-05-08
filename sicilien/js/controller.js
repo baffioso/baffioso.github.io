@@ -7,6 +7,7 @@ var controller = {
 		imageView.init();
 		slideshowView.init();
 		mapView.init();
+		videoView.init();
 		dropdownView.init(); 
 
 	},
