@@ -1,4 +1,6 @@
+/* ========================== */
 /* ======= IMAGE GRID ======= */
+/* ========================== */
 
 var imageView = {
 
@@ -47,7 +49,9 @@ var imageView = {
 };
 
 
+/* ========================= */
 /* ======= SLIDESHOW ======= */
+/* ========================= */
 
 var slideshowView = {
 
@@ -92,7 +96,9 @@ var slideshowView = {
 };
 
 
+/* =================== */
 /* ======= MAP ======= */
+/* =================== */
 
 var mapView = {
 
@@ -108,26 +114,18 @@ var mapView = {
 	},
 
 	renderMap: function() {
-
-/*
-	    L.mapbox.accessToken = 'pk.eyJ1IjoiYmFmZmlvc28iLCJhIjoiT1JTS1lIMCJ9.f5ubY91Bi42yPnTrgiq-Gw';
-*/				    
+				    
 	    //init map and set view
 	    this.map = L.map('map').setView([37.5, 14.1], 8);
-/*
+
+	    L.mapbox.accessToken = 'pk.eyJ1IjoiYmFmZmlvc28iLCJhIjoiT1JTS1lIMCJ9.f5ubY91Bi42yPnTrgiq-Gw';
+
 	    //add tilelayer
 	    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
 	        attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
 	        maxZoom: 18,
 	        id: 'baffioso.ie1ok8lg',
 	        accessToken: L.mapbox.accessToken
-	    }).addTo(this.map);
-*/
-
-		L.tileLayer('', {
-	        attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-	        minZoom: 8,
-	        maxZoom: 18
 	    }).addTo(this.map);
 
 	},
@@ -156,7 +154,9 @@ var mapView = {
 };
 
 
+/* ======================== */
 /* ======= DROPDOWN ======= */
+/* ======================== */
 
 var dropdownView = {
 
@@ -232,10 +232,3 @@ var dropdownView = {
 		});
 	}
 }
-
-
-
-
-
-
-

@@ -34,7 +34,7 @@ body {
     margin-top: 30px;
 }
 .carousel-img {
-    width: 100%;
+    margin: auto;
 }
 #map {
     margin-top: 30px;
