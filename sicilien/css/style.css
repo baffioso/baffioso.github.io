@@ -67,3 +67,10 @@ body {
     margin: 10px 0 0 10px;
     z-index: 1;
 }
+.video {
+    width: 100%; 
+    height: auto;
+    min-height: 600px;
+    margin: auto;
+    display: block;
+}

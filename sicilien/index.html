@@ -57,7 +57,7 @@
 			<ul class="nav nav-tabs" role="tablist">
 				<li role="presentation" class="active"><a href="#imageGrid" aria-controls="imageGrid" role="tab" data-toggle="tab">Billeder</a></li>
 				<li role="presentation"><a href="#imageCarousel" aria-controls="imageCarousel" role="tab" data-toggle="tab">Slideshow</a></li>
-				<li role="presentation"><a href="#video" aria-controls="video" role="tab" data-toggle="tab">Sekvens</a></li>
+				<li role="presentation"><a href="#video" aria-controls="video" role="tab" data-toggle="tab">Video</a></li>
 				<li role="presentation"><a href="#mapTab" aria-controls="mapTab" role="tab" data-toggle="tab" id="showMap">Kort</a></li>
 			</ul>
 			<div class="tab-content">
@@ -79,16 +79,23 @@
 				</div>
 				<!-- VIDEO  -->
 				<div role="tabpanel" class="tab-pane" id="video">
-					<div class="col-md-12 mly-wrapper">
-						<div class="startstop">
-							<button class="btn btn-default" onclick="videoView.play()">
-								<span class="glyphicon glyphicon-play"></span>
-							</button>
-							<button class="btn btn-default" onclick="videoView.stop()">
-								<span class="glyphicon glyphicon-stop"></span>
-							</button>
-						</div>						
-						<div class="mly" id="mly-route"></div>
+					<div class="row">
+						<div class="col-md-12 mly-wrapper">
+							<iframe class="video" frameBorder="0" src="http://www.youtube.com/embed/5PwANU4t_y8"></iframe>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 mly-wrapper">
+							<div class="startstop">
+								<button class="btn btn-default" onclick="videoView.play()">
+									<span class="glyphicon glyphicon-play"></span>
+								</button>
+								<button class="btn btn-default" onclick="videoView.stop()">
+									<span class="glyphicon glyphicon-stop"></span>
+								</button>
+							</div>						
+							<div class="mly" id="mly-route"></div>
+						</div>
 					</div>
 				</div>
 				<!-- MAP -->
