@@ -169,14 +169,19 @@ var videoView = {
 		var play = undefined;
 		var stop = undefined;
 
-		var mlyRoute = new Mapillary.Viewer('mly-route', 'cjJ1SUtVOEMtdy11b21JM0tyYTZIQTo2ZmVjNTQ3YWQ0OWI2Yjgx', 'rAMb8yclimLOLpxn2oB5AA',
-		                                        {cover: true, cache: false, direction: false});
+		var mlyRoute = new Mapillary.Viewer(
+			'mly-route', 
+			'cjJ1SUtVOEMtdy11b21JM0tyYTZIQTo2ZmVjNTQ3YWQ0OWI2Yjgx', 
+			'vPADgu_OKsjof4rgEMsbKA',
+        	{cover: true, cache: false, direction: false}
+        );
+	    
 	    var route = mlyRoute.getComponent("route");
 
 	    route.configure({paths: [
-	        {sequenceKey: "YQP_HHogDwkDljUz77nDfA", startKey: "rAMb8yclimLOLpxn2oB5AA", stopKey: "XM6zbzpP8nADQtRpgVSfIg",
+	        {sequenceKey: "Wnnkud-HCi8C_jqMDAOvJQ", startKey: "vPADgu_OKsjof4rgEMsbKA", stopKey: "wud9fo9y017lg2v6uPyBMw",
 	         infoKeys: [
-	             {key: "rAMb8yclimLOLpxn2oB5AA", description: "På tur rundt om Monte Cofane"}
+	             {key: "vPADgu_OKsjof4rgEMsbKA", description: "Sidste skridt mod toppen af Monte Monaco ved San Vito lo Capo"}
 	         ]
 	        }
 	    ], playing: true});

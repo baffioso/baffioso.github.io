@@ -112,7 +112,15 @@ var model = {
 		{area: "San Vito Lo Capo",img: "ligsti.jpg", title: "", location: [12.7575, 38.1639]},
 		{area: "San Vito Lo Capo",img: "golfo.jpg", title: "Et kig til vores tidligere hjem ved Castellamare del Golfo", location: [12.7571, 38.167]},
 		{area: "San Vito Lo Capo",img: "sanvitofraoven.jpg", title: "San Vito fra 500 meters højde", location: [12.7569, 38.1672]},
-		{area: "San Vito Lo Capo",img: "ammeudsigt2.jpg", title: "Amning inden nedstigning", location: [12.7569, 38.167]}
+		{area: "San Vito Lo Capo",img: "ammeudsigt2.jpg", title: "Amning inden nedstigning", location: [12.7569, 38.167]},
+		{area: "Palermo",img: "palermoterasse.jpg", title: "Så er vi vel ankommet til Palermo. Vores lejlighed har to store tagterasser med plads til måltider og chill. Det bedste er nu udsigten ned på det vrimlende gadeplan.  ", location: [13.3584, 38.128]},
+		{area: "Palermo",img: "tagtaresse2.jpg", title: "Tagterasse #2", location: [13.3584, 38.128]},
+		{area: "Palermo",img: "streetartfoto.jpg", title: "Vi bor klods op af industrihavnen i et af de kvarterer, der er bygget uden på den gamle by under Palermos vokseværk. ", location: [13.361, 38.1282]},
+		{area: "Palermo",img: "streetartogvogn.jpg", title: "Kvarteret summer af hverdagens vasketøj, gadechill og skæve eksistenser. Det er svært at fange på et billede så i må nøjes med nogle af kvarterets udsmykning.", location: [13.361, 38.1282]},
+		{area: "Palermo",img: "fodbolddrengogemil.jpg", title: "Det er herligt at opleve hverdagsenergien i kvarteret. Her bliver Emil underholdt af en knægt iført Palermos fodboldtrøje. Vi sludrer/kommunikerer med drengens tandløse, men meget imødekommende far. ", location: [13.3594, 38.128]},
+		{area: "Palermo",img: "aftensmadsmandpalermo.jpg", title: "Palermo er kendt for sine gadekøkkener og denne mand har lavet vores aftensmad. Omkring os sidder mændene og drikker øl, ungerne spiller fodbold mens damerne står på altanerne eller i køkkenet (er Anne Maries formodning!). ", location: [13.3583, 38.1288]},
+		{area: "Palermo",img: "amemilpalermo.jpg", title: "Emil glor – Palermo er også noget af en kontrast til den sidste måned han har tilbragt i søvnige badebyer og på landet.", location: [13.3586, 38.1279]},
+		{area: "Palermo",img: "emilbadpalermo.jpg", title: "Afslutningsbad", location: [13.3584, 38.128]}
 	],
 	filteredImages: []
 };
