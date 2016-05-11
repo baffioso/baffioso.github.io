@@ -10,7 +10,7 @@ var model = {
 		{area: "Capo D'Orlando",img: "cannolisara.jpg", title: "Desserten var den her Canolli – en Ricotta-bombe", location: [14.742171, 38.154598]},
 		{area: "Capo D'Orlando",img: "emilandersfrokostcapo.jpg", title: "Frokost ved stranden, der ligger 300 meter fra lejligheden.", location: [14.736952, 38.15585]},
 		{area: "Capo D'Orlando",img: "emilandersvandresmilcapo.jpg", title: "Bærestolen afprøves for første gang – stor succes.", location: [14.724, 38.142]},
-		{area: "Messina",img: "havnecafemessina.jpg", title: "På togtur til Messina. Den første time søger vi ly for regnen på HavneCafeen med byens skævere eksistenser. Vi vender tilbage til aftensmad da toget hjem er to timer forsinket. ", location: [15.547, 38.181]},
+		{area: "Messina",img: "havnecafemessina.jpg", title: "På togtur til Messina. Den første time søger vi ly for regnen på HavneCafeen med byens skævere eksistenser. Vi vender tilbage til aftensmad da toget hjem er to timer forsinket. ", location: [15.561903, 38.187256]},
 		{area: "Messina",img: "cricketmessina.jpg", title: "Vi oplever mange indere i Messina – her fanger vi en gruppe unge cricket-spillere.", location: [15.545, 38.175]},
 		{area: "Messina",img: "udsigtfastlandmessina.jpg", title: "I baggrunden kan fastlandet skimtes. I følge Esters kollega har en bro været planlagt i årtier, men bliver ikke rigtig realiseret.", location: [15.552517, 38.193724]},
 		{area: "Capo D'Orlando",img: "emilflyvercapo.jpg", title: "Emil får flyve…", location: [14.732356, 38.150593]},
@@ -72,7 +72,7 @@ var model = {
 		{area: "Castelluzzo",img: "anderskoder.jpg", title: "Anders bygger denne hjemmeside i gårdhaven. Han har lige udtrykt stor optur over hans 1000 sider lange opslagsbog om Javascript som er så god underholdning, at han ikke længere er ked af der ikke er net i huset.", location: [12.712, 38.105]},
 		{area: "Erice",img: "erice.jpg", title: "På tur til borg-byen Erice, der ligger i 750 meters højde. ", location: [12.587735, 38.035892]},
 		{area: "Erice",img: "udsigtsalterice.jpg", title: "Udsigt til Trapani's saltproduktion og områdets marmor brud", location: [12.587735, 38.035892]},
-		{area: "Castelluzzo",img: "groentvognsanvito.jpg", title: "Indkøb i den nærliggende badeby San Vito Lo Capo", location: [12.734, 38.172]},
+		{area: "San Vito Lo Capo",img: "groentvognsanvito.jpg", title: "Indkøb i den nærliggende badeby San Vito Lo Capo", location: [12.734, 38.172]},
 		{area: "Castelluzzo",img: "amcykeltkryds.jpg", title: "Hvilken vej skal vi vælge? Der er smukt i begge retninger.", location: [12.6955, 38.105]},
 		{area: "Castelluzzo",img: "amemilcornino.jpg", title: "Returgang efter 3-4 timers tur til Cornino. Bag den flade klippe i baggrunden ligger San Vito", location: [12.6626, 38.1113]},
 		{area: "Castelluzzo",img: "amemilstol.jpg", title: "Høj sol til hjemturen giver energi", location: [12.6585, 38.1041]},
@@ -119,8 +119,14 @@ var model = {
 		{area: "Palermo",img: "streetartogvogn.jpg", title: "Kvarteret summer af hverdagens vasketøj, gadechill og skæve eksistenser. Det er svært at fange på et billede så i må nøjes med nogle af kvarterets udsmykning.", location: [13.361, 38.1282]},
 		{area: "Palermo",img: "fodbolddrengogemil.jpg", title: "Det er herligt at opleve hverdagsenergien i kvarteret. Her bliver Emil underholdt af en knægt iført Palermos fodboldtrøje. Vi sludrer/kommunikerer med drengens tandløse, men meget imødekommende far. ", location: [13.3594, 38.128]},
 		{area: "Palermo",img: "aftensmadsmandpalermo.jpg", title: "Palermo er kendt for sine gadekøkkener og denne mand har lavet vores aftensmad. Omkring os sidder mændene og drikker øl, ungerne spiller fodbold mens damerne står på altanerne eller i køkkenet (er Anne Maries formodning!). ", location: [13.3583, 38.1288]},
-		{area: "Palermo",img: "amemilpalermo.jpg", title: "Emil glor – Palermo er også noget af en kontrast til den sidste måned han har tilbragt i søvnige badebyer og på landet.", location: [13.3586, 38.1279]},
-		{area: "Palermo",img: "emilbadpalermo.jpg", title: "Afslutningsbad", location: [13.3584, 38.128]}
+		{area: "Palermo",img: "amemilpalermo.jpg", title: "Emil glor – Palermo er også noget af en kontrast til den sidste måned han har tilbragt i søvnige badebyer og på landet.", location: [13.358568, 38.128202]},
+		{area: "Palermo",img: "emilbadpalermo.jpg", title: "Afslutningsbad", location: [13.3584, 38.128]},
+		{area: "Palermo",img: "frisoer.jpg", title: "Så skulle håret trimmes efter en måned på oldschool maner med barberblad.", location: [13.358110, 38.127980]},
+		{area: "Palermo",img: "gadeview.jpg", title: "Udsigt til den livlige plads fra vores terasse", location: [13.3587, 38.128]},
+		{area: "Palermo",img: "groentsag.jpg", title: "Vores lokale grøntsagsmand havde lange arbejdsdage", location: [13.3588, 38.1278]},
+		{area: "Palermo",img: "markedgade.jpg", title: "Markedsgaden Via Ballaro i den gamle bydel", location: [13.3603, 38.1122]},
+		{area: "Palermo",img: "malerstreetart.jpg", title: "Så bliver der malet gavl me laaaaang pensel", location: [13.3595, 38.1121]},
+		{area: "Palermo",img: "restaurant_emilpagulv.jpg", title: "Dejligt når Emil underholder sig selv, mens forældrene nyder en stoppet sprutte", location: [13.35, 38.1159]}
 	],
 	filteredImages: []
 };
