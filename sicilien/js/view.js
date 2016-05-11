@@ -135,7 +135,9 @@ var mapView = {
 		var images = controller.getImages();
 
 		//marker cluster
-		this.markers = L.markerClusterGroup();
+		this.markers = L.markerClusterGroup({
+			maxClusterRadius: 50
+		});
 
 		for (var i = 0; i < images.length; i++) {
 
