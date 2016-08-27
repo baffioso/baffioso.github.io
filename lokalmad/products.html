@@ -7,14 +7,14 @@
   <!-- Angular -->
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
   <!-- Bootstrap -->
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <style media="screen">
-    .grid {
-      border: solid gray;
-    }
     h4 {
       text-align: center;
     }
@@ -26,26 +26,32 @@
 </head>
 
 <body ng-app="myApp">
-
   <div class="container" ng-controller="productController" border="1">
-    <div class="col-md-8">
+    <div class="col-md-12">
       <label>Søg:<input class="form-control" type="text" ng-model="searchProduct"></label>
-      <div class="row"></div>
-      <div class="col-md-3 grid btn-default" ng-repeat="product in products | filter:searchProduct | orderBy:'name'" >
-        <img class="img-responsive" ng-src="{{ product.img }}">
-        <h4>{{ product.name | uppercase }}</h4>
+      <div class="row">
+        <div class="col-md-3 col-sm-4 col-xs-6 btn btn-default" ng-repeat="product in products | filter:searchProduct | orderBy:'name'">
+            <img class="img-responsive" ng-src="{{ product.img }}">
+            <h4>{{ product.name | uppercase }}</h4>
+        </div>
       </div>
     </div>
+<!--
     <div class="col-md-4">
       <h4>Hvor langt vil du køre?</h4>
       <img class="img-responsive" src="img/slider.png"/>
     </div>
+-->
   </div>
 
   <script>
     var app = angular.module('myApp', []);
 
     app.controller('productController', function($scope) {
+
+      $scope.selectedProducts = [];
+
+
       $scope.products = [{
         "name": "Kartofler",
         "img": "img/potato.png"
@@ -95,6 +101,17 @@
         "name": "Rødbede",
         "img": "img/beetroot.jpeg"
       }];
+    });
+
+    //toggle button active
+    $(document).ready(function(){
+      $('.btn').click(function(){
+          if($(this).hasClass('active')){
+              $(this).removeClass('active')
+          } else {
+              $(this).addClass('active')
+          }
+      });
     });
 
   </script>
