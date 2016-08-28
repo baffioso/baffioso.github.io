@@ -1,0 +1,95 @@
+<html lang="en" >
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Angular Material style sheet -->
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+
+</head>
+
+<body ng-app="app" ng-cloak>
+
+  <div ng-controller="AppCtrl" ng-cloak>
+    <div layout="row">
+      <md-input-container>
+        <label>Søg en madvare</label>
+        <input ng-model="searchProduct">
+      </md-input-container>
+      <span flex> </span>
+      <md-button class="md-raised">NÆSTE</md-button>
+    </div>
+    <md-button ng-repeat="product in products | filter:searchProduct | orderBy:'name'">
+      <img ng-src="{{ product.img }}">
+      <h4>{{ product.name | uppercase }}</h4>
+    </md-button>
+  </div>
+
+  <!-- Angular Material requires Angular.js Libraries -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+
+  <!-- Angular Material Library -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+
+  <!-- Your application bootstrap  -->
+  <script type="text/javascript">
+    angular.module('app', ['ngMaterial'])
+    .controller('AppCtrl', function($scope) {
+      $scope.products = [{
+        "name": "Kartofler",
+        "img": "img/potato.png"
+      }, {
+        "name": "Agurker",
+        "img": "img/cucumber.png"
+      }, {
+        "name": "Æg",
+        "img": "img/egg.png"
+      }, {
+        "name": "Tomater",
+        "img": "img/tomato.png"
+      }, {
+        "name": "Apple",
+        "img": "img/apple.png"
+      }, {
+        "name": "Broccoli",
+        "img": "img/broccoli.jpeg"
+      }, {
+        "name": "Løg",
+        "img": "img/onion.png"
+      }, {
+        "name": "Kylling",
+        "img": "img/chicken.jpg"
+      }, {
+        "name": "Jordbær",
+        "img": "img/strawberry.png"
+      }, {
+        "name": "Gulerod",
+        "img": "img/carrot.png"
+      }, {
+        "name": "Kål",
+        "img": "img/cabbage.png"
+      }, {
+        "name": "Kirsebær",
+        "img": "img/cherry.ico"
+      }, {
+        "name": "Blomkål",
+        "img": "img/cauliflower.png"
+      }, {
+        "name": "Marmelade",
+        "img": "img/jam.png"
+      }, {
+        "name": "Juice",
+        "img": "img/juice.png"
+      }, {
+        "name": "Rødbede",
+        "img": "img/beetroot.png"
+      }];
+
+    })
+
+  </script>
+
+</body>
+</html>
