@@ -4,7 +4,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Angular Material style sheet -->
   <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
-
+  <style media="screen">
+  .btn-on {
+color: blue;
+}
+.btn-off {
+color: red;
+}
+  </style>
 </head>
 
 <body ng-app="app" ng-cloak>
@@ -18,11 +25,13 @@
       <span flex> </span>
       <md-button class="md-raised">NÆSTE</md-button>
     </div>
-    <md-button ng-repeat="product in products | filter:searchProduct | orderBy:'name'">
+    <md-button ng-class="{'md-raised md-warn' : product.toggled, '' : !product.toggled}" ng-repeat="product in products | filter:searchProduct | orderBy:'name'" ng-click="toggleBtn(product)">
       <img ng-src="{{ product.img }}">
       <h4>{{ product.name | uppercase }}</h4>
     </md-button>
   </div>
+  <pre>selected products = {{selectedProducts | json}}</pre>
+
 
   <!-- Angular Material requires Angular.js Libraries -->
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
@@ -86,6 +95,11 @@
         "name": "Rødbede",
         "img": "img/beetroot.png"
       }];
+
+      //Toggle button active
+      $scope.toggleBtn = function (product) {
+        product.toggled = !product.toggled;
+      }
 
     })
 
