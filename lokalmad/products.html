@@ -28,11 +28,7 @@
 <body ng-app="myApp">
   <div class="container" ng-controller="productController" border="1">
     <div class="col-md-12">
-<<<<<<< HEAD
       <input class="form-control" type="text" ng-model="searchProduct" placeholder="Søg en madvare">
-=======
-      <label>Søg:<input class="form-control" type="text" ng-model="searchProduct"></label>
->>>>>>> a00c542c5d5b6b4bb7e20f8936736916d978eda5
       <div class="row">
         <div class="col-md-3 col-sm-4 col-xs-6 btn btn-default" ng-repeat="product in products | filter:searchProduct | orderBy:'name'">
             <img class="img-responsive" ng-src="{{ product.img }}">
