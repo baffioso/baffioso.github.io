@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <!-- Angular -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style media="screen">
+    h4 {
+      text-align: center;
+    }
+    .img-responsive {
+      margin: 0 auto;
+    }
+  </style>
+
+</head>
+
+<body ng-app="myApp">
+  <div class="container" ng-controller="productController" border="1">
+    <div class="col-md-12">
+      <input class="form-control" type="text" ng-model="searchProduct" placeholder="Søg en madvare">
+      <div class="row">
+        <div class="col-md-3 col-sm-4 col-xs-6 btn btn-default" ng-repeat="product in products | filter:searchProduct | orderBy:'name'">
+            <img class="img-responsive" ng-src="{{ product.img }}">
+            <h4>{{ product.name | uppercase }}</h4>
+        </div>
+      </div>
+    </div>
+<!--
+    <div class="col-md-4">
+      <h4>Hvor langt vil du køre?</h4>
+      <img class="img-responsive" src="img/slider.png"/>
+    </div>
+-->
+  </div>
+
+  <script>
+    var app = angular.module('myApp', []);
+
+    app.controller('productController', function($scope) {
+
+      $scope.selectedProducts = [];
+
+
+      $scope.products = [{
+        "name": "Kartofler",
+        "img": "img/potato.png"
+      }, {
+        "name": "Agurker",
+        "img": "img/cucumber.png"
+      }, {
+        "name": "Æg",
+        "img": "img/egg.png"
+      }, {
+        "name": "Tomater",
+        "img": "img/tomato.png"
+      }, {
+        "name": "Apple",
+        "img": "img/apple.png"
+      }, {
+        "name": "Broccoli",
+        "img": "img/broccoli.jpeg"
+      }, {
+        "name": "Løg",
+        "img": "img/onion.png"
+      }, {
+        "name": "Kylling",
+        "img": "img/chicken.jpg"
+      }, {
+        "name": "Jordbær",
+        "img": "img/strawberry.png"
+      }, {
+        "name": "Gulerod",
+        "img": "img/carrot.png"
+      }, {
+        "name": "Kål",
+        "img": "img/cabbage.png"
+      }, {
+        "name": "Kirsebær",
+        "img": "img/cherry.ico"
+      }, {
+        "name": "Blomkål",
+        "img": "img/cauliflower.png"
+      }, {
+        "name": "Marmelade",
+        "img": "img/jam.jpeg"
+      }, {
+        "name": "Juice",
+        "img": "img/juice.png"
+      }, {
+        "name": "Rødbede",
+        "img": "img/beetroot.jpeg"
+      }];
+    });
+
+    //toggle button active
+    $(document).ready(function(){
+      $('.btn').click(function(){
+          if($(this).hasClass('active')){
+              $(this).removeClass('active')
+          } else {
+              $(this).addClass('active')
+          }
+      });
+    });
+
+  </script>
+</body>
+
+</html>

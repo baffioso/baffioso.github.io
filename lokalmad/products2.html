@@ -1,0 +1,131 @@
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Angular Material style sheet -->
+        <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+
+        <!-- bootstrap for angular -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ng2-bootstrap/x.x.x/ng2-bootstrap.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+        <style media="screen">
+            .next {
+                position: fixed;
+                bottom: 0;
+                right: 0;
+            }
+
+        </style>
+    </head>
+
+    <body ng-app="app" ng-cloak>
+
+        <div ng-controller="AppCtrl" ng-cloak>
+            <pre>selected products = {{selectedProducts}}</pre>
+            <div layout="column">
+                <md-input-container>
+                    <label>Søg en madvare</label>
+                    <input ng-model="searchProduct">
+                </md-input-container>
+                <span flex></span>
+            </div>
+            <div layout="row" layout-wrap layout-align="center">
+                <md-button flex-xs="25" ng-class="{'md-raised md-warn' : product.toggled, '' : !product.toggled}" ng-repeat="product in products | filter:searchProduct | orderBy:'name'" ng-click="toggleBtn(product)">
+                    <img class="img-responsive" ng-src="{{ product.img }}">
+                    <h5>{{ product.name | uppercase }}</h5>
+                </md-button>
+            </div>
+            <div layout="column">
+                <md-button class="md-raised md-primary next">NÆSTE</md-button>
+            </div>
+        </div>
+
+        <!-- Angular Material requires Angular.js Libraries -->
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+
+        <!-- Angular Material Library -->
+        <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+
+        <!-- Your application bootstrap  -->
+        <script type="text/javascript">
+            angular.module('app', ['ngMaterial']).controller('AppCtrl', function($scope) {
+                $scope.products = [
+                    {
+                        "name": "Kartofler",
+                        "img": "img/potato.png"
+                    }, {
+                        "name": "Agurker",
+                        "img": "img/cucumber.png"
+                    }, {
+                        "name": "Æg",
+                        "img": "img/egg.png"
+                    }, {
+                        "name": "Tomater",
+                        "img": "img/tomato.png"
+                    }, {
+                        "name": "Apple",
+                        "img": "img/apple.png"
+                    }, {
+                        "name": "Broccoli",
+                        "img": "img/broccoli.jpeg"
+                    }, {
+                        "name": "Løg",
+                        "img": "img/onion.png"
+                    }, {
+                        "name": "Kylling",
+                        "img": "img/chicken.jpg"
+                    }, {
+                        "name": "Jordbær",
+                        "img": "img/strawberry.png"
+                    }, {
+                        "name": "Gulerod",
+                        "img": "img/carrot.png"
+                    }, {
+                        "name": "Kål",
+                        "img": "img/cabbage.png"
+                    }, {
+                        "name": "Kirsebær",
+                        "img": "img/cherry.ico"
+                    }, {
+                        "name": "Blomkål",
+                        "img": "img/cauliflower.png"
+                    }, {
+                        "name": "Marmelade",
+                        "img": "img/jam.png"
+                    }, {
+                        "name": "Juice",
+                        "img": "img/juice.png"
+                    }, {
+                        "name": "Rødbede",
+                        "img": "img/beetroot.png"
+                    }
+                ];
+
+                //array for selected products
+                $scope.selectedProducts = [];
+
+                //Toggle button active and add selected product to array
+                $scope.toggleBtn = function(product) {
+                    //toggle/untoggle
+                    product.toggled = !product.toggled;
+
+                    //add/remove products to/from array on toggle
+                    if ($scope.selectedProducts.indexOf(product.name) > -1) {
+                        $scope.selectedProducts.splice($scope.selectedProducts.indexOf(product.name), 1)
+                    } else {
+                        $scope.selectedProducts.push(product.name);
+                    };
+
+                }
+
+            })
+        </script>
+
+    </body>
+
+</html>

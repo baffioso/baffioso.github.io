@@ -1,0 +1,110 @@
+<html lang="en" >
+   <head>
+
+     <meta charset="utf-8">
+
+      <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+
+      <!-- Address autocomplete -->
+      <link rel="stylesheet" href="bower_components/jquery-ui/themes/start/jquery-ui.css">
+      <link rel="stylesheet" href="bower_components/jquery-ui/themes/start/theme.css">
+      <script src="bower_components/jquery/dist/jquery.js"></script>
+      <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+      <script src="bower_components/jquery-ui/ui/autocomplete.js"></script>
+      <script src="bower_components/dawa-autocomplete/dawa-autocomplete.js"></script>
+
+      <!-- Mapbox -->
+      <script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+      <link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
+
+
+	    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+      <style media="screen">
+        #map {
+          margin-top: 25px;
+          height: 600px;
+          width: 70%;
+          border-radius: 5px;
+          z-index: 0;
+        }
+      </style>
+
+   </head>
+   <body ng-app="firstApplication">
+      <div id="inputContainer" class="inputDemo" ng-controller="inputController as ctrl" ng-cloak>
+         <md-content layout-padding>
+           <div layout="row">
+             <div flex="80">
+
+            <form name="projectForm">
+                <md-input-container class="md-block">
+                  <label>Address</label>
+                  <input id="address" name="userAddress" ng-model="project.userAddress">
+                  <div ng-messages="projectForm.userAddress.$error">
+                     <div ng-message="required">This is required.</div>
+                  </div>
+               </md-input-container>
+            </md-input-container>
+            </form>
+          </div>
+
+
+
+        </div>
+
+         </md-content>
+
+      </div>
+      <div id="map"></div>
+
+
+
+      <script language="javascript">
+         angular
+            .module('firstApplication', ['ngMaterial'])
+            .controller('inputController', inputController);
+
+         function inputController ($scope) {
+           $scope.project = {
+              comments: 'Comments'
+            };
+         }
+
+         //DAWA-autocomplete tilføjes adressefeltet
+         $('#address').dawaautocomplete({
+           select: function(event, data) {
+             //adressen tilføjes kortet
+             $.getJSON(data.data.href, function(data) {
+               var koordinater = data.adgangsadresse.adgangspunkt.koordinater;
+               var marker = L.marker([koordinater[1], koordinater[0]]).addTo(map);
+               //panorerer hen til adressen
+               map.setView({
+                 lat: koordinater[1],
+                 lng: koordinater[0]
+               }, 17)
+             });
+           }
+         });
+
+         var map = L.map('map').setView([55.5, 12.1], 6);
+
+         L.mapbox.accessToken = 'pk.eyJ1IjoiYmFmZmlvc28iLCJhIjoiT1JTS1lIMCJ9.f5ubY91Bi42yPnTrgiq-Gw';
+
+         //add tilelayer
+         L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+           attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+           maxZoom: 18,
+           id: 'baffioso.ie1ok8lg',
+           accessToken: L.mapbox.accessToken
+         }).addTo(this.map);
+
+
+      </script>
+   </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- Angular -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Mapbox -->
+    <script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
+
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <style media="screen">
+        #map {
+            height: 400px;
+            width: 100%;
+            border-radius: 5px;
+            z-index: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container" ng-app="lokalmad">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="sliderContainer" ng-controller="sliderController as ctrl" layout="row" ng-cloak>
+                    <md-content style="margin: 16px; padding:16px">
+                        <md-slider-container>
+                            <span>Afstand i km</span>
+                            <md-slider flex=100 md-discrete min="0" max="5000" ng-model="disctance" aria-label="red" id="red-slider">
+                            </md-slider>
+                            <md-input-container>
+                                <input id="radius" flex type="number" ng-model="disctance" aria-label="red" aria-controls="red-slider">
+                            </md-input-container>
+                        </md-slider-container>
+                    </md-content>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+
+    <script language="javascript">
+        angular
+            .module('lokalmad', ['ngMaterial'])
+            .controller('sliderController', sliderController);
+
+        function sliderController($scope, $mdSidenav) {
+            $scope.disctance = 2000;
+        }
+
+        var map = L.map('map').setView([55.6, 12.6], 10);
+
+        L.mapbox.accessToken = 'pk.eyJ1IjoiYmFmZmlvc28iLCJhIjoiT1JTS1lIMCJ9.f5ubY91Bi42yPnTrgiq-Gw';
+
+        //add tilelayer
+        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+            attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+            maxZoom: 18,
+            id: 'baffioso.ie1ok8lg',
+            accessToken: L.mapbox.accessToken
+        }).addTo(this.map);
+
+        var circle = null;
+
+        $("#radius").change(function(radius) {
+            //delete existing circle
+            if (circle != null) {
+                map.removeLayer(circle)
+            }
+
+            //add circle
+            var radius = $("#radius").val()
+            circle = L.circle([55.6, 12.6], radius, {
+                color: 'red',
+                fillColor: '#f03',
+                fillOpacity: 0.5
+            }).addTo(map);
+
+        })
+    </script>
+
+</body>
+
+</html>
