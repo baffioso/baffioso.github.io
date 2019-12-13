@@ -1,0 +1,317 @@
+[
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "Slovenia",
+		"target_coords" : "[14.48084,45.81331]",
+		"sum" : 525
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "Bulgaria",
+		"target_coords" : "[25.48566,42.60740]",
+		"sum" : 20344
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "Croatia",
+		"target_coords" : "[17.01190,45.56434]",
+		"sum" : 791
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "Japan",
+		"target_coords" : "[139.23942,36.57484]",
+		"sum" : 66
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "Montenegro",
+		"target_coords" : "[19.24086,42.77285]",
+		"sum" : 3008
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "Norway",
+		"target_coords" : "[11.52804,64.57315]",
+		"sum" : 16090
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "Iceland",
+		"target_coords" : "[-18.10590,64.98418]",
+		"sum" : 90
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "United Kingdom of Great Britain and Northern Ireland",
+		"target_coords" : "[-3.27658,54.70235]",
+		"sum" : 12739
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "Malta",
+		"target_coords" : "[14.44769,35.88860]",
+		"sum" : 1724
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "USA (INS\/DHS)",
+		"target_coords" : "[-100.44588,39.78373]",
+		"sum" : 6023
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "Belgium",
+		"target_coords" : "[4.66671,50.64028]",
+		"sum" : 21844
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "Australia",
+		"target_coords" : "[134.75500,-24.77611]",
+		"sum" : 866
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "Finland",
+		"target_coords" : "[25.92092,63.24678]",
+		"sum" : 2295
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "Romania",
+		"target_coords" : "[24.68592,45.98521]",
+		"sum" : 3448
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "Italy",
+		"target_coords" : "[12.67430,42.63843]",
+		"sum" : 4580
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "The former Yugoslav Rep. of Macedonia",
+		"target_coords" : "[21.71684,41.61712]",
+		"sum" : 2319
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "Cyprus",
+		"target_coords" : "[33.14513,34.98230]",
+		"sum" : 11041
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "Denmark",
+		"target_coords" : "[10.33333,55.67025]",
+		"sum" : 22202
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "Portugal",
+		"target_coords" : "[-7.88963,40.03327]",
+		"sum" : 850
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "Liechtenstein",
+		"target_coords" : "[9.55315,47.14163]",
+		"sum" : 23
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "Serbia and Kosovo: S\/RES\/1244 (1999)",
+		"target_coords" : "[21.07657,44.02432]",
+		"sum" : 11886
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "Czech Rep.",
+		"target_coords" : "[15.47495,49.81670]",
+		"sum" : 824
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "Netherlands",
+		"target_coords" : "[5.74808,52.50017]",
+		"sum" : 37985
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "Switzerland",
+		"target_coords" : "[8.23197,46.79856]",
+		"sum" : 17506
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "Slovakia",
+		"target_coords" : "[19.45286,48.74115]",
+		"sum" : 313
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "Turkey",
+		"target_coords" : "[34.92497,38.95976]",
+		"sum" : 9002
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "Estonia",
+		"target_coords" : "[25.33191,58.75238]",
+		"sum" : 47
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "New Zealand",
+		"target_coords" : "[172.83441,-41.50008]",
+		"sum" : 115
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "Ireland",
+		"target_coords" : "[-7.97946,52.86520]",
+		"sum" : 660
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "Austria",
+		"target_coords" : "[13.19996,47.20003]",
+		"sum" : 49289
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "Germany",
+		"target_coords" : "[10.42345,51.08342]",
+		"sum" : 517479
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "Greece",
+		"target_coords" : "[21.98771,38.99537]",
+		"sum" : 15782
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "France",
+		"target_coords" : "[1.88833,46.60335]",
+		"sum" : 18331
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "Lithuania",
+		"target_coords" : "[23.75000,55.35000]",
+		"sum" : 279
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "Albania",
+		"target_coords" : "[19.99996,41.00003]",
+		"sum" : 322
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "Rep. of Korea",
+		"target_coords" : "[127.94086,36.55819]",
+		"sum" : 1261
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "Bosnia and Herzegovina",
+		"target_coords" : "[17.59615,44.30535]",
+		"sum" : 122
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "Sweden",
+		"target_coords" : "[14.52086,59.67497]",
+		"sum" : 117329
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "Hungary",
+		"target_coords" : "[19.50609,47.18176]",
+		"sum" : 77190
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "Luxembourg",
+		"target_coords" : "[6.12968,49.81587]",
+		"sum" : 1274
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "Latvia",
+		"target_coords" : "[24.75376,56.84065]",
+		"sum" : 365
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "Canada",
+		"target_coords" : "[-107.99171,61.06669]",
+		"sum" : 4587
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "Spain",
+		"target_coords" : "[-4.83806,39.32623]",
+		"sum" : 12578
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "USA (EOIR)",
+		"target_coords" : "[,]",
+		"sum" : 1184
+	},
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_coords" : "[39.04941,34.64019]",
+		"target" : "Poland",
+		"target_coords" : "[19.13442,52.21593]",
+		"sum" : 875
+	}
+]
