@@ -1,317 +1,407 @@
-[        
+[
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "Australia",
-		"target_coords" : "[134.75500,-24.77611]",
-		"sum" : 18346
+		"target_long" : 134.755,
+		"target_lat" : -24.7761086,
+		"value" : 18346
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "Finland",
-		"target_coords" : "[25.92092,63.24678]",
-		"sum" : 8443
+		"target_long" : 25.9209164,
+		"target_lat" : 63.2467777,
+		"value" : 8443
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "Romania",
-		"target_coords" : "[24.68592,45.98521]",
-		"sum" : 2463
+		"target_long" : 24.6859225,
+		"target_lat" : 45.9852129,
+		"value" : 2463
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "Italy",
-		"target_coords" : "[12.67430,42.63843]",
-		"sum" : 18788
+		"target_long" : 12.674297,
+		"target_lat" : 42.6384261,
+		"value" : 18788
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "USA (INS\/DHS)",
-		"target_coords" : "[-100.44588,39.78373]",
-		"sum" : 2331
+		"target_long" : -100.4458825,
+		"target_lat" : 39.7837304,
+		"value" : 2331
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "Belgium",
-		"target_coords" : "[4.66671,50.64028]",
-		"sum" : 24220
+		"target_long" : 4.6667145,
+		"target_lat" : 50.6402809,
+		"value" : 24220
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "United Kingdom of Great Britain and Northern Ireland",
-		"target_coords" : "[-3.27658,54.70235]",
-		"sum" : 59068
+		"target_long" : -3.2765753,
+		"target_lat" : 54.7023545,
+		"value" : 59068
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "Malta",
-		"target_coords" : "[14.44769,35.88860]",
-		"sum" : 8
+		"target_long" : 14.4476911,
+		"target_lat" : 35.8885993,
+		"value" : 8
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "Iceland",
-		"target_coords" : "[-18.10590,64.98418]",
-		"sum" : 74
+		"target_long" : -18.1059013,
+		"target_lat" : 64.9841821,
+		"value" : 74
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "Norway",
-		"target_coords" : "[11.52804,64.57315]",
-		"sum" : 22482
+		"target_long" : 11.5280364395482,
+		"target_lat" : 64.5731537,
+		"value" : 22482
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "Montenegro",
-		"target_coords" : "[19.24086,42.77285]",
-		"sum" : 397
+		"target_long" : 19.2408586,
+		"target_lat" : 42.7728491,
+		"value" : 397
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "Croatia",
-		"target_coords" : "[17.01190,45.56434]",
-		"sum" : 1874
+		"target_long" : 17.0118954,
+		"target_lat" : 45.5643442,
+		"value" : 1874
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "Japan",
-		"target_coords" : "[139.23942,36.57484]",
-		"sum" : 86
+		"target_long" : 139.2394179,
+		"target_lat" : 36.5748441,
+		"value" : 86
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "Slovenia",
-		"target_coords" : "[14.48084,45.81331]",
-		"sum" : 1207
+		"target_long" : 14.4808369,
+		"target_lat" : 45.8133113,
+		"value" : 1207
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "Bulgaria",
-		"target_coords" : "[25.48566,42.60740]",
-		"sum" : 23653
+		"target_long" : 25.4856617,
+		"target_lat" : 42.6073975,
+		"value" : 23653
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "Switzerland",
-		"target_coords" : "[8.23197,46.79856]",
-		"sum" : 19729
+		"target_long" : 8.2319736,
+		"target_lat" : 46.7985624,
+		"value" : 19729
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "Netherlands",
-		"target_coords" : "[5.74808,52.50017]",
-		"sum" : 28133
+		"target_long" : 5.7480821,
+		"target_lat" : 52.5001698,
+		"value" : 28133
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "Portugal",
-		"target_coords" : "[-7.88963,40.03327]",
-		"sum" : 67
+		"target_long" : -7.8896263,
+		"target_lat" : 40.033265,
+		"value" : 67
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "Liechtenstein",
-		"target_coords" : "[9.55315,47.14163]",
-		"sum" : 19
+		"target_long" : 9.5531527,
+		"target_lat" : 47.1416307,
+		"value" : 19
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "Czech Rep.",
-		"target_coords" : "[15.47495,49.81670]",
-		"sum" : 4046
+		"target_long" : 15.4749544,
+		"target_lat" : 49.8167003,
+		"value" : 4046
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "Serbia and Kosovo: S\/RES\/1244 (1999)",
-		"target_coords" : "[21.07657,44.02432]",
-		"sum" : 7275
+		"target_long" : 21.076574332099,
+		"target_lat" : 44.02432285,
+		"value" : 7275
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "Denmark",
-		"target_coords" : "[10.33333,55.67025]",
-		"sum" : 15697
+		"target_long" : 10.3333283,
+		"target_lat" : 55.670249,
+		"value" : 15697
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "The former Yugoslav Rep. of Macedonia",
-		"target_coords" : "[21.71684,41.61712]",
-		"sum" : 1997
+		"target_long" : 21.7168387,
+		"target_lat" : 41.6171214,
+		"value" : 1997
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "Cyprus",
-		"target_coords" : "[33.14513,34.98230]",
-		"sum" : 443
+		"target_long" : 33.1451285,
+		"target_lat" : 34.9823018,
+		"value" : 443
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "Greece",
-		"target_coords" : "[21.98771,38.99537]",
-		"sum" : 17433
+		"target_long" : 21.9877132,
+		"target_lat" : 38.9953683,
+		"value" : 17433
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "Germany",
-		"target_coords" : "[10.42345,51.08342]",
-		"sum" : 230313
+		"target_long" : 10.4234469,
+		"target_lat" : 51.0834196,
+		"value" : 230313
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "Ireland",
-		"target_coords" : "[-7.97946,52.86520]",
-		"sum" : 1114
+		"target_long" : -7.9794599,
+		"target_lat" : 52.865196,
+		"value" : 1114
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "Austria",
-		"target_coords" : "[13.19996,47.20003]",
-		"sum" : 87724
+		"target_long" : 13.199959,
+		"target_lat" : 47.2000338,
+		"value" : 87724
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "New Zealand",
-		"target_coords" : "[172.83441,-41.50008]",
-		"sum" : 106
+		"target_long" : 172.8344077,
+		"target_lat" : -41.5000831,
+		"value" : 106
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "Estonia",
-		"target_coords" : "[25.33191,58.75238]",
-		"sum" : 42
+		"target_long" : 25.3319078,
+		"target_lat" : 58.7523778,
+		"value" : 42
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "Turkey",
-		"target_coords" : "[34.92497,38.95976]",
-		"sum" : 166134
+		"target_long" : 34.9249653,
+		"target_lat" : 38.9597594,
+		"value" : 166134
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "Slovakia",
-		"target_coords" : "[19.45286,48.74115]",
-		"sum" : 9020
+		"target_long" : 19.4528646,
+		"target_lat" : 48.7411522,
+		"value" : 9020
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "Poland",
-		"target_coords" : "[19.13442,52.21593]",
-		"sum" : 2407
+		"target_long" : 19.134422,
+		"target_lat" : 52.215933,
+		"value" : 2407
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "USA (EOIR)",
-		"target_coords" : "[,]",
-		"sum" : 974
+		"target_long" : null,
+		"target_lat" : null,
+		"value" : 974
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "Spain",
-		"target_coords" : "[-4.83806,39.32623]",
-		"sum" : 687
+		"target_long" : -4.8380649,
+		"target_lat" : 39.3262345,
+		"value" : 687
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "Canada",
-		"target_coords" : "[-107.99171,61.06669]",
-		"sum" : 6711
+		"target_long" : -107.9917071,
+		"target_lat" : 61.0666922,
+		"value" : 6711
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "Luxembourg",
-		"target_coords" : "[6.12968,49.81587]",
-		"sum" : 394
+		"target_long" : 6.1296751,
+		"target_lat" : 49.8158683,
+		"value" : 394
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "Latvia",
-		"target_coords" : "[24.75376,56.84065]",
-		"sum" : 141
+		"target_long" : 24.7537645,
+		"target_lat" : 56.8406494,
+		"value" : 141
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "Sweden",
-		"target_coords" : "[14.52086,59.67497]",
-		"sum" : 68861
+		"target_long" : 14.5208584,
+		"target_lat" : 59.6749712,
+		"value" : 68861
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "Hungary",
-		"target_coords" : "[19.50609,47.18176]",
-		"sum" : 82616
+		"target_long" : 19.5060937,
+		"target_lat" : 47.1817585,
+		"value" : 82616
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "Bosnia and Herzegovina",
-		"target_coords" : "[17.59615,44.30535]",
-		"sum" : 40
+		"target_long" : 17.5961467,
+		"target_lat" : 44.3053476,
+		"value" : 40
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "Rep. of Korea",
-		"target_coords" : "[127.94086,36.55819]",
-		"sum" : 160
+		"target_long" : 127.9408564,
+		"target_lat" : 36.5581914,
+		"value" : 160
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "Albania",
-		"target_coords" : "[19.99996,41.00003]",
-		"sum" : 90
+		"target_long" : 19.9999619,
+		"target_lat" : 41.000028,
+		"value" : 90
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "Lithuania",
-		"target_coords" : "[23.75000,55.35000]",
-		"sum" : 341
+		"target_long" : 23.7499997,
+		"target_lat" : 55.3500003,
+		"value" : 341
 	},
 	{
 		"origin" : "Afghanistan",
-		"origin_coords" : "[66.23851,33.76801]",
+		"origin_long" : 66.2385139,
+		"origin_lat" : 33.7680065,
 		"target" : "France",
-		"target_coords" : "[1.88833,46.60335]",
-		"sum" : 16388
+		"target_long" : 1.8883335,
+		"target_lat" : 46.603354,
+		"value" : 16388
 	}
 ]
