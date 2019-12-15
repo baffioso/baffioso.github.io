@@ -6,7 +6,7 @@
 		"target" : "Albania",
 		"target_long" : 19.9999619,
 		"target_lat" : 41.000028,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 3
 	},
 	{
@@ -16,7 +16,7 @@
 		"target" : "Albania",
 		"target_long" : 19.9999619,
 		"target_lat" : 41.000028,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 24
 	},
 	{
@@ -26,7 +26,7 @@
 		"target" : "Albania",
 		"target_long" : 19.9999619,
 		"target_lat" : 41.000028,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 92
 	},
 	{
@@ -36,7 +36,7 @@
 		"target" : "Albania",
 		"target_long" : 19.9999619,
 		"target_lat" : 41.000028,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 71
 	},
 	{
@@ -46,7 +46,7 @@
 		"target" : "Albania",
 		"target_long" : 19.9999619,
 		"target_lat" : 41.000028,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 132
 	},
 	{
@@ -56,7 +56,7 @@
 		"target" : "Albania",
 		"target_long" : 19.9999619,
 		"target_lat" : 41.000028,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 115
 	},
 	{
@@ -66,7 +66,7 @@
 		"target" : "Albania",
 		"target_long" : 19.9999619,
 		"target_lat" : 41.000028,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 1676
 	},
 	{
@@ -76,7 +76,7 @@
 		"target" : "Australia",
 		"target_long" : 134.755,
 		"target_lat" : -24.7761086,
-		"year" : "1999",
+		"year" : 1999,
 		"value" : 12
 	},
 	{
@@ -86,7 +86,7 @@
 		"target" : "Australia",
 		"target_long" : 134.755,
 		"target_lat" : -24.7761086,
-		"year" : "2000",
+		"year" : 2000,
 		"value" : 52
 	},
 	{
@@ -96,7 +96,7 @@
 		"target" : "Australia",
 		"target_long" : 134.755,
 		"target_lat" : -24.7761086,
-		"year" : "2001",
+		"year" : 2001,
 		"value" : 36
 	},
 	{
@@ -106,7 +106,7 @@
 		"target" : "Australia",
 		"target_long" : 134.755,
 		"target_lat" : -24.7761086,
-		"year" : "2002",
+		"year" : 2002,
 		"value" : 15
 	},
 	{
@@ -116,7 +116,7 @@
 		"target" : "Australia",
 		"target_long" : 134.755,
 		"target_lat" : -24.7761086,
-		"year" : "2003",
+		"year" : 2003,
 		"value" : 19
 	},
 	{
@@ -126,7 +126,7 @@
 		"target" : "Australia",
 		"target_long" : 134.755,
 		"target_lat" : -24.7761086,
-		"year" : "2004",
+		"year" : 2004,
 		"value" : 14
 	},
 	{
@@ -136,7 +136,7 @@
 		"target" : "Australia",
 		"target_long" : 134.755,
 		"target_lat" : -24.7761086,
-		"year" : "2005",
+		"year" : 2005,
 		"value" : 7
 	},
 	{
@@ -146,7 +146,7 @@
 		"target" : "Australia",
 		"target_long" : 134.755,
 		"target_lat" : -24.7761086,
-		"year" : "2006",
+		"year" : 2006,
 		"value" : 2
 	},
 	{
@@ -156,7 +156,7 @@
 		"target" : "Australia",
 		"target_long" : 134.755,
 		"target_lat" : -24.7761086,
-		"year" : "2007",
+		"year" : 2007,
 		"value" : 10
 	},
 	{
@@ -166,7 +166,7 @@
 		"target" : "Australia",
 		"target_long" : 134.755,
 		"target_lat" : -24.7761086,
-		"year" : "2008",
+		"year" : 2008,
 		"value" : 16
 	},
 	{
@@ -176,7 +176,7 @@
 		"target" : "Australia",
 		"target_long" : 134.755,
 		"target_lat" : -24.7761086,
-		"year" : "2009",
+		"year" : 2009,
 		"value" : 13
 	},
 	{
@@ -186,7 +186,7 @@
 		"target" : "Australia",
 		"target_long" : 134.755,
 		"target_lat" : -24.7761086,
-		"year" : "2010",
+		"year" : 2010,
 		"value" : 22
 	},
 	{
@@ -196,7 +196,7 @@
 		"target" : "Australia",
 		"target_long" : 134.755,
 		"target_lat" : -24.7761086,
-		"year" : "2011",
+		"year" : 2011,
 		"value" : 93
 	},
 	{
@@ -206,7 +206,7 @@
 		"target" : "Australia",
 		"target_long" : 134.755,
 		"target_lat" : -24.7761086,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 143
 	},
 	{
@@ -216,7 +216,7 @@
 		"target" : "Australia",
 		"target_long" : 134.755,
 		"target_lat" : -24.7761086,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 139
 	},
 	{
@@ -226,7 +226,7 @@
 		"target" : "Australia",
 		"target_long" : 134.755,
 		"target_lat" : -24.7761086,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 78
 	},
 	{
@@ -236,7 +236,7 @@
 		"target" : "Australia",
 		"target_long" : 134.755,
 		"target_lat" : -24.7761086,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 86
 	},
 	{
@@ -246,7 +246,7 @@
 		"target" : "Australia",
 		"target_long" : 134.755,
 		"target_lat" : -24.7761086,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 74
 	},
 	{
@@ -256,7 +256,7 @@
 		"target" : "Australia",
 		"target_long" : 134.755,
 		"target_lat" : -24.7761086,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 77
 	},
 	{
@@ -266,7 +266,7 @@
 		"target" : "Australia",
 		"target_long" : 134.755,
 		"target_lat" : -24.7761086,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 29
 	},
 	{
@@ -276,7 +276,7 @@
 		"target" : "Austria",
 		"target_long" : 13.199959,
 		"target_lat" : 47.2000338,
-		"year" : "1999",
+		"year" : 1999,
 		"value" : 229
 	},
 	{
@@ -286,7 +286,7 @@
 		"target" : "Austria",
 		"target_long" : 13.199959,
 		"target_lat" : 47.2000338,
-		"year" : "2000",
+		"year" : 2000,
 		"value" : 161
 	},
 	{
@@ -296,7 +296,7 @@
 		"target" : "Austria",
 		"target_long" : 13.199959,
 		"target_lat" : 47.2000338,
-		"year" : "2001",
+		"year" : 2001,
 		"value" : 133
 	},
 	{
@@ -306,7 +306,7 @@
 		"target" : "Austria",
 		"target_long" : 13.199959,
 		"target_lat" : 47.2000338,
-		"year" : "2002",
+		"year" : 2002,
 		"value" : 132
 	},
 	{
@@ -316,7 +316,7 @@
 		"target" : "Austria",
 		"target_long" : 13.199959,
 		"target_lat" : 47.2000338,
-		"year" : "2003",
+		"year" : 2003,
 		"value" : 143
 	},
 	{
@@ -326,7 +326,7 @@
 		"target" : "Austria",
 		"target_long" : 13.199959,
 		"target_lat" : 47.2000338,
-		"year" : "2004",
+		"year" : 2004,
 		"value" : 134
 	},
 	{
@@ -336,7 +336,7 @@
 		"target" : "Austria",
 		"target_long" : 13.199959,
 		"target_lat" : 47.2000338,
-		"year" : "2005",
+		"year" : 2005,
 		"value" : 78
 	},
 	{
@@ -346,7 +346,7 @@
 		"target" : "Austria",
 		"target_long" : 13.199959,
 		"target_lat" : 47.2000338,
-		"year" : "2006",
+		"year" : 2006,
 		"value" : 88
 	},
 	{
@@ -356,7 +356,7 @@
 		"target" : "Austria",
 		"target_long" : 13.199959,
 		"target_lat" : 47.2000338,
-		"year" : "2007",
+		"year" : 2007,
 		"value" : 166
 	},
 	{
@@ -366,7 +366,7 @@
 		"target" : "Austria",
 		"target_long" : 13.199959,
 		"target_lat" : 47.2000338,
-		"year" : "2008",
+		"year" : 2008,
 		"value" : 140
 	},
 	{
@@ -376,7 +376,7 @@
 		"target" : "Austria",
 		"target_long" : 13.199959,
 		"target_lat" : 47.2000338,
-		"year" : "2009",
+		"year" : 2009,
 		"value" : 279
 	},
 	{
@@ -386,7 +386,7 @@
 		"target" : "Austria",
 		"target_long" : 13.199959,
 		"target_lat" : 47.2000338,
-		"year" : "2010",
+		"year" : 2010,
 		"value" : 194
 	},
 	{
@@ -396,7 +396,7 @@
 		"target" : "Austria",
 		"target_long" : 13.199959,
 		"target_lat" : 47.2000338,
-		"year" : "2011",
+		"year" : 2011,
 		"value" : 423
 	},
 	{
@@ -406,7 +406,7 @@
 		"target" : "Austria",
 		"target_long" : 13.199959,
 		"target_lat" : 47.2000338,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 922
 	},
 	{
@@ -416,7 +416,7 @@
 		"target" : "Austria",
 		"target_long" : 13.199959,
 		"target_lat" : 47.2000338,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 1991
 	},
 	{
@@ -426,7 +426,7 @@
 		"target" : "Austria",
 		"target_long" : 13.199959,
 		"target_lat" : 47.2000338,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 7661
 	},
 	{
@@ -436,7 +436,7 @@
 		"target" : "Austria",
 		"target_long" : 13.199959,
 		"target_lat" : 47.2000338,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 24314
 	},
 	{
@@ -446,7 +446,7 @@
 		"target" : "Austria",
 		"target_long" : 13.199959,
 		"target_lat" : 47.2000338,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 8723
 	},
 	{
@@ -456,7 +456,7 @@
 		"target" : "Austria",
 		"target_long" : 13.199959,
 		"target_lat" : 47.2000338,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 7262
 	},
 	{
@@ -466,7 +466,7 @@
 		"target" : "Austria",
 		"target_long" : 13.199959,
 		"target_lat" : 47.2000338,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 2569
 	},
 	{
@@ -476,7 +476,7 @@
 		"target" : "Belgium",
 		"target_long" : 4.6667145,
 		"target_lat" : 50.6402809,
-		"year" : "1999",
+		"year" : 1999,
 		"value" : 116
 	},
 	{
@@ -486,7 +486,7 @@
 		"target" : "Belgium",
 		"target_long" : 4.6667145,
 		"target_lat" : 50.6402809,
-		"year" : "2000",
+		"year" : 2000,
 		"value" : 292
 	},
 	{
@@ -496,7 +496,7 @@
 		"target" : "Belgium",
 		"target_long" : 4.6667145,
 		"target_lat" : 50.6402809,
-		"year" : "2001",
+		"year" : 2001,
 		"value" : 230
 	},
 	{
@@ -506,7 +506,7 @@
 		"target" : "Belgium",
 		"target_long" : 4.6667145,
 		"target_lat" : 50.6402809,
-		"year" : "2002",
+		"year" : 2002,
 		"value" : 199
 	},
 	{
@@ -516,7 +516,7 @@
 		"target" : "Belgium",
 		"target_long" : 4.6667145,
 		"target_lat" : 50.6402809,
-		"year" : "2003",
+		"year" : 2003,
 		"value" : 210
 	},
 	{
@@ -526,7 +526,7 @@
 		"target" : "Belgium",
 		"target_long" : 4.6667145,
 		"target_lat" : 50.6402809,
-		"year" : "2004",
+		"year" : 2004,
 		"value" : 182
 	},
 	{
@@ -536,7 +536,7 @@
 		"target" : "Belgium",
 		"target_long" : 4.6667145,
 		"target_lat" : 50.6402809,
-		"year" : "2005",
+		"year" : 2005,
 		"value" : 228
 	},
 	{
@@ -546,7 +546,7 @@
 		"target" : "Belgium",
 		"target_long" : 4.6667145,
 		"target_lat" : 50.6402809,
-		"year" : "2006",
+		"year" : 2006,
 		"value" : 167
 	},
 	{
@@ -556,7 +556,7 @@
 		"target" : "Belgium",
 		"target_long" : 4.6667145,
 		"target_lat" : 50.6402809,
-		"year" : "2007",
+		"year" : 2007,
 		"value" : 199
 	},
 	{
@@ -566,7 +566,7 @@
 		"target" : "Belgium",
 		"target_long" : 4.6667145,
 		"target_lat" : 50.6402809,
-		"year" : "2008",
+		"year" : 2008,
 		"value" : 281
 	},
 	{
@@ -576,7 +576,7 @@
 		"target" : "Belgium",
 		"target_long" : 4.6667145,
 		"target_lat" : 50.6402809,
-		"year" : "2009",
+		"year" : 2009,
 		"value" : 335
 	},
 	{
@@ -586,7 +586,7 @@
 		"target" : "Belgium",
 		"target_long" : 4.6667145,
 		"target_lat" : 50.6402809,
-		"year" : "2010",
+		"year" : 2010,
 		"value" : 302
 	},
 	{
@@ -596,7 +596,7 @@
 		"target" : "Belgium",
 		"target_long" : 4.6667145,
 		"target_lat" : 50.6402809,
-		"year" : "2011",
+		"year" : 2011,
 		"value" : 494
 	},
 	{
@@ -606,7 +606,7 @@
 		"target" : "Belgium",
 		"target_long" : 4.6667145,
 		"target_lat" : 50.6402809,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 798
 	},
 	{
@@ -616,7 +616,7 @@
 		"target" : "Belgium",
 		"target_long" : 4.6667145,
 		"target_lat" : 50.6402809,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 944
 	},
 	{
@@ -626,7 +626,7 @@
 		"target" : "Belgium",
 		"target_long" : 4.6667145,
 		"target_lat" : 50.6402809,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 2524
 	},
 	{
@@ -636,7 +636,7 @@
 		"target" : "Belgium",
 		"target_long" : 4.6667145,
 		"target_lat" : 50.6402809,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 10185
 	},
 	{
@@ -646,7 +646,7 @@
 		"target" : "Belgium",
 		"target_long" : 4.6667145,
 		"target_lat" : 50.6402809,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 2612
 	},
 	{
@@ -656,7 +656,7 @@
 		"target" : "Belgium",
 		"target_long" : 4.6667145,
 		"target_lat" : 50.6402809,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 3823
 	},
 	{
@@ -666,7 +666,7 @@
 		"target" : "Belgium",
 		"target_long" : 4.6667145,
 		"target_lat" : 50.6402809,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 2618
 	},
 	{
@@ -676,7 +676,7 @@
 		"target" : "Bosnia and Herzegovina",
 		"target_long" : 17.5961467,
 		"target_lat" : 44.3053476,
-		"year" : "2007",
+		"year" : 2007,
 		"value" : 1
 	},
 	{
@@ -686,7 +686,7 @@
 		"target" : "Bosnia and Herzegovina",
 		"target_long" : 17.5961467,
 		"target_lat" : 44.3053476,
-		"year" : "2009",
+		"year" : 2009,
 		"value" : 1
 	},
 	{
@@ -696,7 +696,7 @@
 		"target" : "Bosnia and Herzegovina",
 		"target_long" : 17.5961467,
 		"target_lat" : 44.3053476,
-		"year" : "2010",
+		"year" : 2010,
 		"value" : 1
 	},
 	{
@@ -706,7 +706,7 @@
 		"target" : "Bosnia and Herzegovina",
 		"target_long" : 17.5961467,
 		"target_lat" : 44.3053476,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 35
 	},
 	{
@@ -716,7 +716,7 @@
 		"target" : "Bosnia and Herzegovina",
 		"target_long" : 17.5961467,
 		"target_lat" : 44.3053476,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 59
 	},
 	{
@@ -726,7 +726,7 @@
 		"target" : "Bosnia and Herzegovina",
 		"target_long" : 17.5961467,
 		"target_lat" : 44.3053476,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 4
 	},
 	{
@@ -736,7 +736,7 @@
 		"target" : "Bosnia and Herzegovina",
 		"target_long" : 17.5961467,
 		"target_lat" : 44.3053476,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 5
 	},
 	{
@@ -746,7 +746,7 @@
 		"target" : "Bosnia and Herzegovina",
 		"target_long" : 17.5961467,
 		"target_lat" : 44.3053476,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 18
 	},
 	{
@@ -756,7 +756,7 @@
 		"target" : "Bosnia and Herzegovina",
 		"target_long" : 17.5961467,
 		"target_lat" : 44.3053476,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 44
 	},
 	{
@@ -766,7 +766,7 @@
 		"target" : "Bosnia and Herzegovina",
 		"target_long" : 17.5961467,
 		"target_lat" : 44.3053476,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 176
 	},
 	{
@@ -776,7 +776,7 @@
 		"target" : "Bulgaria",
 		"target_long" : 25.4856617,
 		"target_lat" : 42.6073975,
-		"year" : "1999",
+		"year" : 1999,
 		"value" : 4
 	},
 	{
@@ -786,7 +786,7 @@
 		"target" : "Bulgaria",
 		"target_long" : 25.4856617,
 		"target_lat" : 42.6073975,
-		"year" : "2000",
+		"year" : 2000,
 		"value" : 16
 	},
 	{
@@ -796,7 +796,7 @@
 		"target" : "Bulgaria",
 		"target_long" : 25.4856617,
 		"target_lat" : 42.6073975,
-		"year" : "2001",
+		"year" : 2001,
 		"value" : 23
 	},
 	{
@@ -806,7 +806,7 @@
 		"target" : "Bulgaria",
 		"target_long" : 25.4856617,
 		"target_lat" : 42.6073975,
-		"year" : "2002",
+		"year" : 2002,
 		"value" : 3
 	},
 	{
@@ -816,7 +816,7 @@
 		"target" : "Bulgaria",
 		"target_long" : 25.4856617,
 		"target_lat" : 42.6073975,
-		"year" : "2003",
+		"year" : 2003,
 		"value" : 9
 	},
 	{
@@ -826,7 +826,7 @@
 		"target" : "Bulgaria",
 		"target_long" : 25.4856617,
 		"target_lat" : 42.6073975,
-		"year" : "2004",
+		"year" : 2004,
 		"value" : 21
 	},
 	{
@@ -836,7 +836,7 @@
 		"target" : "Bulgaria",
 		"target_long" : 25.4856617,
 		"target_lat" : 42.6073975,
-		"year" : "2005",
+		"year" : 2005,
 		"value" : 15
 	},
 	{
@@ -846,7 +846,7 @@
 		"target" : "Bulgaria",
 		"target_long" : 25.4856617,
 		"target_lat" : 42.6073975,
-		"year" : "2006",
+		"year" : 2006,
 		"value" : 10
 	},
 	{
@@ -856,7 +856,7 @@
 		"target" : "Bulgaria",
 		"target_long" : 25.4856617,
 		"target_lat" : 42.6073975,
-		"year" : "2007",
+		"year" : 2007,
 		"value" : 15
 	},
 	{
@@ -866,7 +866,7 @@
 		"target" : "Bulgaria",
 		"target_long" : 25.4856617,
 		"target_lat" : 42.6073975,
-		"year" : "2008",
+		"year" : 2008,
 		"value" : 20
 	},
 	{
@@ -876,7 +876,7 @@
 		"target" : "Bulgaria",
 		"target_long" : 25.4856617,
 		"target_lat" : 42.6073975,
-		"year" : "2009",
+		"year" : 2009,
 		"value" : 30
 	},
 	{
@@ -886,7 +886,7 @@
 		"target" : "Bulgaria",
 		"target_long" : 25.4856617,
 		"target_lat" : 42.6073975,
-		"year" : "2010",
+		"year" : 2010,
 		"value" : 52
 	},
 	{
@@ -896,7 +896,7 @@
 		"target" : "Bulgaria",
 		"target_long" : 25.4856617,
 		"target_lat" : 42.6073975,
-		"year" : "2011",
+		"year" : 2011,
 		"value" : 67
 	},
 	{
@@ -906,7 +906,7 @@
 		"target" : "Bulgaria",
 		"target_long" : 25.4856617,
 		"target_lat" : 42.6073975,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 436
 	},
 	{
@@ -916,7 +916,7 @@
 		"target" : "Bulgaria",
 		"target_long" : 25.4856617,
 		"target_lat" : 42.6073975,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 4447
 	},
 	{
@@ -926,7 +926,7 @@
 		"target" : "Bulgaria",
 		"target_long" : 25.4856617,
 		"target_lat" : 42.6073975,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 6202
 	},
 	{
@@ -936,7 +936,7 @@
 		"target" : "Bulgaria",
 		"target_long" : 25.4856617,
 		"target_lat" : 42.6073975,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 5950
 	},
 	{
@@ -946,7 +946,7 @@
 		"target" : "Bulgaria",
 		"target_long" : 25.4856617,
 		"target_lat" : 42.6073975,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 2563
 	},
 	{
@@ -956,7 +956,7 @@
 		"target" : "Bulgaria",
 		"target_long" : 25.4856617,
 		"target_lat" : 42.6073975,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 941
 	},
 	{
@@ -966,7 +966,7 @@
 		"target" : "Bulgaria",
 		"target_long" : 25.4856617,
 		"target_lat" : 42.6073975,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 380
 	},
 	{
@@ -976,7 +976,7 @@
 		"target" : "Canada",
 		"target_long" : -107.9917071,
 		"target_lat" : 61.0666922,
-		"year" : "1999",
+		"year" : 1999,
 		"value" : 95
 	},
 	{
@@ -986,7 +986,7 @@
 		"target" : "Canada",
 		"target_long" : -107.9917071,
 		"target_lat" : 61.0666922,
-		"year" : "2000",
+		"year" : 2000,
 		"value" : 72
 	},
 	{
@@ -996,7 +996,7 @@
 		"target" : "Canada",
 		"target_long" : -107.9917071,
 		"target_lat" : 61.0666922,
-		"year" : "2001",
+		"year" : 2001,
 		"value" : 119
 	},
 	{
@@ -1006,7 +1006,7 @@
 		"target" : "Canada",
 		"target_long" : -107.9917071,
 		"target_lat" : 61.0666922,
-		"year" : "2002",
+		"year" : 2002,
 		"value" : 86
 	},
 	{
@@ -1016,7 +1016,7 @@
 		"target" : "Canada",
 		"target_long" : -107.9917071,
 		"target_lat" : 61.0666922,
-		"year" : "2003",
+		"year" : 2003,
 		"value" : 114
 	},
 	{
@@ -1026,7 +1026,7 @@
 		"target" : "Canada",
 		"target_long" : -107.9917071,
 		"target_lat" : 61.0666922,
-		"year" : "2004",
+		"year" : 2004,
 		"value" : 74
 	},
 	{
@@ -1036,7 +1036,7 @@
 		"target" : "Canada",
 		"target_long" : -107.9917071,
 		"target_lat" : 61.0666922,
-		"year" : "2005",
+		"year" : 2005,
 		"value" : 67
 	},
 	{
@@ -1046,7 +1046,7 @@
 		"target" : "Canada",
 		"target_long" : -107.9917071,
 		"target_lat" : 61.0666922,
-		"year" : "2006",
+		"year" : 2006,
 		"value" : 45
 	},
 	{
@@ -1056,7 +1056,7 @@
 		"target" : "Canada",
 		"target_long" : -107.9917071,
 		"target_lat" : 61.0666922,
-		"year" : "2007",
+		"year" : 2007,
 		"value" : 68
 	},
 	{
@@ -1066,7 +1066,7 @@
 		"target" : "Canada",
 		"target_long" : -107.9917071,
 		"target_lat" : 61.0666922,
-		"year" : "2008",
+		"year" : 2008,
 		"value" : 76
 	},
 	{
@@ -1076,7 +1076,7 @@
 		"target" : "Canada",
 		"target_long" : -107.9917071,
 		"target_lat" : 61.0666922,
-		"year" : "2009",
+		"year" : 2009,
 		"value" : 89
 	},
 	{
@@ -1086,7 +1086,7 @@
 		"target" : "Canada",
 		"target_long" : -107.9917071,
 		"target_lat" : 61.0666922,
-		"year" : "2010",
+		"year" : 2010,
 		"value" : 126
 	},
 	{
@@ -1096,7 +1096,7 @@
 		"target" : "Canada",
 		"target_long" : -107.9917071,
 		"target_lat" : 61.0666922,
-		"year" : "2011",
+		"year" : 2011,
 		"value" : 176
 	},
 	{
@@ -1106,7 +1106,7 @@
 		"target" : "Canada",
 		"target_long" : -107.9917071,
 		"target_lat" : 61.0666922,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 336
 	},
 	{
@@ -1116,7 +1116,7 @@
 		"target" : "Canada",
 		"target_long" : -107.9917071,
 		"target_lat" : 61.0666922,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 493
 	},
 	{
@@ -1126,7 +1126,7 @@
 		"target" : "Canada",
 		"target_long" : -107.9917071,
 		"target_lat" : 61.0666922,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 558
 	},
 	{
@@ -1136,7 +1136,7 @@
 		"target" : "Canada",
 		"target_long" : -107.9917071,
 		"target_lat" : 61.0666922,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 581
 	},
 	{
@@ -1146,7 +1146,7 @@
 		"target" : "Canada",
 		"target_long" : -107.9917071,
 		"target_lat" : 61.0666922,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 958
 	},
 	{
@@ -1156,7 +1156,7 @@
 		"target" : "Canada",
 		"target_long" : -107.9917071,
 		"target_lat" : 61.0666922,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 1438
 	},
 	{
@@ -1166,7 +1166,7 @@
 		"target" : "Canada",
 		"target_long" : -107.9917071,
 		"target_lat" : 61.0666922,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 208
 	},
 	{
@@ -1176,7 +1176,7 @@
 		"target" : "Croatia",
 		"target_long" : 17.0118954,
 		"target_lat" : 45.5643442,
-		"year" : "2006",
+		"year" : 2006,
 		"value" : 1
 	},
 	{
@@ -1186,7 +1186,7 @@
 		"target" : "Croatia",
 		"target_long" : 17.0118954,
 		"target_lat" : 45.5643442,
-		"year" : "2010",
+		"year" : 2010,
 		"value" : 4
 	},
 	{
@@ -1196,7 +1196,7 @@
 		"target" : "Croatia",
 		"target_long" : 17.0118954,
 		"target_lat" : 45.5643442,
-		"year" : "2011",
+		"year" : 2011,
 		"value" : 9
 	},
 	{
@@ -1206,7 +1206,7 @@
 		"target" : "Croatia",
 		"target_long" : 17.0118954,
 		"target_lat" : 45.5643442,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 86
 	},
 	{
@@ -1216,7 +1216,7 @@
 		"target" : "Croatia",
 		"target_long" : 17.0118954,
 		"target_lat" : 45.5643442,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 194
 	},
 	{
@@ -1226,7 +1226,7 @@
 		"target" : "Croatia",
 		"target_long" : 17.0118954,
 		"target_lat" : 45.5643442,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 54
 	},
 	{
@@ -1236,7 +1236,7 @@
 		"target" : "Croatia",
 		"target_long" : 17.0118954,
 		"target_lat" : 45.5643442,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 27
 	},
 	{
@@ -1246,7 +1246,7 @@
 		"target" : "Croatia",
 		"target_long" : 17.0118954,
 		"target_lat" : 45.5643442,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 316
 	},
 	{
@@ -1256,7 +1256,7 @@
 		"target" : "Croatia",
 		"target_long" : 17.0118954,
 		"target_lat" : 45.5643442,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 206
 	},
 	{
@@ -1266,7 +1266,7 @@
 		"target" : "Croatia",
 		"target_long" : 17.0118954,
 		"target_lat" : 45.5643442,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 184
 	},
 	{
@@ -1276,7 +1276,7 @@
 		"target" : "Cyprus",
 		"target_long" : 33.1451285,
 		"target_lat" : 34.9823018,
-		"year" : "2001",
+		"year" : 2001,
 		"value" : 46
 	},
 	{
@@ -1286,7 +1286,7 @@
 		"target" : "Cyprus",
 		"target_long" : 33.1451285,
 		"target_lat" : 34.9823018,
-		"year" : "2002",
+		"year" : 2002,
 		"value" : 10
 	},
 	{
@@ -1296,7 +1296,7 @@
 		"target" : "Cyprus",
 		"target_long" : 33.1451285,
 		"target_lat" : 34.9823018,
-		"year" : "2003",
+		"year" : 2003,
 		"value" : 37
 	},
 	{
@@ -1306,7 +1306,7 @@
 		"target" : "Cyprus",
 		"target_long" : 33.1451285,
 		"target_lat" : 34.9823018,
-		"year" : "2004",
+		"year" : 2004,
 		"value" : 547
 	},
 	{
@@ -1316,7 +1316,7 @@
 		"target" : "Cyprus",
 		"target_long" : 33.1451285,
 		"target_lat" : 34.9823018,
-		"year" : "2005",
+		"year" : 2005,
 		"value" : 1205
 	},
 	{
@@ -1326,7 +1326,7 @@
 		"target" : "Cyprus",
 		"target_long" : 33.1451285,
 		"target_lat" : 34.9823018,
-		"year" : "2006",
+		"year" : 2006,
 		"value" : 1255
 	},
 	{
@@ -1336,7 +1336,7 @@
 		"target" : "Cyprus",
 		"target_long" : 33.1451285,
 		"target_lat" : 34.9823018,
-		"year" : "2007",
+		"year" : 2007,
 		"value" : 1752
 	},
 	{
@@ -1346,7 +1346,7 @@
 		"target" : "Cyprus",
 		"target_long" : 33.1451285,
 		"target_lat" : 34.9823018,
-		"year" : "2008",
+		"year" : 2008,
 		"value" : 963
 	},
 	{
@@ -1356,7 +1356,7 @@
 		"target" : "Cyprus",
 		"target_long" : 33.1451285,
 		"target_lat" : 34.9823018,
-		"year" : "2009",
+		"year" : 2009,
 		"value" : 224
 	},
 	{
@@ -1366,7 +1366,7 @@
 		"target" : "Cyprus",
 		"target_long" : 33.1451285,
 		"target_lat" : 34.9823018,
-		"year" : "2010",
+		"year" : 2010,
 		"value" : 96
 	},
 	{
@@ -1376,7 +1376,7 @@
 		"target" : "Cyprus",
 		"target_long" : 33.1451285,
 		"target_lat" : 34.9823018,
-		"year" : "2011",
+		"year" : 2011,
 		"value" : 187
 	},
 	{
@@ -1386,7 +1386,7 @@
 		"target" : "Cyprus",
 		"target_long" : 33.1451285,
 		"target_lat" : 34.9823018,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 564
 	},
 	{
@@ -1396,7 +1396,7 @@
 		"target" : "Cyprus",
 		"target_long" : 33.1451285,
 		"target_lat" : 34.9823018,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 562
 	},
 	{
@@ -1406,7 +1406,7 @@
 		"target" : "Cyprus",
 		"target_long" : 33.1451285,
 		"target_lat" : 34.9823018,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 984
 	},
 	{
@@ -1416,7 +1416,7 @@
 		"target" : "Cyprus",
 		"target_long" : 33.1451285,
 		"target_lat" : 34.9823018,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 908
 	},
 	{
@@ -1426,7 +1426,7 @@
 		"target" : "Cyprus",
 		"target_long" : 33.1451285,
 		"target_lat" : 34.9823018,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 1157
 	},
 	{
@@ -1436,7 +1436,7 @@
 		"target" : "Cyprus",
 		"target_long" : 33.1451285,
 		"target_lat" : 34.9823018,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 1756
 	},
 	{
@@ -1446,7 +1446,7 @@
 		"target" : "Cyprus",
 		"target_long" : 33.1451285,
 		"target_lat" : 34.9823018,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 854
 	},
 	{
@@ -1456,7 +1456,7 @@
 		"target" : "Czech Rep.",
 		"target_long" : 15.4749544,
 		"target_lat" : 49.8167003,
-		"year" : "1999",
+		"year" : 1999,
 		"value" : 103
 	},
 	{
@@ -1466,7 +1466,7 @@
 		"target" : "Czech Rep.",
 		"target_long" : 15.4749544,
 		"target_lat" : 49.8167003,
-		"year" : "2000",
+		"year" : 2000,
 		"value" : 21
 	},
 	{
@@ -1476,7 +1476,7 @@
 		"target" : "Czech Rep.",
 		"target_long" : 15.4749544,
 		"target_lat" : 49.8167003,
-		"year" : "2001",
+		"year" : 2001,
 		"value" : 24
 	},
 	{
@@ -1486,7 +1486,7 @@
 		"target" : "Czech Rep.",
 		"target_long" : 15.4749544,
 		"target_lat" : 49.8167003,
-		"year" : "2002",
+		"year" : 2002,
 		"value" : 12
 	},
 	{
@@ -1496,7 +1496,7 @@
 		"target" : "Czech Rep.",
 		"target_long" : 15.4749544,
 		"target_lat" : 49.8167003,
-		"year" : "2003",
+		"year" : 2003,
 		"value" : 6
 	},
 	{
@@ -1506,7 +1506,7 @@
 		"target" : "Czech Rep.",
 		"target_long" : 15.4749544,
 		"target_lat" : 49.8167003,
-		"year" : "2004",
+		"year" : 2004,
 		"value" : 4
 	},
 	{
@@ -1516,7 +1516,7 @@
 		"target" : "Czech Rep.",
 		"target_long" : 15.4749544,
 		"target_lat" : 49.8167003,
-		"year" : "2005",
+		"year" : 2005,
 		"value" : 22
 	},
 	{
@@ -1526,7 +1526,7 @@
 		"target" : "Czech Rep.",
 		"target_long" : 15.4749544,
 		"target_lat" : 49.8167003,
-		"year" : "2006",
+		"year" : 2006,
 		"value" : 20
 	},
 	{
@@ -1536,7 +1536,7 @@
 		"target" : "Czech Rep.",
 		"target_long" : 15.4749544,
 		"target_lat" : 49.8167003,
-		"year" : "2007",
+		"year" : 2007,
 		"value" : 31
 	},
 	{
@@ -1546,7 +1546,7 @@
 		"target" : "Czech Rep.",
 		"target_long" : 15.4749544,
 		"target_lat" : 49.8167003,
-		"year" : "2008",
+		"year" : 2008,
 		"value" : 63
 	},
 	{
@@ -1556,7 +1556,7 @@
 		"target" : "Czech Rep.",
 		"target_long" : 15.4749544,
 		"target_lat" : 49.8167003,
-		"year" : "2009",
+		"year" : 2009,
 		"value" : 46
 	},
 	{
@@ -1566,7 +1566,7 @@
 		"target" : "Czech Rep.",
 		"target_long" : 15.4749544,
 		"target_lat" : 49.8167003,
-		"year" : "2010",
+		"year" : 2010,
 		"value" : 6
 	},
 	{
@@ -1576,7 +1576,7 @@
 		"target" : "Czech Rep.",
 		"target_long" : 15.4749544,
 		"target_lat" : 49.8167003,
-		"year" : "2011",
+		"year" : 2011,
 		"value" : 7
 	},
 	{
@@ -1586,7 +1586,7 @@
 		"target" : "Czech Rep.",
 		"target_long" : 15.4749544,
 		"target_lat" : 49.8167003,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 57
 	},
 	{
@@ -1596,7 +1596,7 @@
 		"target" : "Czech Rep.",
 		"target_long" : 15.4749544,
 		"target_lat" : 49.8167003,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 69
 	},
 	{
@@ -1606,7 +1606,7 @@
 		"target" : "Czech Rep.",
 		"target_long" : 15.4749544,
 		"target_lat" : 49.8167003,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 107
 	},
 	{
@@ -1616,7 +1616,7 @@
 		"target" : "Czech Rep.",
 		"target_long" : 15.4749544,
 		"target_lat" : 49.8167003,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 129
 	},
 	{
@@ -1626,7 +1626,7 @@
 		"target" : "Czech Rep.",
 		"target_long" : 15.4749544,
 		"target_lat" : 49.8167003,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 73
 	},
 	{
@@ -1636,7 +1636,7 @@
 		"target" : "Czech Rep.",
 		"target_long" : 15.4749544,
 		"target_lat" : 49.8167003,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 68
 	},
 	{
@@ -1646,7 +1646,7 @@
 		"target" : "Czech Rep.",
 		"target_long" : 15.4749544,
 		"target_lat" : 49.8167003,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 24
 	},
 	{
@@ -1656,7 +1656,7 @@
 		"target" : "Denmark",
 		"target_long" : 10.3333283,
 		"target_lat" : 55.670249,
-		"year" : "1999",
+		"year" : 1999,
 		"value" : 38
 	},
 	{
@@ -1666,7 +1666,7 @@
 		"target" : "Denmark",
 		"target_long" : 10.3333283,
 		"target_lat" : 55.670249,
-		"year" : "2000",
+		"year" : 2000,
 		"value" : 55
 	},
 	{
@@ -1676,7 +1676,7 @@
 		"target" : "Denmark",
 		"target_long" : 10.3333283,
 		"target_lat" : 55.670249,
-		"year" : "2001",
+		"year" : 2001,
 		"value" : 97
 	},
 	{
@@ -1686,7 +1686,7 @@
 		"target" : "Denmark",
 		"target_long" : 10.3333283,
 		"target_lat" : 55.670249,
-		"year" : "2002",
+		"year" : 2002,
 		"value" : 30
 	},
 	{
@@ -1696,7 +1696,7 @@
 		"target" : "Denmark",
 		"target_long" : 10.3333283,
 		"target_lat" : 55.670249,
-		"year" : "2003",
+		"year" : 2003,
 		"value" : 56
 	},
 	{
@@ -1706,7 +1706,7 @@
 		"target" : "Denmark",
 		"target_long" : 10.3333283,
 		"target_lat" : 55.670249,
-		"year" : "2004",
+		"year" : 2004,
 		"value" : 56
 	},
 	{
@@ -1716,7 +1716,7 @@
 		"target" : "Denmark",
 		"target_long" : 10.3333283,
 		"target_lat" : 55.670249,
-		"year" : "2005",
+		"year" : 2005,
 		"value" : 46
 	},
 	{
@@ -1726,7 +1726,7 @@
 		"target" : "Denmark",
 		"target_long" : 10.3333283,
 		"target_lat" : 55.670249,
-		"year" : "2006",
+		"year" : 2006,
 		"value" : 55
 	},
 	{
@@ -1736,7 +1736,7 @@
 		"target" : "Denmark",
 		"target_long" : 10.3333283,
 		"target_lat" : 55.670249,
-		"year" : "2007",
+		"year" : 2007,
 		"value" : 74
 	},
 	{
@@ -1746,7 +1746,7 @@
 		"target" : "Denmark",
 		"target_long" : 10.3333283,
 		"target_lat" : 55.670249,
-		"year" : "2008",
+		"year" : 2008,
 		"value" : 105
 	},
 	{
@@ -1756,7 +1756,7 @@
 		"target" : "Denmark",
 		"target_long" : 10.3333283,
 		"target_lat" : 55.670249,
-		"year" : "2009",
+		"year" : 2009,
 		"value" : 383
 	},
 	{
@@ -1766,7 +1766,7 @@
 		"target" : "Denmark",
 		"target_long" : 10.3333283,
 		"target_lat" : 55.670249,
-		"year" : "2010",
+		"year" : 2010,
 		"value" : 821
 	},
 	{
@@ -1776,7 +1776,7 @@
 		"target" : "Denmark",
 		"target_long" : 10.3333283,
 		"target_lat" : 55.670249,
-		"year" : "2011",
+		"year" : 2011,
 		"value" : 428
 	},
 	{
@@ -1786,7 +1786,7 @@
 		"target" : "Denmark",
 		"target_long" : 10.3333283,
 		"target_lat" : 55.670249,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 907
 	},
 	{
@@ -1796,7 +1796,7 @@
 		"target" : "Denmark",
 		"target_long" : 10.3333283,
 		"target_lat" : 55.670249,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 1702
 	},
 	{
@@ -1806,7 +1806,7 @@
 		"target" : "Denmark",
 		"target_long" : 10.3333283,
 		"target_lat" : 55.670249,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 7185
 	},
 	{
@@ -1816,7 +1816,7 @@
 		"target" : "Denmark",
 		"target_long" : 10.3333283,
 		"target_lat" : 55.670249,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 8604
 	},
 	{
@@ -1826,7 +1826,7 @@
 		"target" : "Denmark",
 		"target_long" : 10.3333283,
 		"target_lat" : 55.670249,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 1251
 	},
 	{
@@ -1836,7 +1836,7 @@
 		"target" : "Denmark",
 		"target_long" : 10.3333283,
 		"target_lat" : 55.670249,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 864
 	},
 	{
@@ -1846,7 +1846,7 @@
 		"target" : "Denmark",
 		"target_long" : 10.3333283,
 		"target_lat" : 55.670249,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 542
 	},
 	{
@@ -1856,7 +1856,7 @@
 		"target" : "Estonia",
 		"target_long" : 25.3319078,
 		"target_lat" : 58.7523778,
-		"year" : "2009",
+		"year" : 2009,
 		"value" : 5
 	},
 	{
@@ -1866,7 +1866,7 @@
 		"target" : "Estonia",
 		"target_long" : 25.3319078,
 		"target_lat" : 58.7523778,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 4
 	},
 	{
@@ -1876,7 +1876,7 @@
 		"target" : "Estonia",
 		"target_long" : 25.3319078,
 		"target_lat" : 58.7523778,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 17
 	},
 	{
@@ -1886,7 +1886,7 @@
 		"target" : "Estonia",
 		"target_long" : 25.3319078,
 		"target_lat" : 58.7523778,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 7
 	},
 	{
@@ -1896,7 +1896,7 @@
 		"target" : "Estonia",
 		"target_long" : 25.3319078,
 		"target_lat" : 58.7523778,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 14
 	},
 	{
@@ -1906,7 +1906,7 @@
 		"target" : "Estonia",
 		"target_long" : 25.3319078,
 		"target_lat" : 58.7523778,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 6
 	},
 	{
@@ -1916,7 +1916,7 @@
 		"target" : "Finland",
 		"target_long" : 25.9209164,
 		"target_lat" : 63.2467777,
-		"year" : "1999",
+		"year" : 1999,
 		"value" : 19
 	},
 	{
@@ -1926,7 +1926,7 @@
 		"target" : "Finland",
 		"target_long" : 25.9209164,
 		"target_lat" : 63.2467777,
-		"year" : "2000",
+		"year" : 2000,
 		"value" : 8
 	},
 	{
@@ -1936,7 +1936,7 @@
 		"target" : "Finland",
 		"target_long" : 25.9209164,
 		"target_lat" : 63.2467777,
-		"year" : "2001",
+		"year" : 2001,
 		"value" : 8
 	},
 	{
@@ -1946,7 +1946,7 @@
 		"target" : "Finland",
 		"target_long" : 25.9209164,
 		"target_lat" : 63.2467777,
-		"year" : "2002",
+		"year" : 2002,
 		"value" : 6
 	},
 	{
@@ -1956,7 +1956,7 @@
 		"target" : "Finland",
 		"target_long" : 25.9209164,
 		"target_lat" : 63.2467777,
-		"year" : "2003",
+		"year" : 2003,
 		"value" : 39
 	},
 	{
@@ -1966,7 +1966,7 @@
 		"target" : "Finland",
 		"target_long" : 25.9209164,
 		"target_lat" : 63.2467777,
-		"year" : "2004",
+		"year" : 2004,
 		"value" : 15
 	},
 	{
@@ -1976,7 +1976,7 @@
 		"target" : "Finland",
 		"target_long" : 25.9209164,
 		"target_lat" : 63.2467777,
-		"year" : "2005",
+		"year" : 2005,
 		"value" : 11
 	},
 	{
@@ -1986,7 +1986,7 @@
 		"target" : "Finland",
 		"target_long" : 25.9209164,
 		"target_lat" : 63.2467777,
-		"year" : "2006",
+		"year" : 2006,
 		"value" : 21
 	},
 	{
@@ -1996,7 +1996,7 @@
 		"target" : "Finland",
 		"target_long" : 25.9209164,
 		"target_lat" : 63.2467777,
-		"year" : "2007",
+		"year" : 2007,
 		"value" : 8
 	},
 	{
@@ -2006,7 +2006,7 @@
 		"target" : "Finland",
 		"target_long" : 25.9209164,
 		"target_lat" : 63.2467777,
-		"year" : "2008",
+		"year" : 2008,
 		"value" : 24
 	},
 	{
@@ -2016,7 +2016,7 @@
 		"target" : "Finland",
 		"target_long" : 25.9209164,
 		"target_lat" : 63.2467777,
-		"year" : "2009",
+		"year" : 2009,
 		"value" : 36
 	},
 	{
@@ -2026,7 +2026,7 @@
 		"target" : "Finland",
 		"target_long" : 25.9209164,
 		"target_lat" : 63.2467777,
-		"year" : "2010",
+		"year" : 2010,
 		"value" : 41
 	},
 	{
@@ -2036,7 +2036,7 @@
 		"target" : "Finland",
 		"target_long" : 25.9209164,
 		"target_lat" : 63.2467777,
-		"year" : "2011",
+		"year" : 2011,
 		"value" : 109
 	},
 	{
@@ -2046,7 +2046,7 @@
 		"target" : "Finland",
 		"target_long" : 25.9209164,
 		"target_lat" : 63.2467777,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 180
 	},
 	{
@@ -2056,7 +2056,7 @@
 		"target" : "Finland",
 		"target_long" : 25.9209164,
 		"target_lat" : 63.2467777,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 148
 	},
 	{
@@ -2066,7 +2066,7 @@
 		"target" : "Finland",
 		"target_long" : 25.9209164,
 		"target_lat" : 63.2467777,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 146
 	},
 	{
@@ -2076,7 +2076,7 @@
 		"target" : "Finland",
 		"target_long" : 25.9209164,
 		"target_lat" : 63.2467777,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 876
 	},
 	{
@@ -2086,7 +2086,7 @@
 		"target" : "Finland",
 		"target_long" : 25.9209164,
 		"target_lat" : 63.2467777,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 600
 	},
 	{
@@ -2096,7 +2096,7 @@
 		"target" : "Finland",
 		"target_long" : 25.9209164,
 		"target_lat" : 63.2467777,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 741
 	},
 	{
@@ -2106,7 +2106,7 @@
 		"target" : "Finland",
 		"target_long" : 25.9209164,
 		"target_lat" : 63.2467777,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 89
 	},
 	{
@@ -2116,7 +2116,7 @@
 		"target" : "France",
 		"target_long" : 1.8883335,
 		"target_lat" : 46.603354,
-		"year" : "1999",
+		"year" : 1999,
 		"value" : 27
 	},
 	{
@@ -2126,7 +2126,7 @@
 		"target" : "France",
 		"target_long" : 1.8883335,
 		"target_lat" : 46.603354,
-		"year" : "2000",
+		"year" : 2000,
 		"value" : 17
 	},
 	{
@@ -2136,7 +2136,7 @@
 		"target" : "France",
 		"target_long" : 1.8883335,
 		"target_lat" : 46.603354,
-		"year" : "2001",
+		"year" : 2001,
 		"value" : 90
 	},
 	{
@@ -2146,7 +2146,7 @@
 		"target" : "France",
 		"target_long" : 1.8883335,
 		"target_lat" : 46.603354,
-		"year" : "2002",
+		"year" : 2002,
 		"value" : 29
 	},
 	{
@@ -2156,7 +2156,7 @@
 		"target" : "France",
 		"target_long" : 1.8883335,
 		"target_lat" : 46.603354,
-		"year" : "2003",
+		"year" : 2003,
 		"value" : 49
 	},
 	{
@@ -2166,7 +2166,7 @@
 		"target" : "France",
 		"target_long" : 1.8883335,
 		"target_lat" : 46.603354,
-		"year" : "2004",
+		"year" : 2004,
 		"value" : 52
 	},
 	{
@@ -2176,7 +2176,7 @@
 		"target" : "France",
 		"target_long" : 1.8883335,
 		"target_lat" : 46.603354,
-		"year" : "2005",
+		"year" : 2005,
 		"value" : 32
 	},
 	{
@@ -2186,7 +2186,7 @@
 		"target" : "France",
 		"target_long" : 1.8883335,
 		"target_lat" : 46.603354,
-		"year" : "2006",
+		"year" : 2006,
 		"value" : 21
 	},
 	{
@@ -2196,7 +2196,7 @@
 		"target" : "France",
 		"target_long" : 1.8883335,
 		"target_lat" : 46.603354,
-		"year" : "2007",
+		"year" : 2007,
 		"value" : 45
 	},
 	{
@@ -2206,7 +2206,7 @@
 		"target" : "France",
 		"target_long" : 1.8883335,
 		"target_lat" : 46.603354,
-		"year" : "2008",
+		"year" : 2008,
 		"value" : 32
 	},
 	{
@@ -2216,7 +2216,7 @@
 		"target" : "France",
 		"target_long" : 1.8883335,
 		"target_lat" : 46.603354,
-		"year" : "2009",
+		"year" : 2009,
 		"value" : 61
 	},
 	{
@@ -2226,7 +2226,7 @@
 		"target" : "France",
 		"target_long" : 1.8883335,
 		"target_lat" : 46.603354,
-		"year" : "2010",
+		"year" : 2010,
 		"value" : 192
 	},
 	{
@@ -2236,7 +2236,7 @@
 		"target" : "France",
 		"target_long" : 1.8883335,
 		"target_lat" : 46.603354,
-		"year" : "2011",
+		"year" : 2011,
 		"value" : 119
 	},
 	{
@@ -2246,7 +2246,7 @@
 		"target" : "France",
 		"target_long" : 1.8883335,
 		"target_lat" : 46.603354,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 629
 	},
 	{
@@ -2256,7 +2256,7 @@
 		"target" : "France",
 		"target_long" : 1.8883335,
 		"target_lat" : 46.603354,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 1303
 	},
 	{
@@ -2266,7 +2266,7 @@
 		"target" : "France",
 		"target_long" : 1.8883335,
 		"target_lat" : 46.603354,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 3129
 	},
 	{
@@ -2276,7 +2276,7 @@
 		"target" : "France",
 		"target_long" : 1.8883335,
 		"target_lat" : 46.603354,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 5110
 	},
 	{
@@ -2286,7 +2286,7 @@
 		"target" : "France",
 		"target_long" : 1.8883335,
 		"target_lat" : 46.603354,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 5521
 	},
 	{
@@ -2296,7 +2296,7 @@
 		"target" : "France",
 		"target_long" : 1.8883335,
 		"target_lat" : 46.603354,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 5241
 	},
 	{
@@ -2306,7 +2306,7 @@
 		"target" : "France",
 		"target_long" : 1.8883335,
 		"target_lat" : 46.603354,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 1795
 	},
 	{
@@ -2316,7 +2316,7 @@
 		"target" : "Germany",
 		"target_long" : 10.4234469,
 		"target_lat" : 51.0834196,
-		"year" : "1999",
+		"year" : 1999,
 		"value" : 2193
 	},
 	{
@@ -2326,7 +2326,7 @@
 		"target" : "Germany",
 		"target_long" : 10.4234469,
 		"target_lat" : 51.0834196,
-		"year" : "2000",
+		"year" : 2000,
 		"value" : 2721
 	},
 	{
@@ -2336,7 +2336,7 @@
 		"target" : "Germany",
 		"target_long" : 10.4234469,
 		"target_lat" : 51.0834196,
-		"year" : "2001",
+		"year" : 2001,
 		"value" : 2308
 	},
 	{
@@ -2346,7 +2346,7 @@
 		"target" : "Germany",
 		"target_long" : 10.4234469,
 		"target_lat" : 51.0834196,
-		"year" : "2002",
+		"year" : 2002,
 		"value" : 1842
 	},
 	{
@@ -2356,7 +2356,7 @@
 		"target" : "Germany",
 		"target_long" : 10.4234469,
 		"target_lat" : 51.0834196,
-		"year" : "2003",
+		"year" : 2003,
 		"value" : 1188
 	},
 	{
@@ -2366,7 +2366,7 @@
 		"target" : "Germany",
 		"target_long" : 10.4234469,
 		"target_lat" : 51.0834196,
-		"year" : "2004",
+		"year" : 2004,
 		"value" : 776
 	},
 	{
@@ -2376,7 +2376,7 @@
 		"target" : "Germany",
 		"target_long" : 10.4234469,
 		"target_lat" : 51.0834196,
-		"year" : "2005",
+		"year" : 2005,
 		"value" : 878
 	},
 	{
@@ -2386,7 +2386,7 @@
 		"target" : "Germany",
 		"target_long" : 10.4234469,
 		"target_lat" : 51.0834196,
-		"year" : "2006",
+		"year" : 2006,
 		"value" : 608
 	},
 	{
@@ -2396,7 +2396,7 @@
 		"target" : "Germany",
 		"target_long" : 10.4234469,
 		"target_lat" : 51.0834196,
-		"year" : "2007",
+		"year" : 2007,
 		"value" : 604
 	},
 	{
@@ -2406,7 +2406,7 @@
 		"target" : "Germany",
 		"target_long" : 10.4234469,
 		"target_lat" : 51.0834196,
-		"year" : "2008",
+		"year" : 2008,
 		"value" : 744
 	},
 	{
@@ -2416,7 +2416,7 @@
 		"target" : "Germany",
 		"target_long" : 10.4234469,
 		"target_lat" : 51.0834196,
-		"year" : "2009",
+		"year" : 2009,
 		"value" : 819
 	},
 	{
@@ -2426,7 +2426,7 @@
 		"target" : "Germany",
 		"target_long" : 10.4234469,
 		"target_lat" : 51.0834196,
-		"year" : "2010",
+		"year" : 2010,
 		"value" : 1490
 	},
 	{
@@ -2436,7 +2436,7 @@
 		"target" : "Germany",
 		"target_long" : 10.4234469,
 		"target_lat" : 51.0834196,
-		"year" : "2011",
+		"year" : 2011,
 		"value" : 2634
 	},
 	{
@@ -2446,7 +2446,7 @@
 		"target" : "Germany",
 		"target_long" : 10.4234469,
 		"target_lat" : 51.0834196,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 6201
 	},
 	{
@@ -2456,7 +2456,7 @@
 		"target" : "Germany",
 		"target_long" : 10.4234469,
 		"target_lat" : 51.0834196,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 11851
 	},
 	{
@@ -2466,7 +2466,7 @@
 		"target" : "Germany",
 		"target_long" : 10.4234469,
 		"target_lat" : 51.0834196,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 39332
 	},
 	{
@@ -2476,7 +2476,7 @@
 		"target" : "Germany",
 		"target_long" : 10.4234469,
 		"target_lat" : 51.0834196,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 158657
 	},
 	{
@@ -2486,7 +2486,7 @@
 		"target" : "Germany",
 		"target_long" : 10.4234469,
 		"target_lat" : 51.0834196,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 266248
 	},
 	{
@@ -2496,7 +2496,7 @@
 		"target" : "Germany",
 		"target_long" : 10.4234469,
 		"target_lat" : 51.0834196,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 40828
 	},
 	{
@@ -2506,7 +2506,7 @@
 		"target" : "Germany",
 		"target_long" : 10.4234469,
 		"target_lat" : 51.0834196,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 27506
 	},
 	{
@@ -2516,7 +2516,7 @@
 		"target" : "Greece",
 		"target_long" : 21.9877132,
 		"target_lat" : 38.9953683,
-		"year" : "1999",
+		"year" : 1999,
 		"value" : 8
 	},
 	{
@@ -2526,7 +2526,7 @@
 		"target" : "Greece",
 		"target_long" : 21.9877132,
 		"target_lat" : 38.9953683,
-		"year" : "2001",
+		"year" : 2001,
 		"value" : 15
 	},
 	{
@@ -2536,7 +2536,7 @@
 		"target" : "Greece",
 		"target_long" : 21.9877132,
 		"target_lat" : 38.9953683,
-		"year" : "2002",
+		"year" : 2002,
 		"value" : 13
 	},
 	{
@@ -2546,7 +2546,7 @@
 		"target" : "Greece",
 		"target_long" : 21.9877132,
 		"target_lat" : 38.9953683,
-		"year" : "2003",
+		"year" : 2003,
 		"value" : 20
 	},
 	{
@@ -2556,7 +2556,7 @@
 		"target" : "Greece",
 		"target_long" : 21.9877132,
 		"target_lat" : 38.9953683,
-		"year" : "2004",
+		"year" : 2004,
 		"value" : 44
 	},
 	{
@@ -2566,7 +2566,7 @@
 		"target" : "Greece",
 		"target_long" : 21.9877132,
 		"target_lat" : 38.9953683,
-		"year" : "2005",
+		"year" : 2005,
 		"value" : 57
 	},
 	{
@@ -2576,7 +2576,7 @@
 		"target" : "Greece",
 		"target_long" : 21.9877132,
 		"target_lat" : 38.9953683,
-		"year" : "2006",
+		"year" : 2006,
 		"value" : 143
 	},
 	{
@@ -2586,7 +2586,7 @@
 		"target" : "Greece",
 		"target_long" : 21.9877132,
 		"target_lat" : 38.9953683,
-		"year" : "2007",
+		"year" : 2007,
 		"value" : 1311
 	},
 	{
@@ -2596,7 +2596,7 @@
 		"target" : "Greece",
 		"target_long" : 21.9877132,
 		"target_lat" : 38.9953683,
-		"year" : "2008",
+		"year" : 2008,
 		"value" : 808
 	},
 	{
@@ -2606,7 +2606,7 @@
 		"target" : "Greece",
 		"target_long" : 21.9877132,
 		"target_lat" : 38.9953683,
-		"year" : "2009",
+		"year" : 2009,
 		"value" : 965
 	},
 	{
@@ -2616,7 +2616,7 @@
 		"target" : "Greece",
 		"target_long" : 21.9877132,
 		"target_lat" : 38.9953683,
-		"year" : "2010",
+		"year" : 2010,
 		"value" : 167
 	},
 	{
@@ -2626,7 +2626,7 @@
 		"target" : "Greece",
 		"target_long" : 21.9877132,
 		"target_lat" : 38.9953683,
-		"year" : "2011",
+		"year" : 2011,
 		"value" : 352
 	},
 	{
@@ -2636,7 +2636,7 @@
 		"target" : "Greece",
 		"target_long" : 21.9877132,
 		"target_lat" : 38.9953683,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 275
 	},
 	{
@@ -2646,7 +2646,7 @@
 		"target" : "Greece",
 		"target_long" : 21.9877132,
 		"target_lat" : 38.9953683,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 485
 	},
 	{
@@ -2656,7 +2656,7 @@
 		"target" : "Greece",
 		"target_long" : 21.9877132,
 		"target_lat" : 38.9953683,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 791
 	},
 	{
@@ -2666,7 +2666,7 @@
 		"target" : "Greece",
 		"target_long" : 21.9877132,
 		"target_lat" : 38.9953683,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 3319
 	},
 	{
@@ -2676,7 +2676,7 @@
 		"target" : "Greece",
 		"target_long" : 21.9877132,
 		"target_lat" : 38.9953683,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 26634
 	},
 	{
@@ -2686,7 +2686,7 @@
 		"target" : "Greece",
 		"target_long" : 21.9877132,
 		"target_lat" : 38.9953683,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 16340
 	},
 	{
@@ -2696,7 +2696,7 @@
 		"target" : "Greece",
 		"target_long" : 21.9877132,
 		"target_lat" : 38.9953683,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 10180
 	},
 	{
@@ -2706,7 +2706,7 @@
 		"target" : "Hungary",
 		"target_long" : 19.5060937,
 		"target_lat" : 47.1817585,
-		"year" : "1999",
+		"year" : 1999,
 		"value" : 31
 	},
 	{
@@ -2716,7 +2716,7 @@
 		"target" : "Hungary",
 		"target_long" : 19.5060937,
 		"target_lat" : 47.1817585,
-		"year" : "2000",
+		"year" : 2000,
 		"value" : 41
 	},
 	{
@@ -2726,7 +2726,7 @@
 		"target" : "Hungary",
 		"target_long" : 19.5060937,
 		"target_lat" : 47.1817585,
-		"year" : "2001",
+		"year" : 2001,
 		"value" : 17
 	},
 	{
@@ -2736,7 +2736,7 @@
 		"target" : "Hungary",
 		"target_long" : 19.5060937,
 		"target_lat" : 47.1817585,
-		"year" : "2002",
+		"year" : 2002,
 		"value" : 20
 	},
 	{
@@ -2746,7 +2746,7 @@
 		"target" : "Hungary",
 		"target_long" : 19.5060937,
 		"target_lat" : 47.1817585,
-		"year" : "2003",
+		"year" : 2003,
 		"value" : 11
 	},
 	{
@@ -2756,7 +2756,7 @@
 		"target" : "Hungary",
 		"target_long" : 19.5060937,
 		"target_lat" : 47.1817585,
-		"year" : "2004",
+		"year" : 2004,
 		"value" : 10
 	},
 	{
@@ -2766,7 +2766,7 @@
 		"target" : "Hungary",
 		"target_long" : 19.5060937,
 		"target_lat" : 47.1817585,
-		"year" : "2005",
+		"year" : 2005,
 		"value" : 18
 	},
 	{
@@ -2776,7 +2776,7 @@
 		"target" : "Hungary",
 		"target_long" : 19.5060937,
 		"target_lat" : 47.1817585,
-		"year" : "2006",
+		"year" : 2006,
 		"value" : 32
 	},
 	{
@@ -2786,7 +2786,7 @@
 		"target" : "Hungary",
 		"target_long" : 19.5060937,
 		"target_lat" : 47.1817585,
-		"year" : "2007",
+		"year" : 2007,
 		"value" : 48
 	},
 	{
@@ -2796,7 +2796,7 @@
 		"target" : "Hungary",
 		"target_long" : 19.5060937,
 		"target_lat" : 47.1817585,
-		"year" : "2008",
+		"year" : 2008,
 		"value" : 16
 	},
 	{
@@ -2806,7 +2806,7 @@
 		"target" : "Hungary",
 		"target_long" : 19.5060937,
 		"target_lat" : 47.1817585,
-		"year" : "2009",
+		"year" : 2009,
 		"value" : 19
 	},
 	{
@@ -2816,7 +2816,7 @@
 		"target" : "Hungary",
 		"target_long" : 19.5060937,
 		"target_lat" : 47.1817585,
-		"year" : "2010",
+		"year" : 2010,
 		"value" : 26
 	},
 	{
@@ -2826,7 +2826,7 @@
 		"target" : "Hungary",
 		"target_long" : 19.5060937,
 		"target_lat" : 47.1817585,
-		"year" : "2011",
+		"year" : 2011,
 		"value" : 91
 	},
 	{
@@ -2836,7 +2836,7 @@
 		"target" : "Hungary",
 		"target_long" : 19.5060937,
 		"target_lat" : 47.1817585,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 145
 	},
 	{
@@ -2846,7 +2846,7 @@
 		"target" : "Hungary",
 		"target_long" : 19.5060937,
 		"target_lat" : 47.1817585,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 960
 	},
 	{
@@ -2856,7 +2856,7 @@
 		"target" : "Hungary",
 		"target_long" : 19.5060937,
 		"target_lat" : 47.1817585,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 6749
 	},
 	{
@@ -2866,7 +2866,7 @@
 		"target" : "Hungary",
 		"target_long" : 19.5060937,
 		"target_lat" : 47.1817585,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 64081
 	},
 	{
@@ -2876,7 +2876,7 @@
 		"target" : "Hungary",
 		"target_long" : 19.5060937,
 		"target_lat" : 47.1817585,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 4735
 	},
 	{
@@ -2886,7 +2886,7 @@
 		"target" : "Hungary",
 		"target_long" : 19.5060937,
 		"target_lat" : 47.1817585,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 564
 	},
 	{
@@ -2896,7 +2896,7 @@
 		"target" : "Hungary",
 		"target_long" : 19.5060937,
 		"target_lat" : 47.1817585,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 41
 	},
 	{
@@ -2906,7 +2906,7 @@
 		"target" : "Iceland",
 		"target_long" : -18.1059013,
 		"target_lat" : 64.9841821,
-		"year" : "2007",
+		"year" : 2007,
 		"value" : 5
 	},
 	{
@@ -2916,7 +2916,7 @@
 		"target" : "Iceland",
 		"target_long" : -18.1059013,
 		"target_lat" : 64.9841821,
-		"year" : "2008",
+		"year" : 2008,
 		"value" : 1
 	},
 	{
@@ -2926,7 +2926,7 @@
 		"target" : "Iceland",
 		"target_long" : -18.1059013,
 		"target_lat" : 64.9841821,
-		"year" : "2009",
+		"year" : 2009,
 		"value" : 3
 	},
 	{
@@ -2936,7 +2936,7 @@
 		"target" : "Iceland",
 		"target_long" : -18.1059013,
 		"target_lat" : 64.9841821,
-		"year" : "2010",
+		"year" : 2010,
 		"value" : 2
 	},
 	{
@@ -2946,7 +2946,7 @@
 		"target" : "Iceland",
 		"target_long" : -18.1059013,
 		"target_lat" : 64.9841821,
-		"year" : "2011",
+		"year" : 2011,
 		"value" : 1
 	},
 	{
@@ -2956,7 +2956,7 @@
 		"target" : "Iceland",
 		"target_long" : -18.1059013,
 		"target_lat" : 64.9841821,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 3
 	},
 	{
@@ -2966,7 +2966,7 @@
 		"target" : "Iceland",
 		"target_long" : -18.1059013,
 		"target_lat" : 64.9841821,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 5
 	},
 	{
@@ -2976,7 +2976,7 @@
 		"target" : "Iceland",
 		"target_long" : -18.1059013,
 		"target_lat" : 64.9841821,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 5
 	},
 	{
@@ -2986,7 +2986,7 @@
 		"target" : "Iceland",
 		"target_long" : -18.1059013,
 		"target_lat" : 64.9841821,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 29
 	},
 	{
@@ -2996,7 +2996,7 @@
 		"target" : "Iceland",
 		"target_long" : -18.1059013,
 		"target_lat" : 64.9841821,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 37
 	},
 	{
@@ -3006,7 +3006,7 @@
 		"target" : "Iceland",
 		"target_long" : -18.1059013,
 		"target_lat" : 64.9841821,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 33
 	},
 	{
@@ -3016,7 +3016,7 @@
 		"target" : "Iceland",
 		"target_long" : -18.1059013,
 		"target_lat" : 64.9841821,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 36
 	},
 	{
@@ -3026,7 +3026,7 @@
 		"target" : "Ireland",
 		"target_long" : -7.9794599,
 		"target_lat" : 52.865196,
-		"year" : "1999",
+		"year" : 1999,
 		"value" : 4
 	},
 	{
@@ -3036,7 +3036,7 @@
 		"target" : "Ireland",
 		"target_long" : -7.9794599,
 		"target_lat" : 52.865196,
-		"year" : "2000",
+		"year" : 2000,
 		"value" : 10
 	},
 	{
@@ -3046,7 +3046,7 @@
 		"target" : "Ireland",
 		"target_long" : -7.9794599,
 		"target_lat" : 52.865196,
-		"year" : "2001",
+		"year" : 2001,
 		"value" : 8
 	},
 	{
@@ -3056,7 +3056,7 @@
 		"target" : "Ireland",
 		"target_long" : -7.9794599,
 		"target_lat" : 52.865196,
-		"year" : "2002",
+		"year" : 2002,
 		"value" : 9
 	},
 	{
@@ -3066,7 +3066,7 @@
 		"target" : "Ireland",
 		"target_long" : -7.9794599,
 		"target_lat" : 52.865196,
-		"year" : "2003",
+		"year" : 2003,
 		"value" : 15
 	},
 	{
@@ -3076,7 +3076,7 @@
 		"target" : "Ireland",
 		"target_long" : -7.9794599,
 		"target_lat" : 52.865196,
-		"year" : "2004",
+		"year" : 2004,
 		"value" : 18
 	},
 	{
@@ -3086,7 +3086,7 @@
 		"target" : "Ireland",
 		"target_long" : -7.9794599,
 		"target_lat" : 52.865196,
-		"year" : "2005",
+		"year" : 2005,
 		"value" : 22
 	},
 	{
@@ -3096,7 +3096,7 @@
 		"target" : "Ireland",
 		"target_long" : -7.9794599,
 		"target_lat" : 52.865196,
-		"year" : "2006",
+		"year" : 2006,
 		"value" : 25
 	},
 	{
@@ -3106,7 +3106,7 @@
 		"target" : "Ireland",
 		"target_long" : -7.9794599,
 		"target_lat" : 52.865196,
-		"year" : "2007",
+		"year" : 2007,
 		"value" : 7
 	},
 	{
@@ -3116,7 +3116,7 @@
 		"target" : "Ireland",
 		"target_long" : -7.9794599,
 		"target_lat" : 52.865196,
-		"year" : "2008",
+		"year" : 2008,
 		"value" : 17
 	},
 	{
@@ -3126,7 +3126,7 @@
 		"target" : "Ireland",
 		"target_long" : -7.9794599,
 		"target_lat" : 52.865196,
-		"year" : "2009",
+		"year" : 2009,
 		"value" : 3
 	},
 	{
@@ -3136,7 +3136,7 @@
 		"target" : "Ireland",
 		"target_long" : -7.9794599,
 		"target_lat" : 52.865196,
-		"year" : "2010",
+		"year" : 2010,
 		"value" : 2
 	},
 	{
@@ -3146,7 +3146,7 @@
 		"target" : "Ireland",
 		"target_long" : -7.9794599,
 		"target_lat" : 52.865196,
-		"year" : "2011",
+		"year" : 2011,
 		"value" : 9
 	},
 	{
@@ -3156,7 +3156,7 @@
 		"target" : "Ireland",
 		"target_long" : -7.9794599,
 		"target_lat" : 52.865196,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 14
 	},
 	{
@@ -3166,7 +3166,7 @@
 		"target" : "Ireland",
 		"target_long" : -7.9794599,
 		"target_lat" : 52.865196,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 37
 	},
 	{
@@ -3176,7 +3176,7 @@
 		"target" : "Ireland",
 		"target_long" : -7.9794599,
 		"target_lat" : 52.865196,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 24
 	},
 	{
@@ -3186,7 +3186,7 @@
 		"target" : "Ireland",
 		"target_long" : -7.9794599,
 		"target_lat" : 52.865196,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 74
 	},
 	{
@@ -3196,7 +3196,7 @@
 		"target" : "Ireland",
 		"target_long" : -7.9794599,
 		"target_lat" : 52.865196,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 244
 	},
 	{
@@ -3206,7 +3206,7 @@
 		"target" : "Ireland",
 		"target_long" : -7.9794599,
 		"target_lat" : 52.865196,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 546
 	},
 	{
@@ -3216,7 +3216,7 @@
 		"target" : "Ireland",
 		"target_long" : -7.9794599,
 		"target_lat" : 52.865196,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 308
 	},
 	{
@@ -3226,7 +3226,7 @@
 		"target" : "Italy",
 		"target_long" : 12.674297,
 		"target_lat" : 42.6384261,
-		"year" : "2008",
+		"year" : 2008,
 		"value" : 36
 	},
 	{
@@ -3236,7 +3236,7 @@
 		"target" : "Italy",
 		"target_long" : 12.674297,
 		"target_lat" : 42.6384261,
-		"year" : "2009",
+		"year" : 2009,
 		"value" : 95
 	},
 	{
@@ -3246,7 +3246,7 @@
 		"target" : "Italy",
 		"target_long" : 12.674297,
 		"target_lat" : 42.6384261,
-		"year" : "2010",
+		"year" : 2010,
 		"value" : 48
 	},
 	{
@@ -3256,7 +3256,7 @@
 		"target" : "Italy",
 		"target_long" : 12.674297,
 		"target_lat" : 42.6384261,
-		"year" : "2011",
+		"year" : 2011,
 		"value" : 541
 	},
 	{
@@ -3266,7 +3266,7 @@
 		"target" : "Italy",
 		"target_long" : 12.674297,
 		"target_lat" : 42.6384261,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 354
 	},
 	{
@@ -3276,7 +3276,7 @@
 		"target" : "Italy",
 		"target_long" : 12.674297,
 		"target_lat" : 42.6384261,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 634
 	},
 	{
@@ -3286,7 +3286,7 @@
 		"target" : "Italy",
 		"target_long" : 12.674297,
 		"target_lat" : 42.6384261,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 504
 	},
 	{
@@ -3296,7 +3296,7 @@
 		"target" : "Italy",
 		"target_long" : 12.674297,
 		"target_lat" : 42.6384261,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 506
 	},
 	{
@@ -3306,7 +3306,7 @@
 		"target" : "Italy",
 		"target_long" : 12.674297,
 		"target_lat" : 42.6384261,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 1229
 	},
 	{
@@ -3316,7 +3316,7 @@
 		"target" : "Italy",
 		"target_long" : 12.674297,
 		"target_lat" : 42.6384261,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 1888
 	},
 	{
@@ -3326,7 +3326,7 @@
 		"target" : "Italy",
 		"target_long" : 12.674297,
 		"target_lat" : 42.6384261,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 190
 	},
 	{
@@ -3336,7 +3336,7 @@
 		"target" : "Japan",
 		"target_long" : 139.2394179,
 		"target_lat" : 36.5748441,
-		"year" : "2005",
+		"year" : 2005,
 		"value" : 1
 	},
 	{
@@ -3346,7 +3346,7 @@
 		"target" : "Japan",
 		"target_long" : 139.2394179,
 		"target_lat" : 36.5748441,
-		"year" : "2011",
+		"year" : 2011,
 		"value" : 2
 	},
 	{
@@ -3356,7 +3356,7 @@
 		"target" : "Japan",
 		"target_long" : 139.2394179,
 		"target_lat" : 36.5748441,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 26
 	},
 	{
@@ -3366,7 +3366,7 @@
 		"target" : "Japan",
 		"target_long" : 139.2394179,
 		"target_lat" : 36.5748441,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 24
 	},
 	{
@@ -3376,7 +3376,7 @@
 		"target" : "Japan",
 		"target_long" : 139.2394179,
 		"target_lat" : 36.5748441,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 8
 	},
 	{
@@ -3386,7 +3386,7 @@
 		"target" : "Japan",
 		"target_long" : 139.2394179,
 		"target_lat" : 36.5748441,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 5
 	},
 	{
@@ -3396,7 +3396,7 @@
 		"target" : "Japan",
 		"target_long" : 139.2394179,
 		"target_lat" : 36.5748441,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 4
 	},
 	{
@@ -3406,7 +3406,7 @@
 		"target" : "Japan",
 		"target_long" : 139.2394179,
 		"target_lat" : 36.5748441,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 15
 	},
 	{
@@ -3416,7 +3416,7 @@
 		"target" : "Japan",
 		"target_long" : 139.2394179,
 		"target_lat" : 36.5748441,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 4
 	},
 	{
@@ -3426,7 +3426,7 @@
 		"target" : "Latvia",
 		"target_long" : 24.7537645,
 		"target_lat" : 56.8406494,
-		"year" : "2008",
+		"year" : 2008,
 		"value" : 3
 	},
 	{
@@ -3436,7 +3436,7 @@
 		"target" : "Latvia",
 		"target_long" : 24.7537645,
 		"target_lat" : 56.8406494,
-		"year" : "2009",
+		"year" : 2009,
 		"value" : 2
 	},
 	{
@@ -3446,7 +3446,7 @@
 		"target" : "Latvia",
 		"target_long" : 24.7537645,
 		"target_lat" : 56.8406494,
-		"year" : "2011",
+		"year" : 2011,
 		"value" : 16
 	},
 	{
@@ -3456,7 +3456,7 @@
 		"target" : "Latvia",
 		"target_long" : 24.7537645,
 		"target_lat" : 56.8406494,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 18
 	},
 	{
@@ -3466,7 +3466,7 @@
 		"target" : "Latvia",
 		"target_long" : 24.7537645,
 		"target_lat" : 56.8406494,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 15
 	},
 	{
@@ -3476,7 +3476,7 @@
 		"target" : "Latvia",
 		"target_long" : 24.7537645,
 		"target_lat" : 56.8406494,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 34
 	},
 	{
@@ -3486,7 +3486,7 @@
 		"target" : "Latvia",
 		"target_long" : 24.7537645,
 		"target_lat" : 56.8406494,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 6
 	},
 	{
@@ -3496,7 +3496,7 @@
 		"target" : "Latvia",
 		"target_long" : 24.7537645,
 		"target_lat" : 56.8406494,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 149
 	},
 	{
@@ -3506,7 +3506,7 @@
 		"target" : "Latvia",
 		"target_long" : 24.7537645,
 		"target_lat" : 56.8406494,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 137
 	},
 	{
@@ -3516,7 +3516,7 @@
 		"target" : "Latvia",
 		"target_long" : 24.7537645,
 		"target_lat" : 56.8406494,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 6
 	},
 	{
@@ -3526,7 +3526,7 @@
 		"target" : "Liechtenstein",
 		"target_long" : 9.5531527,
 		"target_lat" : 47.1416307,
-		"year" : "2009",
+		"year" : 2009,
 		"value" : 5
 	},
 	{
@@ -3536,7 +3536,7 @@
 		"target" : "Liechtenstein",
 		"target_long" : 9.5531527,
 		"target_lat" : 47.1416307,
-		"year" : "2010",
+		"year" : 2010,
 		"value" : 2
 	},
 	{
@@ -3546,7 +3546,7 @@
 		"target" : "Liechtenstein",
 		"target_long" : 9.5531527,
 		"target_lat" : 47.1416307,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 1
 	},
 	{
@@ -3556,7 +3556,7 @@
 		"target" : "Liechtenstein",
 		"target_long" : 9.5531527,
 		"target_lat" : 47.1416307,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 2
 	},
 	{
@@ -3566,7 +3566,7 @@
 		"target" : "Liechtenstein",
 		"target_long" : 9.5531527,
 		"target_lat" : 47.1416307,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 1
 	},
 	{
@@ -3576,7 +3576,7 @@
 		"target" : "Liechtenstein",
 		"target_long" : 9.5531527,
 		"target_lat" : 47.1416307,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 2
 	},
 	{
@@ -3586,7 +3586,7 @@
 		"target" : "Liechtenstein",
 		"target_long" : 9.5531527,
 		"target_lat" : 47.1416307,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 5
 	},
 	{
@@ -3596,7 +3596,7 @@
 		"target" : "Liechtenstein",
 		"target_long" : 9.5531527,
 		"target_lat" : 47.1416307,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 12
 	},
 	{
@@ -3606,7 +3606,7 @@
 		"target" : "Liechtenstein",
 		"target_long" : 9.5531527,
 		"target_lat" : 47.1416307,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 2
 	},
 	{
@@ -3616,7 +3616,7 @@
 		"target" : "Lithuania",
 		"target_long" : 23.7499997,
 		"target_lat" : 55.3500003,
-		"year" : "2008",
+		"year" : 2008,
 		"value" : 5
 	},
 	{
@@ -3626,7 +3626,7 @@
 		"target" : "Lithuania",
 		"target_long" : 23.7499997,
 		"target_lat" : 55.3500003,
-		"year" : "2009",
+		"year" : 2009,
 		"value" : 6
 	},
 	{
@@ -3636,7 +3636,7 @@
 		"target" : "Lithuania",
 		"target_long" : 23.7499997,
 		"target_lat" : 55.3500003,
-		"year" : "2011",
+		"year" : 2011,
 		"value" : 1
 	},
 	{
@@ -3646,7 +3646,7 @@
 		"target" : "Lithuania",
 		"target_long" : 23.7499997,
 		"target_lat" : 55.3500003,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 6
 	},
 	{
@@ -3656,7 +3656,7 @@
 		"target" : "Lithuania",
 		"target_long" : 23.7499997,
 		"target_lat" : 55.3500003,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 11
 	},
 	{
@@ -3666,7 +3666,7 @@
 		"target" : "Lithuania",
 		"target_long" : 23.7499997,
 		"target_lat" : 55.3500003,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 8
 	},
 	{
@@ -3676,7 +3676,7 @@
 		"target" : "Lithuania",
 		"target_long" : 23.7499997,
 		"target_lat" : 55.3500003,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 6
 	},
 	{
@@ -3686,7 +3686,7 @@
 		"target" : "Lithuania",
 		"target_long" : 23.7499997,
 		"target_lat" : 55.3500003,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 165
 	},
 	{
@@ -3696,7 +3696,7 @@
 		"target" : "Lithuania",
 		"target_long" : 23.7499997,
 		"target_lat" : 55.3500003,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 227
 	},
 	{
@@ -3706,7 +3706,7 @@
 		"target" : "Lithuania",
 		"target_long" : 23.7499997,
 		"target_lat" : 55.3500003,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 32
 	},
 	{
@@ -3716,7 +3716,7 @@
 		"target" : "Luxembourg",
 		"target_long" : 6.1296751,
 		"target_lat" : 49.8158683,
-		"year" : "2000",
+		"year" : 2000,
 		"value" : 2
 	},
 	{
@@ -3726,7 +3726,7 @@
 		"target" : "Luxembourg",
 		"target_long" : 6.1296751,
 		"target_lat" : 49.8158683,
-		"year" : "2001",
+		"year" : 2001,
 		"value" : 1
 	},
 	{
@@ -3736,7 +3736,7 @@
 		"target" : "Luxembourg",
 		"target_long" : 6.1296751,
 		"target_lat" : 49.8158683,
-		"year" : "2003",
+		"year" : 2003,
 		"value" : 1
 	},
 	{
@@ -3746,7 +3746,7 @@
 		"target" : "Luxembourg",
 		"target_long" : 6.1296751,
 		"target_lat" : 49.8158683,
-		"year" : "2004",
+		"year" : 2004,
 		"value" : 1
 	},
 	{
@@ -3756,7 +3756,7 @@
 		"target" : "Luxembourg",
 		"target_long" : 6.1296751,
 		"target_lat" : 49.8158683,
-		"year" : "2009",
+		"year" : 2009,
 		"value" : 1
 	},
 	{
@@ -3766,7 +3766,7 @@
 		"target" : "Luxembourg",
 		"target_long" : 6.1296751,
 		"target_lat" : 49.8158683,
-		"year" : "2010",
+		"year" : 2010,
 		"value" : 19
 	},
 	{
@@ -3776,7 +3776,7 @@
 		"target" : "Luxembourg",
 		"target_long" : 6.1296751,
 		"target_lat" : 49.8158683,
-		"year" : "2011",
+		"year" : 2011,
 		"value" : 11
 	},
 	{
@@ -3786,7 +3786,7 @@
 		"target" : "Luxembourg",
 		"target_long" : 6.1296751,
 		"target_lat" : 49.8158683,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 14
 	},
 	{
@@ -3796,7 +3796,7 @@
 		"target" : "Luxembourg",
 		"target_long" : 6.1296751,
 		"target_lat" : 49.8158683,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 24
 	},
 	{
@@ -3806,7 +3806,7 @@
 		"target" : "Luxembourg",
 		"target_long" : 6.1296751,
 		"target_lat" : 49.8158683,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 87
 	},
 	{
@@ -3816,7 +3816,7 @@
 		"target" : "Luxembourg",
 		"target_long" : 6.1296751,
 		"target_lat" : 49.8158683,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 640
 	},
 	{
@@ -3826,7 +3826,7 @@
 		"target" : "Luxembourg",
 		"target_long" : 6.1296751,
 		"target_lat" : 49.8158683,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 289
 	},
 	{
@@ -3836,7 +3836,7 @@
 		"target" : "Luxembourg",
 		"target_long" : 6.1296751,
 		"target_lat" : 49.8158683,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 371
 	},
 	{
@@ -3846,7 +3846,7 @@
 		"target" : "Luxembourg",
 		"target_long" : 6.1296751,
 		"target_lat" : 49.8158683,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 158
 	},
 	{
@@ -3856,7 +3856,7 @@
 		"target" : "Malta",
 		"target_long" : 14.4476911,
 		"target_lat" : 35.8885993,
-		"year" : "2003",
+		"year" : 2003,
 		"value" : 3
 	},
 	{
@@ -3866,7 +3866,7 @@
 		"target" : "Malta",
 		"target_long" : 14.4476911,
 		"target_lat" : 35.8885993,
-		"year" : "2004",
+		"year" : 2004,
 		"value" : 3
 	},
 	{
@@ -3876,7 +3876,7 @@
 		"target" : "Malta",
 		"target_long" : 14.4476911,
 		"target_lat" : 35.8885993,
-		"year" : "2005",
+		"year" : 2005,
 		"value" : 11
 	},
 	{
@@ -3886,7 +3886,7 @@
 		"target" : "Malta",
 		"target_long" : 14.4476911,
 		"target_lat" : 35.8885993,
-		"year" : "2006",
+		"year" : 2006,
 		"value" : 4
 	},
 	{
@@ -3896,7 +3896,7 @@
 		"target" : "Malta",
 		"target_long" : 14.4476911,
 		"target_lat" : 35.8885993,
-		"year" : "2007",
+		"year" : 2007,
 		"value" : 1
 	},
 	{
@@ -3906,7 +3906,7 @@
 		"target" : "Malta",
 		"target_long" : 14.4476911,
 		"target_lat" : 35.8885993,
-		"year" : "2008",
+		"year" : 2008,
 		"value" : 1
 	},
 	{
@@ -3916,7 +3916,7 @@
 		"target" : "Malta",
 		"target_long" : 14.4476911,
 		"target_lat" : 35.8885993,
-		"year" : "2009",
+		"year" : 2009,
 		"value" : 14
 	},
 	{
@@ -3926,7 +3926,7 @@
 		"target" : "Malta",
 		"target_long" : 14.4476911,
 		"target_lat" : 35.8885993,
-		"year" : "2010",
+		"year" : 2010,
 		"value" : 8
 	},
 	{
@@ -3936,7 +3936,7 @@
 		"target" : "Malta",
 		"target_long" : 14.4476911,
 		"target_lat" : 35.8885993,
-		"year" : "2011",
+		"year" : 2011,
 		"value" : 122
 	},
 	{
@@ -3946,7 +3946,7 @@
 		"target" : "Malta",
 		"target_long" : 14.4476911,
 		"target_lat" : 35.8885993,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 147
 	},
 	{
@@ -3956,7 +3956,7 @@
 		"target" : "Malta",
 		"target_long" : 14.4476911,
 		"target_lat" : 35.8885993,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 250
 	},
 	{
@@ -3966,7 +3966,7 @@
 		"target" : "Malta",
 		"target_long" : 14.4476911,
 		"target_lat" : 35.8885993,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 305
 	},
 	{
@@ -3976,7 +3976,7 @@
 		"target" : "Malta",
 		"target_long" : 14.4476911,
 		"target_lat" : 35.8885993,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 398
 	},
 	{
@@ -3986,7 +3986,7 @@
 		"target" : "Malta",
 		"target_long" : 14.4476911,
 		"target_lat" : 35.8885993,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 287
 	},
 	{
@@ -3996,7 +3996,7 @@
 		"target" : "Malta",
 		"target_long" : 14.4476911,
 		"target_lat" : 35.8885993,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 436
 	},
 	{
@@ -4006,7 +4006,7 @@
 		"target" : "Malta",
 		"target_long" : 14.4476911,
 		"target_lat" : 35.8885993,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 408
 	},
 	{
@@ -4016,7 +4016,7 @@
 		"target" : "Montenegro",
 		"target_long" : 19.2408586,
 		"target_lat" : 42.7728491,
-		"year" : "2011",
+		"year" : 2011,
 		"value" : 1
 	},
 	{
@@ -4026,7 +4026,7 @@
 		"target" : "Montenegro",
 		"target_long" : 19.2408586,
 		"target_lat" : 42.7728491,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 44
 	},
 	{
@@ -4036,7 +4036,7 @@
 		"target" : "Montenegro",
 		"target_long" : 19.2408586,
 		"target_lat" : 42.7728491,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 285
 	},
 	{
@@ -4046,7 +4046,7 @@
 		"target" : "Montenegro",
 		"target_long" : 19.2408586,
 		"target_lat" : 42.7728491,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 1649
 	},
 	{
@@ -4056,7 +4056,7 @@
 		"target" : "Montenegro",
 		"target_long" : 19.2408586,
 		"target_lat" : 42.7728491,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 996
 	},
 	{
@@ -4066,7 +4066,7 @@
 		"target" : "Montenegro",
 		"target_long" : 19.2408586,
 		"target_lat" : 42.7728491,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 35
 	},
 	{
@@ -4076,7 +4076,7 @@
 		"target" : "Montenegro",
 		"target_long" : 19.2408586,
 		"target_lat" : 42.7728491,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 74
 	},
 	{
@@ -4086,7 +4086,7 @@
 		"target" : "Montenegro",
 		"target_long" : 19.2408586,
 		"target_lat" : 42.7728491,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 1100
 	},
 	{
@@ -4096,7 +4096,7 @@
 		"target" : "Netherlands",
 		"target_long" : 5.7480821,
 		"target_lat" : 52.5001698,
-		"year" : "1999",
+		"year" : 1999,
 		"value" : 850
 	},
 	{
@@ -4106,7 +4106,7 @@
 		"target" : "Netherlands",
 		"target_long" : 5.7480821,
 		"target_lat" : 52.5001698,
-		"year" : "2000",
+		"year" : 2000,
 		"value" : 1077
 	},
 	{
@@ -4116,7 +4116,7 @@
 		"target" : "Netherlands",
 		"target_long" : 5.7480821,
 		"target_lat" : 52.5001698,
-		"year" : "2001",
+		"year" : 2001,
 		"value" : 522
 	},
 	{
@@ -4126,7 +4126,7 @@
 		"target" : "Netherlands",
 		"target_long" : 5.7480821,
 		"target_lat" : 52.5001698,
-		"year" : "2002",
+		"year" : 2002,
 		"value" : 322
 	},
 	{
@@ -4136,7 +4136,7 @@
 		"target" : "Netherlands",
 		"target_long" : 5.7480821,
 		"target_lat" : 52.5001698,
-		"year" : "2003",
+		"year" : 2003,
 		"value" : 234
 	},
 	{
@@ -4146,7 +4146,7 @@
 		"target" : "Netherlands",
 		"target_long" : 5.7480821,
 		"target_lat" : 52.5001698,
-		"year" : "2004",
+		"year" : 2004,
 		"value" : 180
 	},
 	{
@@ -4156,7 +4156,7 @@
 		"target" : "Netherlands",
 		"target_long" : 5.7480821,
 		"target_lat" : 52.5001698,
-		"year" : "2005",
+		"year" : 2005,
 		"value" : 280
 	},
 	{
@@ -4166,7 +4166,7 @@
 		"target" : "Netherlands",
 		"target_long" : 5.7480821,
 		"target_lat" : 52.5001698,
-		"year" : "2006",
+		"year" : 2006,
 		"value" : 293
 	},
 	{
@@ -4176,7 +4176,7 @@
 		"target" : "Netherlands",
 		"target_long" : 5.7480821,
 		"target_lat" : 52.5001698,
-		"year" : "2007",
+		"year" : 2007,
 		"value" : 36
 	},
 	{
@@ -4186,7 +4186,7 @@
 		"target" : "Netherlands",
 		"target_long" : 5.7480821,
 		"target_lat" : 52.5001698,
-		"year" : "2008",
+		"year" : 2008,
 		"value" : 48
 	},
 	{
@@ -4196,7 +4196,7 @@
 		"target" : "Netherlands",
 		"target_long" : 5.7480821,
 		"target_lat" : 52.5001698,
-		"year" : "2009",
+		"year" : 2009,
 		"value" : 101
 	},
 	{
@@ -4206,7 +4206,7 @@
 		"target" : "Netherlands",
 		"target_long" : 5.7480821,
 		"target_lat" : 52.5001698,
-		"year" : "2010",
+		"year" : 2010,
 		"value" : 125
 	},
 	{
@@ -4216,7 +4216,7 @@
 		"target" : "Netherlands",
 		"target_long" : 5.7480821,
 		"target_lat" : 52.5001698,
-		"year" : "2011",
+		"year" : 2011,
 		"value" : 168
 	},
 	{
@@ -4226,7 +4226,7 @@
 		"target" : "Netherlands",
 		"target_long" : 5.7480821,
 		"target_lat" : 52.5001698,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 454
 	},
 	{
@@ -4236,7 +4236,7 @@
 		"target" : "Netherlands",
 		"target_long" : 5.7480821,
 		"target_lat" : 52.5001698,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 2673
 	},
 	{
@@ -4246,7 +4246,7 @@
 		"target" : "Netherlands",
 		"target_long" : 5.7480821,
 		"target_lat" : 52.5001698,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 8748
 	},
 	{
@@ -4256,7 +4256,7 @@
 		"target" : "Netherlands",
 		"target_long" : 5.7480821,
 		"target_lat" : 52.5001698,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 18675
 	},
 	{
@@ -4266,7 +4266,7 @@
 		"target" : "Netherlands",
 		"target_long" : 5.7480821,
 		"target_lat" : 52.5001698,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 2416
 	},
 	{
@@ -4276,7 +4276,7 @@
 		"target" : "Netherlands",
 		"target_long" : 5.7480821,
 		"target_lat" : 52.5001698,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 2378
 	},
 	{
@@ -4286,7 +4286,7 @@
 		"target" : "Netherlands",
 		"target_long" : 5.7480821,
 		"target_lat" : 52.5001698,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 2493
 	},
 	{
@@ -4296,7 +4296,7 @@
 		"target" : "New Zealand",
 		"target_long" : 172.8344077,
 		"target_lat" : -41.5000831,
-		"year" : "2000",
+		"year" : 2000,
 		"value" : 2
 	},
 	{
@@ -4306,7 +4306,7 @@
 		"target" : "New Zealand",
 		"target_long" : 172.8344077,
 		"target_lat" : -41.5000831,
-		"year" : "2001",
+		"year" : 2001,
 		"value" : 4
 	},
 	{
@@ -4316,7 +4316,7 @@
 		"target" : "New Zealand",
 		"target_long" : 172.8344077,
 		"target_lat" : -41.5000831,
-		"year" : "2002",
+		"year" : 2002,
 		"value" : 5
 	},
 	{
@@ -4326,7 +4326,7 @@
 		"target" : "New Zealand",
 		"target_long" : 172.8344077,
 		"target_lat" : -41.5000831,
-		"year" : "2003",
+		"year" : 2003,
 		"value" : 7
 	},
 	{
@@ -4336,7 +4336,7 @@
 		"target" : "New Zealand",
 		"target_long" : 172.8344077,
 		"target_lat" : -41.5000831,
-		"year" : "2004",
+		"year" : 2004,
 		"value" : 16
 	},
 	{
@@ -4346,7 +4346,7 @@
 		"target" : "New Zealand",
 		"target_long" : 172.8344077,
 		"target_lat" : -41.5000831,
-		"year" : "2005",
+		"year" : 2005,
 		"value" : 11
 	},
 	{
@@ -4356,7 +4356,7 @@
 		"target" : "New Zealand",
 		"target_long" : 172.8344077,
 		"target_lat" : -41.5000831,
-		"year" : "2006",
+		"year" : 2006,
 		"value" : 1
 	},
 	{
@@ -4366,7 +4366,7 @@
 		"target" : "New Zealand",
 		"target_long" : 172.8344077,
 		"target_lat" : -41.5000831,
-		"year" : "2007",
+		"year" : 2007,
 		"value" : 1
 	},
 	{
@@ -4376,7 +4376,7 @@
 		"target" : "New Zealand",
 		"target_long" : 172.8344077,
 		"target_lat" : -41.5000831,
-		"year" : "2008",
+		"year" : 2008,
 		"value" : 2
 	},
 	{
@@ -4386,7 +4386,7 @@
 		"target" : "New Zealand",
 		"target_long" : 172.8344077,
 		"target_lat" : -41.5000831,
-		"year" : "2009",
+		"year" : 2009,
 		"value" : 8
 	},
 	{
@@ -4396,7 +4396,7 @@
 		"target" : "New Zealand",
 		"target_long" : 172.8344077,
 		"target_lat" : -41.5000831,
-		"year" : "2010",
+		"year" : 2010,
 		"value" : 3
 	},
 	{
@@ -4406,7 +4406,7 @@
 		"target" : "New Zealand",
 		"target_long" : 172.8344077,
 		"target_lat" : -41.5000831,
-		"year" : "2011",
+		"year" : 2011,
 		"value" : 2
 	},
 	{
@@ -4416,7 +4416,7 @@
 		"target" : "New Zealand",
 		"target_long" : 172.8344077,
 		"target_lat" : -41.5000831,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 13
 	},
 	{
@@ -4426,7 +4426,7 @@
 		"target" : "New Zealand",
 		"target_long" : 172.8344077,
 		"target_lat" : -41.5000831,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 10
 	},
 	{
@@ -4436,7 +4436,7 @@
 		"target" : "New Zealand",
 		"target_long" : 172.8344077,
 		"target_lat" : -41.5000831,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 12
 	},
 	{
@@ -4446,7 +4446,7 @@
 		"target" : "New Zealand",
 		"target_long" : 172.8344077,
 		"target_lat" : -41.5000831,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 13
 	},
 	{
@@ -4456,7 +4456,7 @@
 		"target" : "New Zealand",
 		"target_long" : 172.8344077,
 		"target_lat" : -41.5000831,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 9
 	},
 	{
@@ -4466,7 +4466,7 @@
 		"target" : "New Zealand",
 		"target_long" : 172.8344077,
 		"target_lat" : -41.5000831,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 8
 	},
 	{
@@ -4476,7 +4476,7 @@
 		"target" : "New Zealand",
 		"target_long" : 172.8344077,
 		"target_lat" : -41.5000831,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 6
 	},
 	{
@@ -4486,7 +4486,7 @@
 		"target" : "Norway",
 		"target_long" : 11.5280364395482,
 		"target_lat" : 64.5731537,
-		"year" : "1999",
+		"year" : 1999,
 		"value" : 95
 	},
 	{
@@ -4496,7 +4496,7 @@
 		"target" : "Norway",
 		"target_long" : 11.5280364395482,
 		"target_lat" : 64.5731537,
-		"year" : "2000",
+		"year" : 2000,
 		"value" : 60
 	},
 	{
@@ -4506,7 +4506,7 @@
 		"target" : "Norway",
 		"target_long" : 11.5280364395482,
 		"target_lat" : 64.5731537,
-		"year" : "2001",
+		"year" : 2001,
 		"value" : 57
 	},
 	{
@@ -4516,7 +4516,7 @@
 		"target" : "Norway",
 		"target_long" : 11.5280364395482,
 		"target_lat" : 64.5731537,
-		"year" : "2002",
+		"year" : 2002,
 		"value" : 80
 	},
 	{
@@ -4526,7 +4526,7 @@
 		"target" : "Norway",
 		"target_long" : 11.5280364395482,
 		"target_lat" : 64.5731537,
-		"year" : "2003",
+		"year" : 2003,
 		"value" : 97
 	},
 	{
@@ -4536,7 +4536,7 @@
 		"target" : "Norway",
 		"target_long" : 11.5280364395482,
 		"target_lat" : 64.5731537,
-		"year" : "2004",
+		"year" : 2004,
 		"value" : 71
 	},
 	{
@@ -4546,7 +4546,7 @@
 		"target" : "Norway",
 		"target_long" : 11.5280364395482,
 		"target_lat" : 64.5731537,
-		"year" : "2005",
+		"year" : 2005,
 		"value" : 79
 	},
 	{
@@ -4556,7 +4556,7 @@
 		"target" : "Norway",
 		"target_long" : 11.5280364395482,
 		"target_lat" : 64.5731537,
-		"year" : "2006",
+		"year" : 2006,
 		"value" : 49
 	},
 	{
@@ -4566,7 +4566,7 @@
 		"target" : "Norway",
 		"target_long" : 11.5280364395482,
 		"target_lat" : 64.5731537,
-		"year" : "2007",
+		"year" : 2007,
 		"value" : 48
 	},
 	{
@@ -4576,7 +4576,7 @@
 		"target" : "Norway",
 		"target_long" : 11.5280364395482,
 		"target_lat" : 64.5731537,
-		"year" : "2008",
+		"year" : 2008,
 		"value" : 114
 	},
 	{
@@ -4586,7 +4586,7 @@
 		"target" : "Norway",
 		"target_long" : 11.5280364395482,
 		"target_lat" : 64.5731537,
-		"year" : "2009",
+		"year" : 2009,
 		"value" : 271
 	},
 	{
@@ -4596,7 +4596,7 @@
 		"target" : "Norway",
 		"target_long" : 11.5280364395482,
 		"target_lat" : 64.5731537,
-		"year" : "2010",
+		"year" : 2010,
 		"value" : 110
 	},
 	{
@@ -4606,7 +4606,7 @@
 		"target" : "Norway",
 		"target_long" : 11.5280364395482,
 		"target_lat" : 64.5731537,
-		"year" : "2011",
+		"year" : 2011,
 		"value" : 189
 	},
 	{
@@ -4616,7 +4616,7 @@
 		"target" : "Norway",
 		"target_long" : 11.5280364395482,
 		"target_lat" : 64.5731537,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 312
 	},
 	{
@@ -4626,7 +4626,7 @@
 		"target" : "Norway",
 		"target_long" : 11.5280364395482,
 		"target_lat" : 64.5731537,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 868
 	},
 	{
@@ -4636,7 +4636,7 @@
 		"target" : "Norway",
 		"target_long" : 11.5280364395482,
 		"target_lat" : 64.5731537,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 1978
 	},
 	{
@@ -4646,7 +4646,7 @@
 		"target" : "Norway",
 		"target_long" : 11.5280364395482,
 		"target_lat" : 64.5731537,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 10520
 	},
 	{
@@ -4656,7 +4656,7 @@
 		"target" : "Norway",
 		"target_long" : 11.5280364395482,
 		"target_lat" : 64.5731537,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 529
 	},
 	{
@@ -4666,7 +4666,7 @@
 		"target" : "Norway",
 		"target_long" : 11.5280364395482,
 		"target_lat" : 64.5731537,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 1007
 	},
 	{
@@ -4676,7 +4676,7 @@
 		"target" : "Norway",
 		"target_long" : 11.5280364395482,
 		"target_lat" : 64.5731537,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 353
 	},
 	{
@@ -4686,7 +4686,7 @@
 		"target" : "Poland",
 		"target_long" : 19.134422,
 		"target_lat" : 52.215933,
-		"year" : "1999",
+		"year" : 1999,
 		"value" : 14
 	},
 	{
@@ -4696,7 +4696,7 @@
 		"target" : "Poland",
 		"target_long" : 19.134422,
 		"target_lat" : 52.215933,
-		"year" : "2000",
+		"year" : 2000,
 		"value" : 8
 	},
 	{
@@ -4706,7 +4706,7 @@
 		"target" : "Poland",
 		"target_long" : 19.134422,
 		"target_lat" : 52.215933,
-		"year" : "2001",
+		"year" : 2001,
 		"value" : 10
 	},
 	{
@@ -4716,7 +4716,7 @@
 		"target" : "Poland",
 		"target_long" : 19.134422,
 		"target_lat" : 52.215933,
-		"year" : "2002",
+		"year" : 2002,
 		"value" : 1
 	},
 	{
@@ -4726,7 +4726,7 @@
 		"target" : "Poland",
 		"target_long" : 19.134422,
 		"target_lat" : 52.215933,
-		"year" : "2003",
+		"year" : 2003,
 		"value" : 4
 	},
 	{
@@ -4736,7 +4736,7 @@
 		"target" : "Poland",
 		"target_long" : 19.134422,
 		"target_lat" : 52.215933,
-		"year" : "2004",
+		"year" : 2004,
 		"value" : 7
 	},
 	{
@@ -4746,7 +4746,7 @@
 		"target" : "Poland",
 		"target_long" : 19.134422,
 		"target_lat" : 52.215933,
-		"year" : "2005",
+		"year" : 2005,
 		"value" : 6
 	},
 	{
@@ -4756,7 +4756,7 @@
 		"target" : "Poland",
 		"target_long" : 19.134422,
 		"target_lat" : 52.215933,
-		"year" : "2006",
+		"year" : 2006,
 		"value" : 3
 	},
 	{
@@ -4766,7 +4766,7 @@
 		"target" : "Poland",
 		"target_long" : 19.134422,
 		"target_lat" : 52.215933,
-		"year" : "2007",
+		"year" : 2007,
 		"value" : 3
 	},
 	{
@@ -4776,7 +4776,7 @@
 		"target" : "Poland",
 		"target_long" : 19.134422,
 		"target_lat" : 52.215933,
-		"year" : "2008",
+		"year" : 2008,
 		"value" : 8
 	},
 	{
@@ -4786,7 +4786,7 @@
 		"target" : "Poland",
 		"target_long" : 19.134422,
 		"target_lat" : 52.215933,
-		"year" : "2009",
+		"year" : 2009,
 		"value" : 7
 	},
 	{
@@ -4796,7 +4796,7 @@
 		"target" : "Poland",
 		"target_long" : 19.134422,
 		"target_lat" : 52.215933,
-		"year" : "2010",
+		"year" : 2010,
 		"value" : 8
 	},
 	{
@@ -4806,7 +4806,7 @@
 		"target" : "Poland",
 		"target_long" : 19.134422,
 		"target_lat" : 52.215933,
-		"year" : "2011",
+		"year" : 2011,
 		"value" : 10
 	},
 	{
@@ -4816,7 +4816,7 @@
 		"target" : "Poland",
 		"target_long" : 19.134422,
 		"target_lat" : 52.215933,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 107
 	},
 	{
@@ -4826,7 +4826,7 @@
 		"target" : "Poland",
 		"target_long" : 19.134422,
 		"target_lat" : 52.215933,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 255
 	},
 	{
@@ -4836,7 +4836,7 @@
 		"target" : "Poland",
 		"target_long" : 19.134422,
 		"target_lat" : 52.215933,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 104
 	},
 	{
@@ -4846,7 +4846,7 @@
 		"target" : "Poland",
 		"target_long" : 19.134422,
 		"target_lat" : 52.215933,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 285
 	},
 	{
@@ -4856,7 +4856,7 @@
 		"target" : "Poland",
 		"target_long" : 19.134422,
 		"target_lat" : 52.215933,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 41
 	},
 	{
@@ -4866,7 +4866,7 @@
 		"target" : "Poland",
 		"target_long" : 19.134422,
 		"target_lat" : 52.215933,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 42
 	},
 	{
@@ -4876,7 +4876,7 @@
 		"target" : "Poland",
 		"target_long" : 19.134422,
 		"target_lat" : 52.215933,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 16
 	},
 	{
@@ -4886,7 +4886,7 @@
 		"target" : "Portugal",
 		"target_long" : -7.8896263,
 		"target_lat" : 40.033265,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 20
 	},
 	{
@@ -4896,7 +4896,7 @@
 		"target" : "Portugal",
 		"target_long" : -7.8896263,
 		"target_lat" : 40.033265,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 146
 	},
 	{
@@ -4906,7 +4906,7 @@
 		"target" : "Portugal",
 		"target_long" : -7.8896263,
 		"target_lat" : 40.033265,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 18
 	},
 	{
@@ -4916,7 +4916,7 @@
 		"target" : "Portugal",
 		"target_long" : -7.8896263,
 		"target_lat" : 40.033265,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 22
 	},
 	{
@@ -4926,7 +4926,7 @@
 		"target" : "Portugal",
 		"target_long" : -7.8896263,
 		"target_lat" : 40.033265,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 428
 	},
 	{
@@ -4936,7 +4936,7 @@
 		"target" : "Portugal",
 		"target_long" : -7.8896263,
 		"target_lat" : 40.033265,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 411
 	},
 	{
@@ -4946,7 +4946,7 @@
 		"target" : "Rep. of Korea",
 		"target_long" : 127.9408564,
 		"target_lat" : 36.5581914,
-		"year" : "2001",
+		"year" : 2001,
 		"value" : 1
 	},
 	{
@@ -4956,7 +4956,7 @@
 		"target" : "Rep. of Korea",
 		"target_long" : 127.9408564,
 		"target_lat" : 36.5581914,
-		"year" : "2007",
+		"year" : 2007,
 		"value" : 1
 	},
 	{
@@ -4966,7 +4966,7 @@
 		"target" : "Rep. of Korea",
 		"target_long" : 127.9408564,
 		"target_lat" : 36.5581914,
-		"year" : "2011",
+		"year" : 2011,
 		"value" : 2
 	},
 	{
@@ -4976,7 +4976,7 @@
 		"target" : "Rep. of Korea",
 		"target_long" : 127.9408564,
 		"target_lat" : 36.5581914,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 146
 	},
 	{
@@ -4986,7 +4986,7 @@
 		"target" : "Rep. of Korea",
 		"target_long" : 127.9408564,
 		"target_lat" : 36.5581914,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 295
 	},
 	{
@@ -4996,7 +4996,7 @@
 		"target" : "Rep. of Korea",
 		"target_long" : 127.9408564,
 		"target_lat" : 36.5581914,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 204
 	},
 	{
@@ -5006,7 +5006,7 @@
 		"target" : "Rep. of Korea",
 		"target_long" : 127.9408564,
 		"target_lat" : 36.5581914,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 404
 	},
 	{
@@ -5016,7 +5016,7 @@
 		"target" : "Rep. of Korea",
 		"target_long" : 127.9408564,
 		"target_lat" : 36.5581914,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 171
 	},
 	{
@@ -5026,7 +5026,7 @@
 		"target" : "Rep. of Korea",
 		"target_long" : 127.9408564,
 		"target_lat" : 36.5581914,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 99
 	},
 	{
@@ -5036,7 +5036,7 @@
 		"target" : "Rep. of Korea",
 		"target_long" : 127.9408564,
 		"target_lat" : 36.5581914,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 49
 	},
 	{
@@ -5046,7 +5046,7 @@
 		"target" : "Romania",
 		"target_long" : 24.6859225,
 		"target_lat" : 45.9852129,
-		"year" : "1999",
+		"year" : 1999,
 		"value" : 25
 	},
 	{
@@ -5056,7 +5056,7 @@
 		"target" : "Romania",
 		"target_long" : 24.6859225,
 		"target_lat" : 45.9852129,
-		"year" : "2000",
+		"year" : 2000,
 		"value" : 15
 	},
 	{
@@ -5066,7 +5066,7 @@
 		"target" : "Romania",
 		"target_long" : 24.6859225,
 		"target_lat" : 45.9852129,
-		"year" : "2001",
+		"year" : 2001,
 		"value" : 21
 	},
 	{
@@ -5076,7 +5076,7 @@
 		"target" : "Romania",
 		"target_long" : 24.6859225,
 		"target_lat" : 45.9852129,
-		"year" : "2002",
+		"year" : 2002,
 		"value" : 27
 	},
 	{
@@ -5086,7 +5086,7 @@
 		"target" : "Romania",
 		"target_long" : 24.6859225,
 		"target_lat" : 45.9852129,
-		"year" : "2003",
+		"year" : 2003,
 		"value" : 15
 	},
 	{
@@ -5096,7 +5096,7 @@
 		"target" : "Romania",
 		"target_long" : 24.6859225,
 		"target_lat" : 45.9852129,
-		"year" : "2004",
+		"year" : 2004,
 		"value" : 28
 	},
 	{
@@ -5106,7 +5106,7 @@
 		"target" : "Romania",
 		"target_long" : 24.6859225,
 		"target_lat" : 45.9852129,
-		"year" : "2005",
+		"year" : 2005,
 		"value" : 38
 	},
 	{
@@ -5116,7 +5116,7 @@
 		"target" : "Romania",
 		"target_long" : 24.6859225,
 		"target_lat" : 45.9852129,
-		"year" : "2006",
+		"year" : 2006,
 		"value" : 12
 	},
 	{
@@ -5126,7 +5126,7 @@
 		"target" : "Romania",
 		"target_long" : 24.6859225,
 		"target_lat" : 45.9852129,
-		"year" : "2007",
+		"year" : 2007,
 		"value" : 10
 	},
 	{
@@ -5136,7 +5136,7 @@
 		"target" : "Romania",
 		"target_long" : 24.6859225,
 		"target_lat" : 45.9852129,
-		"year" : "2008",
+		"year" : 2008,
 		"value" : 11
 	},
 	{
@@ -5146,7 +5146,7 @@
 		"target" : "Romania",
 		"target_long" : 24.6859225,
 		"target_lat" : 45.9852129,
-		"year" : "2009",
+		"year" : 2009,
 		"value" : 13
 	},
 	{
@@ -5156,7 +5156,7 @@
 		"target" : "Romania",
 		"target_long" : 24.6859225,
 		"target_lat" : 45.9852129,
-		"year" : "2010",
+		"year" : 2010,
 		"value" : 19
 	},
 	{
@@ -5166,7 +5166,7 @@
 		"target" : "Romania",
 		"target_long" : 24.6859225,
 		"target_lat" : 45.9852129,
-		"year" : "2011",
+		"year" : 2011,
 		"value" : 36
 	},
 	{
@@ -5176,7 +5176,7 @@
 		"target" : "Romania",
 		"target_long" : 24.6859225,
 		"target_lat" : 45.9852129,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 256
 	},
 	{
@@ -5186,7 +5186,7 @@
 		"target" : "Romania",
 		"target_long" : 24.6859225,
 		"target_lat" : 45.9852129,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 1016
 	},
 	{
@@ -5196,7 +5196,7 @@
 		"target" : "Romania",
 		"target_long" : 24.6859225,
 		"target_lat" : 45.9852129,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 614
 	},
 	{
@@ -5206,7 +5206,7 @@
 		"target" : "Romania",
 		"target_long" : 24.6859225,
 		"target_lat" : 45.9852129,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 552
 	},
 	{
@@ -5216,7 +5216,7 @@
 		"target" : "Romania",
 		"target_long" : 24.6859225,
 		"target_lat" : 45.9852129,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 482
 	},
 	{
@@ -5226,7 +5226,7 @@
 		"target" : "Romania",
 		"target_long" : 24.6859225,
 		"target_lat" : 45.9852129,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 926
 	},
 	{
@@ -5236,7 +5236,7 @@
 		"target" : "Romania",
 		"target_long" : 24.6859225,
 		"target_lat" : 45.9852129,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 312
 	},
 	{
@@ -5246,7 +5246,7 @@
 		"target" : "Serbia and Kosovo: S\/RES\/1244 (1999)",
 		"target_long" : 21.076574332099,
 		"target_lat" : 44.02432285,
-		"year" : "2008",
+		"year" : 2008,
 		"value" : 5
 	},
 	{
@@ -5256,7 +5256,7 @@
 		"target" : "Serbia and Kosovo: S\/RES\/1244 (1999)",
 		"target_long" : 21.076574332099,
 		"target_lat" : 44.02432285,
-		"year" : "2010",
+		"year" : 2010,
 		"value" : 1
 	},
 	{
@@ -5266,7 +5266,7 @@
 		"target" : "Serbia and Kosovo: S\/RES\/1244 (1999)",
 		"target_long" : 21.076574332099,
 		"target_lat" : 44.02432285,
-		"year" : "2011",
+		"year" : 2011,
 		"value" : 33
 	},
 	{
@@ -5276,7 +5276,7 @@
 		"target" : "Serbia and Kosovo: S\/RES\/1244 (1999)",
 		"target_long" : 21.076574332099,
 		"target_lat" : 44.02432285,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 288
 	},
 	{
@@ -5286,7 +5286,7 @@
 		"target" : "Serbia and Kosovo: S\/RES\/1244 (1999)",
 		"target_long" : 21.076574332099,
 		"target_lat" : 44.02432285,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 1362
 	},
 	{
@@ -5296,7 +5296,7 @@
 		"target" : "Serbia and Kosovo: S\/RES\/1244 (1999)",
 		"target_long" : 21.076574332099,
 		"target_lat" : 44.02432285,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 9784
 	},
 	{
@@ -5306,7 +5306,7 @@
 		"target" : "Serbia and Kosovo: S\/RES\/1244 (1999)",
 		"target_long" : 21.076574332099,
 		"target_lat" : 44.02432285,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 245
 	},
 	{
@@ -5316,7 +5316,7 @@
 		"target" : "Serbia and Kosovo: S\/RES\/1244 (1999)",
 		"target_long" : 21.076574332099,
 		"target_lat" : 44.02432285,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 164
 	},
 	{
@@ -5326,7 +5326,7 @@
 		"target" : "Serbia and Kosovo: S\/RES\/1244 (1999)",
 		"target_long" : 21.076574332099,
 		"target_lat" : 44.02432285,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 39
 	},
 	{
@@ -5336,7 +5336,7 @@
 		"target" : "Serbia and Kosovo: S\/RES\/1244 (1999)",
 		"target_long" : 21.076574332099,
 		"target_lat" : 44.02432285,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 131
 	},
 	{
@@ -5346,7 +5346,7 @@
 		"target" : "Slovakia",
 		"target_long" : 19.4528646,
 		"target_lat" : 48.7411522,
-		"year" : "2000",
+		"year" : 2000,
 		"value" : 1
 	},
 	{
@@ -5356,7 +5356,7 @@
 		"target" : "Slovakia",
 		"target_long" : 19.4528646,
 		"target_lat" : 48.7411522,
-		"year" : "2001",
+		"year" : 2001,
 		"value" : 10
 	},
 	{
@@ -5366,7 +5366,7 @@
 		"target" : "Slovakia",
 		"target_long" : 19.4528646,
 		"target_lat" : 48.7411522,
-		"year" : "2002",
+		"year" : 2002,
 		"value" : 16
 	},
 	{
@@ -5376,7 +5376,7 @@
 		"target" : "Slovakia",
 		"target_long" : 19.4528646,
 		"target_lat" : 48.7411522,
-		"year" : "2003",
+		"year" : 2003,
 		"value" : 71
 	},
 	{
@@ -5386,7 +5386,7 @@
 		"target" : "Slovakia",
 		"target_long" : 19.4528646,
 		"target_lat" : 48.7411522,
-		"year" : "2004",
+		"year" : 2004,
 		"value" : 48
 	},
 	{
@@ -5396,7 +5396,7 @@
 		"target" : "Slovakia",
 		"target_long" : 19.4528646,
 		"target_lat" : 48.7411522,
-		"year" : "2005",
+		"year" : 2005,
 		"value" : 24
 	},
 	{
@@ -5406,7 +5406,7 @@
 		"target" : "Slovakia",
 		"target_long" : 19.4528646,
 		"target_lat" : 48.7411522,
-		"year" : "2006",
+		"year" : 2006,
 		"value" : 6
 	},
 	{
@@ -5416,7 +5416,7 @@
 		"target" : "Slovakia",
 		"target_long" : 19.4528646,
 		"target_lat" : 48.7411522,
-		"year" : "2007",
+		"year" : 2007,
 		"value" : 39
 	},
 	{
@@ -5426,7 +5426,7 @@
 		"target" : "Slovakia",
 		"target_long" : 19.4528646,
 		"target_lat" : 48.7411522,
-		"year" : "2008",
+		"year" : 2008,
 		"value" : 8
 	},
 	{
@@ -5436,7 +5436,7 @@
 		"target" : "Slovakia",
 		"target_long" : 19.4528646,
 		"target_lat" : 48.7411522,
-		"year" : "2009",
+		"year" : 2009,
 		"value" : 11
 	},
 	{
@@ -5446,7 +5446,7 @@
 		"target" : "Slovakia",
 		"target_long" : 19.4528646,
 		"target_lat" : 48.7411522,
-		"year" : "2010",
+		"year" : 2010,
 		"value" : 5
 	},
 	{
@@ -5456,7 +5456,7 @@
 		"target" : "Slovakia",
 		"target_long" : 19.4528646,
 		"target_lat" : 48.7411522,
-		"year" : "2011",
+		"year" : 2011,
 		"value" : 5
 	},
 	{
@@ -5466,7 +5466,7 @@
 		"target" : "Slovakia",
 		"target_long" : 19.4528646,
 		"target_lat" : 48.7411522,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 4
 	},
 	{
@@ -5476,7 +5476,7 @@
 		"target" : "Slovakia",
 		"target_long" : 19.4528646,
 		"target_lat" : 48.7411522,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 13
 	},
 	{
@@ -5486,7 +5486,7 @@
 		"target" : "Slovakia",
 		"target_long" : 19.4528646,
 		"target_lat" : 48.7411522,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 34
 	},
 	{
@@ -5496,7 +5496,7 @@
 		"target" : "Slovakia",
 		"target_long" : 19.4528646,
 		"target_lat" : 48.7411522,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 6
 	},
 	{
@@ -5506,7 +5506,7 @@
 		"target" : "Slovakia",
 		"target_long" : 19.4528646,
 		"target_lat" : 48.7411522,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 10
 	},
 	{
@@ -5516,7 +5516,7 @@
 		"target" : "Slovakia",
 		"target_long" : 19.4528646,
 		"target_lat" : 48.7411522,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 15
 	},
 	{
@@ -5526,7 +5526,7 @@
 		"target" : "Slovakia",
 		"target_long" : 19.4528646,
 		"target_lat" : 48.7411522,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 2
 	},
 	{
@@ -5536,7 +5536,7 @@
 		"target" : "Slovenia",
 		"target_long" : 14.4808369,
 		"target_lat" : 45.8133113,
-		"year" : "2003",
+		"year" : 2003,
 		"value" : 1
 	},
 	{
@@ -5546,7 +5546,7 @@
 		"target" : "Slovenia",
 		"target_long" : 14.4808369,
 		"target_lat" : 45.8133113,
-		"year" : "2005",
+		"year" : 2005,
 		"value" : 1
 	},
 	{
@@ -5556,7 +5556,7 @@
 		"target" : "Slovenia",
 		"target_long" : 14.4808369,
 		"target_lat" : 45.8133113,
-		"year" : "2010",
+		"year" : 2010,
 		"value" : 3
 	},
 	{
@@ -5566,7 +5566,7 @@
 		"target" : "Slovenia",
 		"target_long" : 14.4808369,
 		"target_lat" : 45.8133113,
-		"year" : "2011",
+		"year" : 2011,
 		"value" : 10
 	},
 	{
@@ -5576,7 +5576,7 @@
 		"target" : "Slovenia",
 		"target_long" : 14.4808369,
 		"target_lat" : 45.8133113,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 32
 	},
 	{
@@ -5586,7 +5586,7 @@
 		"target" : "Slovenia",
 		"target_long" : 14.4808369,
 		"target_lat" : 45.8133113,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 56
 	},
 	{
@@ -5596,7 +5596,7 @@
 		"target" : "Slovenia",
 		"target_long" : 14.4808369,
 		"target_lat" : 45.8133113,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 88
 	},
 	{
@@ -5606,7 +5606,7 @@
 		"target" : "Slovenia",
 		"target_long" : 14.4808369,
 		"target_lat" : 45.8133113,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 16
 	},
 	{
@@ -5616,7 +5616,7 @@
 		"target" : "Slovenia",
 		"target_long" : 14.4808369,
 		"target_lat" : 45.8133113,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 273
 	},
 	{
@@ -5626,7 +5626,7 @@
 		"target" : "Slovenia",
 		"target_long" : 14.4808369,
 		"target_lat" : 45.8133113,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 92
 	},
 	{
@@ -5636,7 +5636,7 @@
 		"target" : "Slovenia",
 		"target_long" : 14.4808369,
 		"target_lat" : 45.8133113,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 130
 	},
 	{
@@ -5646,7 +5646,7 @@
 		"target" : "Spain",
 		"target_long" : -4.8380649,
 		"target_lat" : 39.3262345,
-		"year" : "1999",
+		"year" : 1999,
 		"value" : 30
 	},
 	{
@@ -5656,7 +5656,7 @@
 		"target" : "Spain",
 		"target_long" : -4.8380649,
 		"target_lat" : 39.3262345,
-		"year" : "2000",
+		"year" : 2000,
 		"value" : 26
 	},
 	{
@@ -5666,7 +5666,7 @@
 		"target" : "Spain",
 		"target_long" : -4.8380649,
 		"target_lat" : 39.3262345,
-		"year" : "2001",
+		"year" : 2001,
 		"value" : 18
 	},
 	{
@@ -5676,7 +5676,7 @@
 		"target" : "Spain",
 		"target_long" : -4.8380649,
 		"target_lat" : 39.3262345,
-		"year" : "2002",
+		"year" : 2002,
 		"value" : 9
 	},
 	{
@@ -5686,7 +5686,7 @@
 		"target" : "Spain",
 		"target_long" : -4.8380649,
 		"target_lat" : 39.3262345,
-		"year" : "2003",
+		"year" : 2003,
 		"value" : 7
 	},
 	{
@@ -5696,7 +5696,7 @@
 		"target" : "Spain",
 		"target_long" : -4.8380649,
 		"target_lat" : 39.3262345,
-		"year" : "2004",
+		"year" : 2004,
 		"value" : 39
 	},
 	{
@@ -5706,7 +5706,7 @@
 		"target" : "Spain",
 		"target_long" : -4.8380649,
 		"target_lat" : 39.3262345,
-		"year" : "2005",
+		"year" : 2005,
 		"value" : 35
 	},
 	{
@@ -5716,7 +5716,7 @@
 		"target" : "Spain",
 		"target_long" : -4.8380649,
 		"target_lat" : 39.3262345,
-		"year" : "2006",
+		"year" : 2006,
 		"value" : 15
 	},
 	{
@@ -5726,7 +5726,7 @@
 		"target" : "Spain",
 		"target_long" : -4.8380649,
 		"target_lat" : 39.3262345,
-		"year" : "2007",
+		"year" : 2007,
 		"value" : 31
 	},
 	{
@@ -5736,7 +5736,7 @@
 		"target" : "Spain",
 		"target_long" : -4.8380649,
 		"target_lat" : 39.3262345,
-		"year" : "2008",
+		"year" : 2008,
 		"value" : 97
 	},
 	{
@@ -5746,7 +5746,7 @@
 		"target" : "Spain",
 		"target_long" : -4.8380649,
 		"target_lat" : 39.3262345,
-		"year" : "2009",
+		"year" : 2009,
 		"value" : 30
 	},
 	{
@@ -5756,7 +5756,7 @@
 		"target" : "Spain",
 		"target_long" : -4.8380649,
 		"target_lat" : 39.3262345,
-		"year" : "2010",
+		"year" : 2010,
 		"value" : 19
 	},
 	{
@@ -5766,7 +5766,7 @@
 		"target" : "Spain",
 		"target_long" : -4.8380649,
 		"target_lat" : 39.3262345,
-		"year" : "2011",
+		"year" : 2011,
 		"value" : 97
 	},
 	{
@@ -5776,7 +5776,7 @@
 		"target" : "Spain",
 		"target_long" : -4.8380649,
 		"target_lat" : 39.3262345,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 255
 	},
 	{
@@ -5786,7 +5786,7 @@
 		"target" : "Spain",
 		"target_long" : -4.8380649,
 		"target_lat" : 39.3262345,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 725
 	},
 	{
@@ -5796,7 +5796,7 @@
 		"target" : "Spain",
 		"target_long" : -4.8380649,
 		"target_lat" : 39.3262345,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 1666
 	},
 	{
@@ -5806,7 +5806,7 @@
 		"target" : "Spain",
 		"target_long" : -4.8380649,
 		"target_lat" : 39.3262345,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 5627
 	},
 	{
@@ -5816,7 +5816,7 @@
 		"target" : "Spain",
 		"target_long" : -4.8380649,
 		"target_lat" : 39.3262345,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 3052
 	},
 	{
@@ -5826,7 +5826,7 @@
 		"target" : "Spain",
 		"target_long" : -4.8380649,
 		"target_lat" : 39.3262345,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 4258
 	},
 	{
@@ -5836,7 +5836,7 @@
 		"target" : "Spain",
 		"target_long" : -4.8380649,
 		"target_lat" : 39.3262345,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 2151
 	},
 	{
@@ -5846,7 +5846,7 @@
 		"target" : "Sweden",
 		"target_long" : 14.5208584,
 		"target_lat" : 59.6749712,
-		"year" : "1999",
+		"year" : 1999,
 		"value" : 307
 	},
 	{
@@ -5856,7 +5856,7 @@
 		"target" : "Sweden",
 		"target_long" : 14.5208584,
 		"target_lat" : 59.6749712,
-		"year" : "2000",
+		"year" : 2000,
 		"value" : 335
 	},
 	{
@@ -5866,7 +5866,7 @@
 		"target" : "Sweden",
 		"target_long" : 14.5208584,
 		"target_lat" : 59.6749712,
-		"year" : "2001",
+		"year" : 2001,
 		"value" : 441
 	},
 	{
@@ -5876,7 +5876,7 @@
 		"target" : "Sweden",
 		"target_long" : 14.5208584,
 		"target_lat" : 59.6749712,
-		"year" : "2002",
+		"year" : 2002,
 		"value" : 541
 	},
 	{
@@ -5886,7 +5886,7 @@
 		"target" : "Sweden",
 		"target_long" : 14.5208584,
 		"target_lat" : 59.6749712,
-		"year" : "2003",
+		"year" : 2003,
 		"value" : 666
 	},
 	{
@@ -5896,7 +5896,7 @@
 		"target" : "Sweden",
 		"target_long" : 14.5208584,
 		"target_lat" : 59.6749712,
-		"year" : "2004",
+		"year" : 2004,
 		"value" : 411
 	},
 	{
@@ -5906,7 +5906,7 @@
 		"target" : "Sweden",
 		"target_long" : 14.5208584,
 		"target_lat" : 59.6749712,
-		"year" : "2005",
+		"year" : 2005,
 		"value" : 392
 	},
 	{
@@ -5916,7 +5916,7 @@
 		"target" : "Sweden",
 		"target_long" : 14.5208584,
 		"target_lat" : 59.6749712,
-		"year" : "2006",
+		"year" : 2006,
 		"value" : 433
 	},
 	{
@@ -5926,7 +5926,7 @@
 		"target" : "Sweden",
 		"target_long" : 14.5208584,
 		"target_lat" : 59.6749712,
-		"year" : "2007",
+		"year" : 2007,
 		"value" : 440
 	},
 	{
@@ -5936,7 +5936,7 @@
 		"target" : "Sweden",
 		"target_long" : 14.5208584,
 		"target_lat" : 59.6749712,
-		"year" : "2008",
+		"year" : 2008,
 		"value" : 551
 	},
 	{
@@ -5946,7 +5946,7 @@
 		"target" : "Sweden",
 		"target_long" : 14.5208584,
 		"target_lat" : 59.6749712,
-		"year" : "2009",
+		"year" : 2009,
 		"value" : 587
 	},
 	{
@@ -5956,7 +5956,7 @@
 		"target" : "Sweden",
 		"target_long" : 14.5208584,
 		"target_lat" : 59.6749712,
-		"year" : "2010",
+		"year" : 2010,
 		"value" : 427
 	},
 	{
@@ -5966,7 +5966,7 @@
 		"target" : "Sweden",
 		"target_long" : 14.5208584,
 		"target_lat" : 59.6749712,
-		"year" : "2011",
+		"year" : 2011,
 		"value" : 646
 	},
 	{
@@ -5976,7 +5976,7 @@
 		"target" : "Sweden",
 		"target_long" : 14.5208584,
 		"target_lat" : 59.6749712,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 7814
 	},
 	{
@@ -5986,7 +5986,7 @@
 		"target" : "Sweden",
 		"target_long" : 14.5208584,
 		"target_lat" : 59.6749712,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 16317
 	},
 	{
@@ -5996,7 +5996,7 @@
 		"target" : "Sweden",
 		"target_long" : 14.5208584,
 		"target_lat" : 59.6749712,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 30313
 	},
 	{
@@ -6006,7 +6006,7 @@
 		"target" : "Sweden",
 		"target_long" : 14.5208584,
 		"target_lat" : 59.6749712,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 50909
 	},
 	{
@@ -6016,7 +6016,7 @@
 		"target" : "Sweden",
 		"target_long" : 14.5208584,
 		"target_lat" : 59.6749712,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 4731
 	},
 	{
@@ -6026,7 +6026,7 @@
 		"target" : "Sweden",
 		"target_long" : 14.5208584,
 		"target_lat" : 59.6749712,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 4505
 	},
 	{
@@ -6036,7 +6036,7 @@
 		"target" : "Sweden",
 		"target_long" : 14.5208584,
 		"target_lat" : 59.6749712,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 2129
 	},
 	{
@@ -6046,7 +6046,7 @@
 		"target" : "Switzerland",
 		"target_long" : 8.2319736,
 		"target_lat" : 46.7985624,
-		"year" : "1999",
+		"year" : 1999,
 		"value" : 160
 	},
 	{
@@ -6056,7 +6056,7 @@
 		"target" : "Switzerland",
 		"target_long" : 8.2319736,
 		"target_lat" : 46.7985624,
-		"year" : "2000",
+		"year" : 2000,
 		"value" : 150
 	},
 	{
@@ -6066,7 +6066,7 @@
 		"target" : "Switzerland",
 		"target_long" : 8.2319736,
 		"target_lat" : 46.7985624,
-		"year" : "2001",
+		"year" : 2001,
 		"value" : 139
 	},
 	{
@@ -6076,7 +6076,7 @@
 		"target" : "Switzerland",
 		"target_long" : 8.2319736,
 		"target_lat" : 46.7985624,
-		"year" : "2002",
+		"year" : 2002,
 		"value" : 226
 	},
 	{
@@ -6086,7 +6086,7 @@
 		"target" : "Switzerland",
 		"target_long" : 8.2319736,
 		"target_lat" : 46.7985624,
-		"year" : "2003",
+		"year" : 2003,
 		"value" : 178
 	},
 	{
@@ -6096,7 +6096,7 @@
 		"target" : "Switzerland",
 		"target_long" : 8.2319736,
 		"target_lat" : 46.7985624,
-		"year" : "2004",
+		"year" : 2004,
 		"value" : 109
 	},
 	{
@@ -6106,7 +6106,7 @@
 		"target" : "Switzerland",
 		"target_long" : 8.2319736,
 		"target_lat" : 46.7985624,
-		"year" : "2005",
+		"year" : 2005,
 		"value" : 82
 	},
 	{
@@ -6116,7 +6116,7 @@
 		"target" : "Switzerland",
 		"target_long" : 8.2319736,
 		"target_lat" : 46.7985624,
-		"year" : "2006",
+		"year" : 2006,
 		"value" : 125
 	},
 	{
@@ -6126,7 +6126,7 @@
 		"target" : "Switzerland",
 		"target_long" : 8.2319736,
 		"target_lat" : 46.7985624,
-		"year" : "2007",
+		"year" : 2007,
 		"value" : 285
 	},
 	{
@@ -6136,7 +6136,7 @@
 		"target" : "Switzerland",
 		"target_long" : 8.2319736,
 		"target_lat" : 46.7985624,
-		"year" : "2008",
+		"year" : 2008,
 		"value" : 357
 	},
 	{
@@ -6146,7 +6146,7 @@
 		"target" : "Switzerland",
 		"target_long" : 8.2319736,
 		"target_lat" : 46.7985624,
-		"year" : "2009",
+		"year" : 2009,
 		"value" : 370
 	},
 	{
@@ -6156,7 +6156,7 @@
 		"target" : "Switzerland",
 		"target_long" : 8.2319736,
 		"target_lat" : 46.7985624,
-		"year" : "2010",
+		"year" : 2010,
 		"value" : 387
 	},
 	{
@@ -6166,7 +6166,7 @@
 		"target" : "Switzerland",
 		"target_long" : 8.2319736,
 		"target_lat" : 46.7985624,
-		"year" : "2011",
+		"year" : 2011,
 		"value" : 688
 	},
 	{
@@ -6176,7 +6176,7 @@
 		"target" : "Switzerland",
 		"target_long" : 8.2319736,
 		"target_lat" : 46.7985624,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 1146
 	},
 	{
@@ -6186,7 +6186,7 @@
 		"target" : "Switzerland",
 		"target_long" : 8.2319736,
 		"target_lat" : 46.7985624,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 1852
 	},
 	{
@@ -6196,7 +6196,7 @@
 		"target" : "Switzerland",
 		"target_long" : 8.2319736,
 		"target_lat" : 46.7985624,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 3768
 	},
 	{
@@ -6206,7 +6206,7 @@
 		"target" : "Switzerland",
 		"target_long" : 8.2319736,
 		"target_lat" : 46.7985624,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 4649
 	},
 	{
@@ -6216,7 +6216,7 @@
 		"target" : "Switzerland",
 		"target_long" : 8.2319736,
 		"target_lat" : 46.7985624,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 2040
 	},
 	{
@@ -6226,7 +6226,7 @@
 		"target" : "Switzerland",
 		"target_long" : 8.2319736,
 		"target_lat" : 46.7985624,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 1806
 	},
 	{
@@ -6236,7 +6236,7 @@
 		"target" : "Switzerland",
 		"target_long" : 8.2319736,
 		"target_lat" : 46.7985624,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 1005
 	},
 	{
@@ -6246,7 +6246,7 @@
 		"target" : "The former Yugoslav Rep. of Macedonia",
 		"target_long" : 21.7168387,
 		"target_lat" : 41.6171214,
-		"year" : "2010",
+		"year" : 2010,
 		"value" : 1
 	},
 	{
@@ -6256,7 +6256,7 @@
 		"target" : "The former Yugoslav Rep. of Macedonia",
 		"target_long" : 21.7168387,
 		"target_lat" : 41.6171214,
-		"year" : "2011",
+		"year" : 2011,
 		"value" : 2
 	},
 	{
@@ -6266,7 +6266,7 @@
 		"target" : "The former Yugoslav Rep. of Macedonia",
 		"target_long" : 21.7168387,
 		"target_lat" : 41.6171214,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 5
 	},
 	{
@@ -6276,7 +6276,7 @@
 		"target" : "The former Yugoslav Rep. of Macedonia",
 		"target_long" : 21.7168387,
 		"target_lat" : 41.6171214,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 360
 	},
 	{
@@ -6286,7 +6286,7 @@
 		"target" : "The former Yugoslav Rep. of Macedonia",
 		"target_long" : 21.7168387,
 		"target_lat" : 41.6171214,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 746
 	},
 	{
@@ -6296,7 +6296,7 @@
 		"target" : "The former Yugoslav Rep. of Macedonia",
 		"target_long" : 21.7168387,
 		"target_lat" : 41.6171214,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 997
 	},
 	{
@@ -6306,7 +6306,7 @@
 		"target" : "The former Yugoslav Rep. of Macedonia",
 		"target_long" : 21.7168387,
 		"target_lat" : 41.6171214,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 192
 	},
 	{
@@ -6316,7 +6316,7 @@
 		"target" : "The former Yugoslav Rep. of Macedonia",
 		"target_long" : 21.7168387,
 		"target_lat" : 41.6171214,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 26
 	},
 	{
@@ -6326,7 +6326,7 @@
 		"target" : "The former Yugoslav Rep. of Macedonia",
 		"target_long" : 21.7168387,
 		"target_lat" : 41.6171214,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 12
 	},
 	{
@@ -6336,7 +6336,7 @@
 		"target" : "Turkey",
 		"target_long" : 34.9249653,
 		"target_lat" : 38.9597594,
-		"year" : "1999",
+		"year" : 1999,
 		"value" : 3
 	},
 	{
@@ -6346,7 +6346,7 @@
 		"target" : "Turkey",
 		"target_long" : 34.9249653,
 		"target_lat" : 38.9597594,
-		"year" : "2000",
+		"year" : 2000,
 		"value" : 4
 	},
 	{
@@ -6356,7 +6356,7 @@
 		"target" : "Turkey",
 		"target_long" : 34.9249653,
 		"target_lat" : 38.9597594,
-		"year" : "2001",
+		"year" : 2001,
 		"value" : 11
 	},
 	{
@@ -6366,7 +6366,7 @@
 		"target" : "Turkey",
 		"target_long" : 34.9249653,
 		"target_lat" : 38.9597594,
-		"year" : "2002",
+		"year" : 2002,
 		"value" : 13
 	},
 	{
@@ -6376,7 +6376,7 @@
 		"target" : "Turkey",
 		"target_long" : 34.9249653,
 		"target_lat" : 38.9597594,
-		"year" : "2003",
+		"year" : 2003,
 		"value" : 8
 	},
 	{
@@ -6386,7 +6386,7 @@
 		"target" : "Turkey",
 		"target_long" : 34.9249653,
 		"target_lat" : 38.9597594,
-		"year" : "2004",
+		"year" : 2004,
 		"value" : 15
 	},
 	{
@@ -6396,7 +6396,7 @@
 		"target" : "Turkey",
 		"target_long" : 34.9249653,
 		"target_lat" : 38.9597594,
-		"year" : "2005",
+		"year" : 2005,
 		"value" : 10
 	},
 	{
@@ -6406,7 +6406,7 @@
 		"target" : "Turkey",
 		"target_long" : 34.9249653,
 		"target_lat" : 38.9597594,
-		"year" : "2006",
+		"year" : 2006,
 		"value" : 7
 	},
 	{
@@ -6416,7 +6416,7 @@
 		"target" : "Turkey",
 		"target_long" : 34.9249653,
 		"target_lat" : 38.9597594,
-		"year" : "2007",
+		"year" : 2007,
 		"value" : 21
 	},
 	{
@@ -6426,7 +6426,7 @@
 		"target" : "Turkey",
 		"target_long" : 34.9249653,
 		"target_lat" : 38.9597594,
-		"year" : "2008",
+		"year" : 2008,
 		"value" : 22
 	},
 	{
@@ -6436,7 +6436,7 @@
 		"target" : "Turkey",
 		"target_long" : 34.9249653,
 		"target_lat" : 38.9597594,
-		"year" : "2009",
+		"year" : 2009,
 		"value" : 46
 	},
 	{
@@ -6446,7 +6446,7 @@
 		"target" : "Turkey",
 		"target_long" : 34.9249653,
 		"target_lat" : 38.9597594,
-		"year" : "2010",
+		"year" : 2010,
 		"value" : 37
 	},
 	{
@@ -6456,7 +6456,7 @@
 		"target" : "Turkey",
 		"target_long" : 34.9249653,
 		"target_lat" : 38.9597594,
-		"year" : "2011",
+		"year" : 2011,
 		"value" : 188
 	},
 	{
@@ -6466,7 +6466,7 @@
 		"target" : "Turkey",
 		"target_long" : 34.9249653,
 		"target_lat" : 38.9597594,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 24
 	},
 	{
@@ -6476,7 +6476,7 @@
 		"target" : "Turkey",
 		"target_long" : 34.9249653,
 		"target_lat" : 38.9597594,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 108
 	},
 	{
@@ -6486,7 +6486,7 @@
 		"target" : "Turkey",
 		"target_long" : 34.9249653,
 		"target_lat" : 38.9597594,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 8366
 	},
 	{
@@ -6496,7 +6496,7 @@
 		"target" : "Turkey",
 		"target_long" : 34.9249653,
 		"target_lat" : 38.9597594,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 107
 	},
 	{
@@ -6506,7 +6506,7 @@
 		"target" : "Turkey",
 		"target_long" : 34.9249653,
 		"target_lat" : 38.9597594,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 38
 	},
 	{
@@ -6516,7 +6516,7 @@
 		"target" : "Turkey",
 		"target_long" : 34.9249653,
 		"target_lat" : 38.9597594,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 14
 	},
 	{
@@ -6526,7 +6526,7 @@
 		"target" : "Turkey",
 		"target_long" : 34.9249653,
 		"target_lat" : 38.9597594,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 4
 	},
 	{
@@ -6536,7 +6536,7 @@
 		"target" : "USA (EOIR)",
 		"target_long" : -100.4458825,
 		"target_lat" : 39.7837304,
-		"year" : "1999",
+		"year" : 1999,
 		"value" : 31
 	},
 	{
@@ -6546,7 +6546,7 @@
 		"target" : "USA (EOIR)",
 		"target_long" : -100.4458825,
 		"target_lat" : 39.7837304,
-		"year" : "2000",
+		"year" : 2000,
 		"value" : 30
 	},
 	{
@@ -6556,7 +6556,7 @@
 		"target" : "USA (EOIR)",
 		"target_long" : -100.4458825,
 		"target_lat" : 39.7837304,
-		"year" : "2001",
+		"year" : 2001,
 		"value" : 54
 	},
 	{
@@ -6566,7 +6566,7 @@
 		"target" : "USA (EOIR)",
 		"target_long" : -100.4458825,
 		"target_lat" : 39.7837304,
-		"year" : "2002",
+		"year" : 2002,
 		"value" : 53
 	},
 	{
@@ -6576,7 +6576,7 @@
 		"target" : "USA (EOIR)",
 		"target_long" : -100.4458825,
 		"target_lat" : 39.7837304,
-		"year" : "2003",
+		"year" : 2003,
 		"value" : 109
 	},
 	{
@@ -6586,7 +6586,7 @@
 		"target" : "USA (EOIR)",
 		"target_long" : -100.4458825,
 		"target_lat" : 39.7837304,
-		"year" : "2004",
+		"year" : 2004,
 		"value" : 46
 	},
 	{
@@ -6596,7 +6596,7 @@
 		"target" : "USA (EOIR)",
 		"target_long" : -100.4458825,
 		"target_lat" : 39.7837304,
-		"year" : "2005",
+		"year" : 2005,
 		"value" : 43
 	},
 	{
@@ -6606,7 +6606,7 @@
 		"target" : "USA (EOIR)",
 		"target_long" : -100.4458825,
 		"target_lat" : 39.7837304,
-		"year" : "2006",
+		"year" : 2006,
 		"value" : 50
 	},
 	{
@@ -6616,7 +6616,7 @@
 		"target" : "USA (EOIR)",
 		"target_long" : -100.4458825,
 		"target_lat" : 39.7837304,
-		"year" : "2007",
+		"year" : 2007,
 		"value" : 27
 	},
 	{
@@ -6626,7 +6626,7 @@
 		"target" : "USA (EOIR)",
 		"target_long" : -100.4458825,
 		"target_lat" : 39.7837304,
-		"year" : "2008",
+		"year" : 2008,
 		"value" : 41
 	},
 	{
@@ -6636,7 +6636,7 @@
 		"target" : "USA (EOIR)",
 		"target_long" : -100.4458825,
 		"target_lat" : 39.7837304,
-		"year" : "2009",
+		"year" : 2009,
 		"value" : 25
 	},
 	{
@@ -6646,7 +6646,7 @@
 		"target" : "USA (EOIR)",
 		"target_long" : -100.4458825,
 		"target_lat" : 39.7837304,
-		"year" : "2010",
+		"year" : 2010,
 		"value" : 22
 	},
 	{
@@ -6656,7 +6656,7 @@
 		"target" : "USA (EOIR)",
 		"target_long" : -100.4458825,
 		"target_lat" : 39.7837304,
-		"year" : "2011",
+		"year" : 2011,
 		"value" : 57
 	},
 	{
@@ -6666,7 +6666,7 @@
 		"target" : "USA (EOIR)",
 		"target_long" : -100.4458825,
 		"target_lat" : 39.7837304,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 57
 	},
 	{
@@ -6676,7 +6676,7 @@
 		"target" : "USA (EOIR)",
 		"target_long" : -100.4458825,
 		"target_lat" : 39.7837304,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 115
 	},
 	{
@@ -6686,7 +6686,7 @@
 		"target" : "USA (EOIR)",
 		"target_long" : -100.4458825,
 		"target_lat" : 39.7837304,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 141
 	},
 	{
@@ -6696,7 +6696,7 @@
 		"target" : "USA (EOIR)",
 		"target_long" : -100.4458825,
 		"target_lat" : 39.7837304,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 109
 	},
 	{
@@ -6706,7 +6706,7 @@
 		"target" : "USA (EOIR)",
 		"target_long" : -100.4458825,
 		"target_lat" : 39.7837304,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 156
 	},
 	{
@@ -6716,7 +6716,7 @@
 		"target" : "USA (EOIR)",
 		"target_long" : -100.4458825,
 		"target_lat" : 39.7837304,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 112
 	},
 	{
@@ -6726,7 +6726,7 @@
 		"target" : "USA (EOIR)",
 		"target_long" : -100.4458825,
 		"target_lat" : 39.7837304,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 16
 	},
 	{
@@ -6736,7 +6736,7 @@
 		"target" : "USA (INS\/DHS)",
 		"target_long" : -100.4458825,
 		"target_lat" : 39.7837304,
-		"year" : "2000",
+		"year" : 2000,
 		"value" : 13
 	},
 	{
@@ -6746,7 +6746,7 @@
 		"target" : "USA (INS\/DHS)",
 		"target_long" : -100.4458825,
 		"target_lat" : 39.7837304,
-		"year" : "2002",
+		"year" : 2002,
 		"value" : 20
 	},
 	{
@@ -6756,7 +6756,7 @@
 		"target" : "USA (INS\/DHS)",
 		"target_long" : -100.4458825,
 		"target_lat" : 39.7837304,
-		"year" : "2003",
+		"year" : 2003,
 		"value" : 11
 	},
 	{
@@ -6766,7 +6766,7 @@
 		"target" : "USA (INS\/DHS)",
 		"target_long" : -100.4458825,
 		"target_lat" : 39.7837304,
-		"year" : "2004",
+		"year" : 2004,
 		"value" : 19
 	},
 	{
@@ -6776,7 +6776,7 @@
 		"target" : "USA (INS\/DHS)",
 		"target_long" : -100.4458825,
 		"target_lat" : 39.7837304,
-		"year" : "2005",
+		"year" : 2005,
 		"value" : 28
 	},
 	{
@@ -6786,7 +6786,7 @@
 		"target" : "USA (INS\/DHS)",
 		"target_long" : -100.4458825,
 		"target_lat" : 39.7837304,
-		"year" : "2006",
+		"year" : 2006,
 		"value" : 34
 	},
 	{
@@ -6796,7 +6796,7 @@
 		"target" : "USA (INS\/DHS)",
 		"target_long" : -100.4458825,
 		"target_lat" : 39.7837304,
-		"year" : "2007",
+		"year" : 2007,
 		"value" : 28
 	},
 	{
@@ -6806,7 +6806,7 @@
 		"target" : "USA (INS\/DHS)",
 		"target_long" : -100.4458825,
 		"target_lat" : 39.7837304,
-		"year" : "2008",
+		"year" : 2008,
 		"value" : 27
 	},
 	{
@@ -6816,7 +6816,7 @@
 		"target" : "USA (INS\/DHS)",
 		"target_long" : -100.4458825,
 		"target_lat" : 39.7837304,
-		"year" : "2009",
+		"year" : 2009,
 		"value" : 23
 	},
 	{
@@ -6826,7 +6826,7 @@
 		"target" : "USA (INS\/DHS)",
 		"target_long" : -100.4458825,
 		"target_lat" : 39.7837304,
-		"year" : "2010",
+		"year" : 2010,
 		"value" : 41
 	},
 	{
@@ -6836,7 +6836,7 @@
 		"target" : "USA (INS\/DHS)",
 		"target_long" : -100.4458825,
 		"target_lat" : 39.7837304,
-		"year" : "2011",
+		"year" : 2011,
 		"value" : 205
 	},
 	{
@@ -6846,7 +6846,7 @@
 		"target" : "USA (INS\/DHS)",
 		"target_long" : -100.4458825,
 		"target_lat" : 39.7837304,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 647
 	},
 	{
@@ -6856,7 +6856,7 @@
 		"target" : "USA (INS\/DHS)",
 		"target_long" : -100.4458825,
 		"target_lat" : 39.7837304,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 1468
 	},
 	{
@@ -6866,7 +6866,7 @@
 		"target" : "USA (INS\/DHS)",
 		"target_long" : -100.4458825,
 		"target_lat" : 39.7837304,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 1564
 	},
 	{
@@ -6876,7 +6876,7 @@
 		"target" : "USA (INS\/DHS)",
 		"target_long" : -100.4458825,
 		"target_lat" : 39.7837304,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 1004
 	},
 	{
@@ -6886,7 +6886,7 @@
 		"target" : "USA (INS\/DHS)",
 		"target_long" : -100.4458825,
 		"target_lat" : 39.7837304,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 652
 	},
 	{
@@ -6896,7 +6896,7 @@
 		"target" : "USA (INS\/DHS)",
 		"target_long" : -100.4458825,
 		"target_lat" : 39.7837304,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 459
 	},
 	{
@@ -6906,7 +6906,7 @@
 		"target" : "USA (INS\/DHS)",
 		"target_long" : -100.4458825,
 		"target_lat" : 39.7837304,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 207
 	},
 	{
@@ -6916,7 +6916,7 @@
 		"target" : "United Kingdom of Great Britain and Northern Ireland",
 		"target_long" : -3.2765753,
 		"target_lat" : 54.7023545,
-		"year" : "2001",
+		"year" : 2001,
 		"value" : 115
 	},
 	{
@@ -6926,7 +6926,7 @@
 		"target" : "United Kingdom of Great Britain and Northern Ireland",
 		"target_long" : -3.2765753,
 		"target_lat" : 54.7023545,
-		"year" : "2002",
+		"year" : 2002,
 		"value" : 83
 	},
 	{
@@ -6936,7 +6936,7 @@
 		"target" : "United Kingdom of Great Britain and Northern Ireland",
 		"target_long" : -3.2765753,
 		"target_lat" : 54.7023545,
-		"year" : "2003",
+		"year" : 2003,
 		"value" : 156
 	},
 	{
@@ -6946,7 +6946,7 @@
 		"target" : "United Kingdom of Great Britain and Northern Ireland",
 		"target_long" : -3.2765753,
 		"target_lat" : 54.7023545,
-		"year" : "2004",
+		"year" : 2004,
 		"value" : 412
 	},
 	{
@@ -6956,7 +6956,7 @@
 		"target" : "United Kingdom of Great Britain and Northern Ireland",
 		"target_long" : -3.2765753,
 		"target_lat" : 54.7023545,
-		"year" : "2005",
+		"year" : 2005,
 		"value" : 388
 	},
 	{
@@ -6966,7 +6966,7 @@
 		"target" : "United Kingdom of Great Britain and Northern Ireland",
 		"target_long" : -3.2765753,
 		"target_lat" : 54.7023545,
-		"year" : "2006",
+		"year" : 2006,
 		"value" : 179
 	},
 	{
@@ -6976,7 +6976,7 @@
 		"target" : "United Kingdom of Great Britain and Northern Ireland",
 		"target_long" : -3.2765753,
 		"target_lat" : 54.7023545,
-		"year" : "2007",
+		"year" : 2007,
 		"value" : 188
 	},
 	{
@@ -6986,7 +6986,7 @@
 		"target" : "United Kingdom of Great Britain and Northern Ireland",
 		"target_long" : -3.2765753,
 		"target_lat" : 54.7023545,
-		"year" : "2008",
+		"year" : 2008,
 		"value" : 181
 	},
 	{
@@ -6996,7 +6996,7 @@
 		"target" : "United Kingdom of Great Britain and Northern Ireland",
 		"target_long" : -3.2765753,
 		"target_lat" : 54.7023545,
-		"year" : "2009",
+		"year" : 2009,
 		"value" : 173
 	},
 	{
@@ -7006,7 +7006,7 @@
 		"target" : "United Kingdom of Great Britain and Northern Ireland",
 		"target_long" : -3.2765753,
 		"target_lat" : 54.7023545,
-		"year" : "2010",
+		"year" : 2010,
 		"value" : 158
 	},
 	{
@@ -7016,7 +7016,7 @@
 		"target" : "United Kingdom of Great Britain and Northern Ireland",
 		"target_long" : -3.2765753,
 		"target_lat" : 54.7023545,
-		"year" : "2011",
+		"year" : 2011,
 		"value" : 508
 	},
 	{
@@ -7026,7 +7026,7 @@
 		"target" : "United Kingdom of Great Britain and Northern Ireland",
 		"target_long" : -3.2765753,
 		"target_lat" : 54.7023545,
-		"year" : "2012",
+		"year" : 2012,
 		"value" : 1289
 	},
 	{
@@ -7036,7 +7036,7 @@
 		"target" : "United Kingdom of Great Britain and Northern Ireland",
 		"target_long" : -3.2765753,
 		"target_lat" : 54.7023545,
-		"year" : "2013",
+		"year" : 2013,
 		"value" : 2020
 	},
 	{
@@ -7046,7 +7046,7 @@
 		"target" : "United Kingdom of Great Britain and Northern Ireland",
 		"target_long" : -3.2765753,
 		"target_lat" : 54.7023545,
-		"year" : "2014",
+		"year" : 2014,
 		"value" : 2353
 	},
 	{
@@ -7056,7 +7056,7 @@
 		"target" : "United Kingdom of Great Britain and Northern Ireland",
 		"target_long" : -3.2765753,
 		"target_lat" : 54.7023545,
-		"year" : "2015",
+		"year" : 2015,
 		"value" : 2794
 	},
 	{
@@ -7066,7 +7066,7 @@
 		"target" : "United Kingdom of Great Britain and Northern Ireland",
 		"target_long" : -3.2765753,
 		"target_lat" : 54.7023545,
-		"year" : "2016",
+		"year" : 2016,
 		"value" : 1587
 	},
 	{
@@ -7076,7 +7076,7 @@
 		"target" : "United Kingdom of Great Britain and Northern Ireland",
 		"target_long" : -3.2765753,
 		"target_lat" : 54.7023545,
-		"year" : "2017",
+		"year" : 2017,
 		"value" : 786
 	},
 	{
@@ -7086,7 +7086,7 @@
 		"target" : "United Kingdom of Great Britain and Northern Ireland",
 		"target_long" : -3.2765753,
 		"target_lat" : 54.7023545,
-		"year" : "2018",
+		"year" : 2018,
 		"value" : 641
 	}
 ]
