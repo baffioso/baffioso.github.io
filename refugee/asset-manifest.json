@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/refugee/static/css/main.65fc3014.chunk.css",
-    "main.js": "/refugee/static/js/main.d755cf0d.chunk.js",
-    "main.js.map": "/refugee/static/js/main.d755cf0d.chunk.js.map",
+    "main.js": "/refugee/static/js/main.0c075484.chunk.js",
+    "main.js.map": "/refugee/static/js/main.0c075484.chunk.js.map",
     "runtime~main.js": "/refugee/static/js/runtime~main.e6b6893f.js",
     "runtime~main.js.map": "/refugee/static/js/runtime~main.e6b6893f.js.map",
     "static/js/2.69b6796f.chunk.js": "/refugee/static/js/2.69b6796f.chunk.js",
     "static/js/2.69b6796f.chunk.js.map": "/refugee/static/js/2.69b6796f.chunk.js.map",
     "index.html": "/refugee/index.html",
-    "precache-manifest.db25bc4cd0762d7022eb05505e9e27c0.js": "/refugee/precache-manifest.db25bc4cd0762d7022eb05505e9e27c0.js",
+    "precache-manifest.c267866b5c69b968dfe54b70489a7826.js": "/refugee/precache-manifest.c267866b5c69b968dfe54b70489a7826.js",
     "service-worker.js": "/refugee/service-worker.js",
     "static/css/main.65fc3014.chunk.css.map": "/refugee/static/css/main.65fc3014.chunk.css.map"
   }
