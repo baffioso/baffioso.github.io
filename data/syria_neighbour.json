@@ -1,0 +1,47 @@
+[
+	{
+		"origin" : "Syrian Arab Rep.",
+		"origin_long" : 39.0494106,
+		"origin_lat" : 34.6401861,
+		"target" : "Turkey",
+		"target_long" : 35.970215625,
+		"target_lat" : 39.127913185778,
+		"value" : 3691333
+    },
+    {
+		"origin" : "Syrian Arab Rep.",
+		"origin_long" : 39.0494106,
+		"origin_lat" : 34.6401861,
+		"target" : "Lebanon",
+		"target_long" : 35.91088203125,
+		"target_lat" : 33.936363151441,
+		"value" : 916113
+    },	
+    {
+		"origin" : "Syrian Arab Rep.",
+		"origin_long" : 39.0494106,
+		"origin_lat" : 34.6401861,
+		"target" : "Jordan",
+		"target_long" : 36.7886,
+		"target_lat" : 31.2539,
+		"value" : 654192
+    },	
+    {
+		"origin" : "Syrian Arab Rep.",
+		"origin_long" : 39.0494106,
+		"origin_lat" : 34.6401861,
+		"target" : "Iraq",
+		"target_long" : 43.765,
+		"target_lat" : 33.056,
+		"value" : 244539
+    },
+    {
+		"origin" : "Syrian Arab Rep.",
+		"origin_long" : 39.0494106,
+		"origin_lat" : 34.6401861,
+		"target" : "Egypt",
+		"target_long" : 30.055429,
+		"target_lat" : 29.875383,
+		"value" : 129159
+    }
+]
