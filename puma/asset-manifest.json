@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/puma/static/css/main.67c25ddb.chunk.css",
-    "main.js": "/puma/static/js/main.41da36ae.chunk.js",
-    "main.js.map": "/puma/static/js/main.41da36ae.chunk.js.map",
+    "main.css": "/puma/static/css/main.3760bfb7.chunk.css",
+    "main.js": "/puma/static/js/main.32061ca7.chunk.js",
+    "main.js.map": "/puma/static/js/main.32061ca7.chunk.js.map",
     "runtime-main.js": "/puma/static/js/runtime-main.593fdc6d.js",
     "runtime-main.js.map": "/puma/static/js/runtime-main.593fdc6d.js.map",
     "static/css/2.b15c002f.chunk.css": "/puma/static/css/2.b15c002f.chunk.css",
     "static/js/2.e2628087.chunk.js": "/puma/static/js/2.e2628087.chunk.js",
     "static/js/2.e2628087.chunk.js.map": "/puma/static/js/2.e2628087.chunk.js.map",
     "index.html": "/puma/index.html",
-    "precache-manifest.a0e191d64aa6747fb2a9df8e6d42e5ae.js": "/puma/precache-manifest.a0e191d64aa6747fb2a9df8e6d42e5ae.js",
+    "precache-manifest.4c406b5433f8af5be11ab7f420f4af7a.js": "/puma/precache-manifest.4c406b5433f8af5be11ab7f420f4af7a.js",
     "service-worker.js": "/puma/service-worker.js",
     "static/css/2.b15c002f.chunk.css.map": "/puma/static/css/2.b15c002f.chunk.css.map",
-    "static/css/main.67c25ddb.chunk.css.map": "/puma/static/css/main.67c25ddb.chunk.css.map",
+    "static/css/main.3760bfb7.chunk.css.map": "/puma/static/css/main.3760bfb7.chunk.css.map",
     "static/js/2.e2628087.chunk.js.LICENSE": "/puma/static/js/2.e2628087.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.593fdc6d.js",
     "static/css/2.b15c002f.chunk.css",
     "static/js/2.e2628087.chunk.js",
-    "static/css/main.67c25ddb.chunk.css",
-    "static/js/main.41da36ae.chunk.js"
+    "static/css/main.3760bfb7.chunk.css",
+    "static/js/main.32061ca7.chunk.js"
   ]
 }
