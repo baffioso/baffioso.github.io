@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/puma/static/css/main.6bc42a1f.chunk.css",
-    "main.js": "/puma/static/js/main.76cd1e61.chunk.js",
-    "main.js.map": "/puma/static/js/main.76cd1e61.chunk.js.map",
+    "main.js": "/puma/static/js/main.e5381c1a.chunk.js",
+    "main.js.map": "/puma/static/js/main.e5381c1a.chunk.js.map",
     "runtime-main.js": "/puma/static/js/runtime-main.593fdc6d.js",
     "runtime-main.js.map": "/puma/static/js/runtime-main.593fdc6d.js.map",
     "static/css/2.b15c002f.chunk.css": "/puma/static/css/2.b15c002f.chunk.css",
     "static/js/2.8d12d30d.chunk.js": "/puma/static/js/2.8d12d30d.chunk.js",
     "static/js/2.8d12d30d.chunk.js.map": "/puma/static/js/2.8d12d30d.chunk.js.map",
     "index.html": "/puma/index.html",
-    "precache-manifest.f07056eabc8aefd6f5ceeac4da7053ec.js": "/puma/precache-manifest.f07056eabc8aefd6f5ceeac4da7053ec.js",
+    "precache-manifest.edafbaa8c45b2a503b3522b6079c8eba.js": "/puma/precache-manifest.edafbaa8c45b2a503b3522b6079c8eba.js",
     "service-worker.js": "/puma/service-worker.js",
     "static/css/2.b15c002f.chunk.css.map": "/puma/static/css/2.b15c002f.chunk.css.map",
     "static/css/main.6bc42a1f.chunk.css.map": "/puma/static/css/main.6bc42a1f.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.b15c002f.chunk.css",
     "static/js/2.8d12d30d.chunk.js",
     "static/css/main.6bc42a1f.chunk.css",
-    "static/js/main.76cd1e61.chunk.js"
+    "static/js/main.e5381c1a.chunk.js"
   ]
 }
