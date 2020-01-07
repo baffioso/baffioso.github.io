@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "16cbbc23665ef72efeaa98797b9f8639",
+    "revision": "b533cc5e235cfbf6cfc0b2eca2e2e0a6",
     "url": "/puma/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/puma/static/css/2.b15c002f.chunk.css"
   },
   {
-    "revision": "db615965b579dbe94cee",
+    "revision": "9dc473d79916f2b6e1b0",
     "url": "/puma/static/css/main.6bc42a1f.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/puma/static/js/2.8d12d30d.chunk.js.LICENSE"
   },
   {
-    "revision": "db615965b579dbe94cee",
-    "url": "/puma/static/js/main.e5381c1a.chunk.js"
+    "revision": "9dc473d79916f2b6e1b0",
+    "url": "/puma/static/js/main.ebd90d8e.chunk.js"
   },
   {
     "revision": "a4daba44a371dd5e5ae8",
