@@ -1,0 +1,30 @@
+self.__precacheManifest = (self.__precacheManifest || []).concat([
+  {
+    "revision": "0b1d8f45634364ab53072bffeeb63385",
+    "url": "/puma/index.html"
+  },
+  {
+    "revision": "f9052ccd3b1e03260613",
+    "url": "/puma/static/css/2.b15c002f.chunk.css"
+  },
+  {
+    "revision": "61b02bd7653952174a2e",
+    "url": "/puma/static/css/main.3236f77b.chunk.css"
+  },
+  {
+    "revision": "f9052ccd3b1e03260613",
+    "url": "/puma/static/js/2.cc38e1a3.chunk.js"
+  },
+  {
+    "revision": "37ef80829e57f4a0c2aa4bfe70fe2cf3",
+    "url": "/puma/static/js/2.cc38e1a3.chunk.js.LICENSE"
+  },
+  {
+    "revision": "61b02bd7653952174a2e",
+    "url": "/puma/static/js/main.139c8342.chunk.js"
+  },
+  {
+    "revision": "a4daba44a371dd5e5ae8",
+    "url": "/puma/static/js/runtime-main.593fdc6d.js"
+  }
+]);
