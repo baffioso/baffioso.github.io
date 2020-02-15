@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://cesium.com/downloads/cesiumjs/releases/1.63.1/Build/Cesium/Cesium.js"></script>
+    <link href="https://cesium.com/downloads/cesiumjs/releases/1.63.1/Build/Cesium/Widgets/widgets.css"
+        rel="stylesheet">
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cesiumContainer" style="width: 100vw; height:100vh"></div>
+
+    <script>
+
+
+        // Grant CesiumJS access to your ion assets
+        Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI2NGM3NDNkYy0yZWM0LTQ0ODQtYjFmNS0zMDY4MGIxNDVmYmQiLCJpZCI6MTgyMzEsInNjb3BlcyI6WyJhc3IiLCJnYyJdLCJpYXQiOjE1NzM1MDc5NTd9.VF54ufCrlaAEna_iHaCn47njpuMz1qgjrone4WnuCuA';
+
+        var viewer = new Cesium.Viewer('cesiumContainer', {
+            terrainProvider: new Cesium.CesiumTerrainProvider({
+                url: Cesium.IonResource.fromAssetId(74171)
+            }),
+            shadows: true,
+            terrainShadows: Cesium.ShadowMode.ENABLED,
+        });
+
+        var shadowMap = viewer.shadowMap;
+        //shadowMap.maxmimumDistance = 10000.0;
+
+        var promise = Cesium.IonResource.fromAssetId(74176)
+            .then(function (resource) {
+                return Cesium.GeoJsonDataSource.load(resource, {
+                    stroke: Cesium.Color.HOTPINK,
+                    fill: Cesium.Color.PINK,
+                    strokeWidth: 3,
+                    markerSymbol: '?'
+                });
+            })
+            .then(function (dataSource) {
+                return viewer.dataSources.add(dataSource);
+            })
+            .then(function (dataSource) {
+                return viewer.zoomTo(dataSource);
+            })
+            .otherwise(function (error) {
+                console.log(error);
+            });
+
+    </script>
+</body>
+
+</html>
