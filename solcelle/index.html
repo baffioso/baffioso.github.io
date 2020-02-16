@@ -19,8 +19,8 @@
         }
 
         #cesiumContainer {
-            width: 100%; 
-            height:100%;
+            width: 100%;
+            height: 100%;
         }
     </style>
 </head>
@@ -35,6 +35,11 @@
         Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI2NGM3NDNkYy0yZWM0LTQ0ODQtYjFmNS0zMDY4MGIxNDVmYmQiLCJpZCI6MTgyMzEsInNjb3BlcyI6WyJhc3IiLCJnYyJdLCJpYXQiOjE1NzM1MDc5NTd9.VF54ufCrlaAEna_iHaCn47njpuMz1qgjrone4WnuCuA';
 
         var viewer = new Cesium.Viewer('cesiumContainer', {
+            baseLayerPicker: false,
+            imageryProvider: new Cesium.MapboxImageryProvider({
+                mapId: 'mapbox.satellite',
+                accessToken: 'pk.eyJ1IjoiYmFmZmlvc28iLCJhIjoiY2s2cDNna2ZkMDkxYzNrcWxsOWhnMXpncSJ9.GDRxMk2269dec-HR2TAk-w'
+            }),
             terrainProvider: new Cesium.CesiumTerrainProvider({
                 url: Cesium.IonResource.fromAssetId(74171)
             }),
