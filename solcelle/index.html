@@ -48,10 +48,12 @@
         var promise = Cesium.IonResource.fromAssetId(74176)
             .then(function (resource) {
                 return Cesium.GeoJsonDataSource.load(resource, {
-                    stroke: Cesium.Color.HOTPINK,
-                    fill: Cesium.Color.PINK,
-                    strokeWidth: 3,
-                    markerSymbol: '?'
+                    stroke: Cesium.Color.RED,
+                    fill: new Cesium.Color(1, 1, 1, 0.4),
+                    strokeWidth: 10,
+                    markerSymbol: '?',
+                    clampToGround: true
+
                 });
             })
             .then(function (dataSource) {
