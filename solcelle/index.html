@@ -30,11 +30,15 @@
 
     <script>
 
+        var extent = Cesium.Rectangle.fromDegrees(12.081814,55.619087,12.090827,55.621862);
 
+        Cesium.Camera.DEFAULT_VIEW_RECTANGLE = extent;
+        Cesium.Camera.DEFAULT_VIEW_FACTOR = 0;
         // Grant CesiumJS access to your ion assets
         Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI2NGM3NDNkYy0yZWM0LTQ0ODQtYjFmNS0zMDY4MGIxNDVmYmQiLCJpZCI6MTgyMzEsInNjb3BlcyI6WyJhc3IiLCJnYyJdLCJpYXQiOjE1NzM1MDc5NTd9.VF54ufCrlaAEna_iHaCn47njpuMz1qgjrone4WnuCuA';
 
         var viewer = new Cesium.Viewer('cesiumContainer', {
+            geocoder: false,
             baseLayerPicker: false,
             imageryProvider: new Cesium.MapboxImageryProvider({
                 mapId: 'mapbox.satellite',
