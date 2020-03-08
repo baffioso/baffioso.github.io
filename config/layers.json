@@ -1,4 +1,4 @@
-[
+{ layers: [
     {
         sourceId: 'puma',
         source: {
@@ -219,3 +219,4 @@
         ]
     }
 ]
+}
