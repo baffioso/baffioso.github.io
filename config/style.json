@@ -1,0 +1,62 @@
+{
+    'public.p_plads': [
+        {
+            p_plads: {
+                "id": "p_plads",
+                "type": "line",
+                "source": "public.p_plads",
+                "source-layer": "public.p_plads",
+                "paint": {
+                    "line-color": "rgba(251, 78, 123, 1)",
+                    "line-width": {
+                        "stops": [[13, 1], [18, 8]]
+                    }
+                },
+                "layout": {
+                    "line-cap": "round",
+                    "line-join": "miter"
+                }
+            }
+        }, {
+            p_plads_label: {
+                "id": "p_plads_label",
+                "type": "symbol",
+                "source": "public.p_plads",
+                "source-layer": "public.p_plads",
+                "layout": {
+                    "text-field": {
+                        "type": "identity",
+                        "property": "antal_pladser"
+                    },
+                    "text-size": 15,
+                    "symbol-placement": "line-center",
+                    "text-rotation-alignment": "map",
+                    "text-keep-upright": true
+
+                },
+                "paint": {
+                    "text-color": "rgba(247, 247, 247, 1)",
+                    "text-halo-width": 1,
+                    "text-halo-color": "rgba(134, 131, 131, 1)"
+                },
+                "minzoom": 16
+            }
+        }
+    ],
+    'public.broende': [
+        {
+            broende: {
+                "id": "broende",
+                "type": "circle",
+                "source": "public.broende",
+                "source-layer": "public.broende",
+                "paint": {
+                    "circle-color": "rgba(46, 88, 90, 1)",
+                    "circle-radius": {
+                        "stops": [[14, 2], [19, 10]]
+                    }
+                }
+            }
+        }
+    ]
+}
