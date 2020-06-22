@@ -1,7 +1,7 @@
 {
-    'public.p_plads': [
+    "public.p_plads": [
         {
-            p_plads: {
+            "p_plads": {
                 "id": "p_plads",
                 "type": "line",
                 "source": "public.p_plads",
@@ -18,7 +18,7 @@
                 }
             }
         }, {
-            p_plads_label: {
+            "p_plads_label": {
                 "id": "p_plads_label",
                 "type": "symbol",
                 "source": "public.p_plads",
@@ -43,9 +43,9 @@
             }
         }
     ],
-    'public.broende': [
+    "public.broende": [
         {
-            broende: {
+            "broende": {
                 "id": "broende",
                 "type": "circle",
                 "source": "public.broende",
